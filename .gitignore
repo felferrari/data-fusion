@@ -2,4 +2,4 @@
 raw
 imgs
 .ipynb*
-*.pyc
+**/*.pyc
