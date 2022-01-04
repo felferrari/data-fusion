@@ -1,6 +1,26 @@
 {
     "experiments":[
-
+        {
+            "num":1,
+            "img_type": "OPT",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":2,
+            "img_type": "SAR",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":3,
+            "img_type": "FUS",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"Concat_ResUNET"
+        },
         {
             "num":4,
             "img_type": "FUS",
