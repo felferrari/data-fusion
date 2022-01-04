@@ -99,7 +99,7 @@ def train_model(tm, exp, img_type, train_cond, method):
         start_training = time.perf_counter()
         history = model.fit(
             train_data_loader,
-            validation_data=train_data_loader,
+            validation_data=val_data_loader,
             epochs=epochs,
             verbose=2,
             callbacks=callbacks_list)
@@ -118,7 +118,7 @@ def train_model(tm, exp, img_type, train_cond, method):
         start_training = time.perf_counter()
         history = model.fit(
             train_data_loader,
-            validation_data=train_data_loader,
+            validation_data=val_data_loader,
             epochs=epochs,
             verbose=2,
             callbacks=callbacks_list)
