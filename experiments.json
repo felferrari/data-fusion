@@ -1,0 +1,246 @@
+{
+    "experiments":[
+        {
+            "num":1,
+            "img_type": "OPT",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":2,
+            "img_type": "SAR",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":3,
+            "img_type": "FUS",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":4,
+            "img_type": "FUS",
+            "train_cond": "n_n",
+            "test_cond": "n_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":5,
+            "img_type": "OPT",
+            "train_cond": "c_c",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":6,
+            "img_type": "SAR",
+            "train_cond": "c_c",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":7,
+            "img_type": "FUS",
+            "train_cond": "c_c",
+            "test_cond": "c_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":8,
+            "img_type": "FUS",
+            "train_cond": "c_c",
+            "test_cond": "c_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":9,
+            "img_type": "OPT",
+            "train_cond": "c_n",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":10,
+            "img_type": "SAR",
+            "train_cond": "c_n",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":11,
+            "img_type": "FUS",
+            "train_cond": "c_n",
+            "test_cond": "c_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":12,
+            "img_type": "FUS",
+            "train_cond": "c_n",
+            "test_cond": "c_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":13,
+            "img_type": "OPT",
+            "train_cond": "n_c",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":14,
+            "img_type": "SAR",
+            "train_cond": "n_c",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":15,
+            "img_type": "FUS",
+            "train_cond": "n_c",
+            "test_cond": "n_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":16,
+            "img_type": "FUS",
+            "train_cond": "n_c",
+            "test_cond": "n_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":17,
+            "img_type": "OPT",
+            "train_cond": "n_n",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":18,
+            "img_type": "SAR",
+            "train_cond": "n_n",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":19,
+            "img_type": "FUS",
+            "train_cond": "n_n",
+            "test_cond": "c_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":20,
+            "img_type": "FUS",
+            "train_cond": "n_n",
+            "test_cond": "c_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":21,
+            "img_type": "OPT",
+            "train_cond": "c_c",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":22,
+            "img_type": "SAR",
+            "train_cond": "c_c",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":23,
+            "img_type": "FUS",
+            "train_cond": "c_c",
+            "test_cond": "n_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":24,
+            "img_type": "FUS",
+            "train_cond": "c_c",
+            "test_cond": "n_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":25,
+            "img_type": "OPT",
+            "train_cond": "c_n",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":26,
+            "img_type": "SAR",
+            "train_cond": "c_n",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":27,
+            "img_type": "FUS",
+            "train_cond": "c_n",
+            "test_cond": "n_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":28,
+            "img_type": "FUS",
+            "train_cond": "c_n",
+            "test_cond": "n_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":29,
+            "img_type": "OPT",
+            "train_cond": "n_c",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":30,
+            "img_type": "SAR",
+            "train_cond": "n_c",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":31,
+            "img_type": "FUS",
+            "train_cond": "n_c",
+            "test_cond": "c_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":32,
+            "img_type": "FUS",
+            "train_cond": "n_c",
+            "test_cond": "c_n",
+            "method":"CrossFusion_ResUNET"
+        }
+    ],
+    
+    
+    
+    "weights":[
+        0.2, 0.8, 0.0
+    ],
+   
+    "overlap": 0.7,
+    "patch_size": 128,
+    "batch_size": 32,
+    "classes":3,
+    
+    "nb_filters": [2, 4, 8],
+    "fus_filters": [8, 8, 4],
+    "grid_size":[6,3],
+    "tiles_tr":[1,3,6,8,12,16,17],
+    "tiles_val": [7,14],
+    "times":5
+}
