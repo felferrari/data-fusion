@@ -1,0 +1,53 @@
+{
+    "files_sar":[
+        {
+            "link":"https://drive.google.com/file/d/12QGCvLr--QajCf6UrADRm2n1JLmcLe-p/view?usp=sharing",
+            "id":"12QGCvLr--QajCf6UrADRm2n1JLmcLe-p",
+            "o_name":"2018_vv.tif",
+            "name":"sar_01.tif"
+        },
+        {
+            "link":"https://drive.google.com/file/d/12HeSSNK8q5LY-7yZnnMwRld6l5RA0319/view?usp=sharing",
+            "id":"12HeSSNK8q5LY-7yZnnMwRld6l5RA0319",
+            "o_name":"2018_vh.tif",
+            "name":"sar_02.tif"
+        },
+        {
+            "link":"https://drive.google.com/file/d/12QX01UFNZdMvAk6eybi_FuHdI30OwjLq/view?usp=sharing",
+            "id":"12QX01UFNZdMvAk6eybi_FuHdI30OwjLq",
+            "o_name":"2019_vv.tif",
+            "name":"sar_03.tif"
+        },
+        {
+            "link":"https://drive.google.com/file/d/12JYE0I_EpCA3fXryFN9c6uzVjB8PRWlz/view?usp=sharing",
+            "id":"12JYE0I_EpCA3fXryFN9c6uzVjB8PRWlz",
+            "o_name":"2019_vh.tif",
+            "name":"sar_04.tif"
+        }
+    ],
+    "files_opt":[
+        {
+            "link":"https://drive.google.com/file/d/12C8wChByJRaqf7FwXyJOeBRc_FHMdMX2/view?usp=sharing",
+            "id":"12C8wChByJRaqf7FwXyJOeBRc_FHMdMX2",
+            "o_name":"2018.tif",
+            "name":"opt_01.tif"
+        },
+        {
+            "link":"https://drive.google.com/file/d/12E86fdGuX_t-F7w-A_BI444HiAK1A41R/view?usp=sharing",
+            "id":"12E86fdGuX_t-F7w-A_BI444HiAK1A41R",
+            "o_name":"2019.tif",
+            "name":"opt_02.tif"
+        }
+        
+    ],
+    "files_labels":[
+        {
+            "link":"https://drive.google.com/file/d/12SoJxSSx6Y7MgiAQDHcVTxHR-wKC-ZFe/view?usp=sharing",
+            "id":"12SoJxSSx6Y7MgiAQDHcVTxHR-wKC-ZFe",
+            "o_name":"labels.npy",
+            "name":"labels.npy"
+        }
+    ]
+
+
+}
