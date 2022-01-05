@@ -4,14 +4,22 @@ from skimage.util.shape import view_as_windows
 import numpy as np
 
 class PatchesGen(Sequence):
-    def __init__(self, image, labels, patch_size, overlap, tiles_size, tiles_sel, percentage, batch_size):
+    def __init__(self, image, labels, patch_size, overlap, tiles_size, tiles_sel, percentage, batch_size, image2 = None):
+        if batch_size % 2 != 0:
+            raise Exception('batch sizen must be divisible by 2')
         self.img_shape = image.shape[0:2]
         self.labels = labels.flatten()
         self.image=image.reshape(self.img_shape[0]*self.img_shape[1],-1)
+        if image2 is not None:
+            self.image2=image2.reshape(self.img_shape[0]*self.img_shape[1],-1)
+            self.batch_size = int(batch_size/2)
+        else:
+            self.batch_size = batch_size
         self.patch_size = patch_size
         self.tiles_size = tiles_size
         self.overlap = overlap
-        self.batch_size = batch_size
+        
+        
         self.create_tiles()
         self.create_datasets(tiles_sel)
         self.create_patches(percentage)
@@ -81,7 +89,11 @@ class PatchesGen(Sequence):
         nrot = np.where(cs[2]==1)[0]
         ps[nrot] = np.rot90(ps[nrot], axes = (1,2))
 
-        return (self.image[ps], to_categorical(self.labels[ps]))
+        if self.image2 is not None:
+            lab = to_categorical(self.labels[ps])
+            return (np.concatenate([self.image[ps], self.image2[ps]], axis=0), np.concatenate([lab, lab], axis=0) )
+        else:
+            return (self.image[ps], to_categorical(self.labels[ps]))
 
     def on_epoch_end(self):
         self.shuffle_patches()

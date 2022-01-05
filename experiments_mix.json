@@ -1,0 +1,134 @@
+{
+    "experiments":[
+        {
+            "num":33,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":34,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":35,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":36,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":37,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":38,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":39,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":40,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":41,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":42,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":43,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":44,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":45,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":46,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":47,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":48,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"CrossFusion_ResUNET"
+        }
+    ],
+    
+    
+    
+    "weights":[
+        0.2, 0.8, 0.0
+    ],
+   
+    "overlap": 0.7,
+    "patch_size": 128,
+    "batch_size": 12,
+    "classes":3,
+    
+    "nb_filters": [2, 4, 8],
+    "fus_filters": [8, 8, 4],
+    "grid_size":[6,3],
+    "tiles_tr":[1,3,6,8,12,16,17],
+    "tiles_val": [7,14],
+    "times":5
+}

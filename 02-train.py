@@ -14,7 +14,7 @@ from itertools import repeat
 
 def train_model(tm, exp, img_type, train_cond, method):  
     tf.get_logger().setLevel('ERROR')  
-    with open(f'experiments.json') as param_file:
+    with open(f'experiments_mix.json') as param_file:
         params = json.load(param_file)
 
     img_path = 'imgs' 
@@ -33,25 +33,48 @@ def train_model(tm, exp, img_type, train_cond, method):
     tiles_val = params['tiles_val']
 
     print(f'Training Experiment {exp} time: {tm}')
-    print(f'Conditions: {method}_{img_type}_{train_cond}')
+    print(f'Traini Conditions: {method}_{img_type}_{train_cond}')
 
+    if train_cond == 'mix':
+        image1_array = np.load(os.path.join(img_path, f'fus_stack_n_n.npy'))
+        image2_array = np.load(os.path.join(img_path, f'fus_stack_c_c.npy'))
 
-    image_array = np.load(os.path.join(img_path, f'fus_stack_{train_cond}.npy'))
+        if img_type == 'OPT':
+            image1_array = image1_array[:, :, :n_opt_layer]
+            image2_array = image2_array[:, :, :n_opt_layer]
+            
+        if img_type == 'SAR':
+            image1_array = image1_array[:, :, n_opt_layer:]
+            image2_array = image2_array[:, :, n_opt_layer:]
+            
+        print('Image1 stack:', image1_array.shape)
+        print('Image2 stack:', image2_array.shape)
 
-    if img_type == 'OPT':
-        image_array = image_array[:, :, :n_opt_layer]
-        
-    if img_type == 'SAR':
-        image_array = image_array[:, :, n_opt_layer:]
-        
-    print('Image stack:', image_array.shape)
+        final_mask1 = np.load(os.path.join(img_path, 'final_mask1.npy')).astype(np.uint8)
+        print('Labels stack:', final_mask1.shape)
+        h_, w_, channels = image1_array.shape
 
-    final_mask1 = np.load(os.path.join(img_path, 'final_mask1.npy')).astype(np.uint8)
-    print('Labels stack:', final_mask1.shape)
-    h_, w_, channels = image_array.shape
+        train_data_loader = PatchesGen(image1_array, final_mask1, patch_size, overlap, grid_size, tiles_tr, 2, batch_size, image2_array)
+        val_data_loader = PatchesGen(image1_array, final_mask1, patch_size, overlap, grid_size, tiles_val, 2, batch_size, image2_array)
 
-    train_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_tr, 2, batch_size)
-    val_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_val, 2, batch_size)
+    
+    else:
+        image_array = np.load(os.path.join(img_path, f'fus_stack_{train_cond}.npy'))
+
+        if img_type == 'OPT':
+            image_array = image_array[:, :, :n_opt_layer]
+            
+        if img_type == 'SAR':
+            image_array = image_array[:, :, n_opt_layer:]
+            
+        print('Image stack:', image_array.shape)
+
+        final_mask1 = np.load(os.path.join(img_path, 'final_mask1.npy')).astype(np.uint8)
+        print('Labels stack:', final_mask1.shape)
+        h_, w_, channels = image_array.shape
+
+        train_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_tr, 2, batch_size)
+        val_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_val, 2, batch_size)
 
     path_exp = os.path.join(img_path, 'experiments', f'exp_{exp}')
     path_models = os.path.join(path_exp, 'models')
@@ -129,7 +152,7 @@ def train_model(tm, exp, img_type, train_cond, method):
     np.save(os.path.join(path_exp, f'history_{tm}.npy'), np.array(history.history))
 
 if __name__ == '__main__':
-    with open(f'experiments.json') as param_file:
+    with open(f'experiments_mix.json') as param_file:
         params = json.load(param_file)
     times=params['times']
     exps = []
