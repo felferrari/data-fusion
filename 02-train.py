@@ -33,7 +33,7 @@ def train_model(tm, exp, img_type, train_cond, method):
     tiles_val = params['tiles_val']
 
     print(f'Training Experiment {exp} time: {tm}')
-    print(f'Traini Conditions: {method}_{img_type}_{train_cond}')
+    print(f'Training Conditions: {method}_{img_type}_{train_cond}')
 
     if train_cond == 'mix':
         image1_array = np.load(os.path.join(img_path, f'fus_stack_n_n.npy'))
