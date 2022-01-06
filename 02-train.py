@@ -14,7 +14,7 @@ from itertools import repeat
 
 def train_model(tm, exp, img_type, train_cond, method):  
     tf.get_logger().setLevel('ERROR')  
-    with open(f'experiments_mix.json') as param_file:
+    with open(f'experiments.json') as param_file:
         params = json.load(param_file)
 
     img_path = 'imgs' 
@@ -152,7 +152,7 @@ def train_model(tm, exp, img_type, train_cond, method):
     np.save(os.path.join(path_exp, f'history_{tm}.npy'), np.array(history.history))
 
 if __name__ == '__main__':
-    with open(f'experiments_mix.json') as param_file:
+    with open(f'experiments.json') as param_file:
         params = json.load(param_file)
     times=params['times']
     exps = []

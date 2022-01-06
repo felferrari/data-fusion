@@ -223,6 +223,118 @@
             "train_cond": "n_c",
             "test_cond": "c_n",
             "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":33,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":34,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":35,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":36,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":37,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":38,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":39,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":40,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_c",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":41,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":42,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"ResUNET"
+        },
+        {
+            "num":43,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":44,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "c_n",
+            "method":"CrossFusion_ResUNET"
+        },
+        {
+            "num":45,
+            "img_type": "OPT",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":46,
+            "img_type": "SAR",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"ResUNET"
+        },
+        {
+            "num":47,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"Concat_ResUNET"
+        },
+        {
+            "num":48,
+            "img_type": "FUS",
+            "train_cond": "mix",
+            "test_cond": "n_c",
+            "method":"CrossFusion_ResUNET"
         }
     ],
     
