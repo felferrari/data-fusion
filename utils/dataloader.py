@@ -15,6 +15,7 @@ class PatchesGen(Sequence):
             self.batch_size = int(batch_size/2)
         else:
             self.batch_size = batch_size
+            self.image2 = None
         self.patch_size = patch_size
         self.tiles_size = tiles_size
         self.overlap = overlap
