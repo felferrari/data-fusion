@@ -110,9 +110,7 @@ def train_model(tm, exp, img_type, train_cond, method):
     #Training
     epochs=500
     
-    
     loss = WBCE(weights = weights)
-    
 
     if img_type == 'FUS':
         
@@ -121,19 +119,9 @@ def train_model(tm, exp, img_type, train_cond, method):
         model.summary()
 
         #train OPT and SAR for 10 epochs
-        lr_schedule_opt = tf.keras.optimizers.schedules.ExponentialDecay(
-            initial_learning_rate = 5e-4,
-            decay_steps=len(train_data_loader),
-            decay_rate=0.98,
-            staircase=True)
-        lr_schedule_sar = tf.keras.optimizers.schedules.ExponentialDecay(
-            initial_learning_rate = 5e-4,
-            decay_steps=len(train_data_loader),
-            decay_rate=0.98,
-            staircase=True)
         optimizers = [
-            Adam(learning_rate = lr_schedule_opt),
-            Adam(learning_rate = lr_schedule_sar),
+            Adam(learning_rate = 1e-4),
+            Adam(learning_rate = 1e-4),
             Adam(learning_rate = 0)
         ]
         model.compile(optimizers=optimizers, loss=loss, metrics=['accuracy'])
@@ -153,17 +141,17 @@ def train_model(tm, exp, img_type, train_cond, method):
         lr_schedule_opt = tf.keras.optimizers.schedules.ExponentialDecay(
             initial_learning_rate = 5e-4,
             decay_steps=len(train_data_loader),
-            decay_rate=0.98,
+            decay_rate=0.96,
             staircase=True)
         lr_schedule_sar = tf.keras.optimizers.schedules.ExponentialDecay(
             initial_learning_rate = 5e-4,
             decay_steps=len(train_data_loader),
-            decay_rate=0.98,
+            decay_rate=0.96,
             staircase=True)
         lr_schedule_fus = tf.keras.optimizers.schedules.ExponentialDecay(
             initial_learning_rate = 5e-4,
             decay_steps=len(train_data_loader),
-            decay_rate=0.98,
+            decay_rate=0.96,
             staircase=True)
         optimizers = [
             Adam(learning_rate = lr_schedule_opt),
@@ -185,8 +173,6 @@ def train_model(tm, exp, img_type, train_cond, method):
             verbose=2,
             callbacks=callbacks_list
             )
-
-
         
         end_training = time.perf_counter() - start_training
     
