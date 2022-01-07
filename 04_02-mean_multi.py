@@ -11,9 +11,22 @@ import importlib
 from multiprocessing import Pool
 from multiprocessing import Process
 from itertools import repeat
+import sys
+import logging
 
 
-def mean_model(times, exp, img_type, test_cond, method):    
+def mean_model(times, exp, img_type, test_cond, method):   
+
+    logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
+            filename='train.log',
+            filemode='a'
+            )
+    log = logging.getLogger('foobar')
+    sys.stdout = StreamToLogger(log,logging.INFO)
+    sys.stderr = StreamToLogger(log,logging.ERROR)
+     
     tf.get_logger().setLevel('ERROR')
     with open(f'experiments_multi.json') as param_file:
         params = json.load(param_file)

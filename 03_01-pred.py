@@ -11,9 +11,21 @@ import importlib
 from multiprocessing import Pool
 from multiprocessing import Process
 from itertools import repeat
+import sys
+import logging
 
+def pred_model(tm, exp, img_type, test_cond, method):   
 
-def pred_model(tm, exp, img_type, test_cond, method):    
+    logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
+            filename='train.log',
+            filemode='a'
+            )
+    log = logging.getLogger('foobar')
+    sys.stdout = StreamToLogger(log,logging.INFO)
+    sys.stderr = StreamToLogger(log,logging.ERROR)
+
     tf.get_logger().setLevel('ERROR')
     with open(f'experiments.json') as param_file:
         params = json.load(param_file)
@@ -126,10 +138,6 @@ def pred_model(tm, exp, img_type, test_cond, method):
 
     print(f'model {tm}: {end_test:.2f}')
     np.save(os.path.join(path_exp, f'pred_time_{tm}.npy'), end_test)
-
-
-    
-
 
 if __name__ == '__main__':
     with open(f'experiments.json') as param_file:

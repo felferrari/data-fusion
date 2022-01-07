@@ -15,6 +15,16 @@ import sys
 import logging
 
 def train_model(tm, exp, img_type, train_cond, method):  
+    logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
+            filename='train.log',
+            filemode='a'
+            )
+    log = logging.getLogger('foobar')
+    sys.stdout = StreamToLogger(log,logging.INFO)
+    sys.stderr = StreamToLogger(log,logging.ERROR)
+
     tf.get_logger().setLevel('ERROR')  
     with open(f'experiments.json') as param_file:
         params = json.load(param_file)
@@ -154,16 +164,6 @@ def train_model(tm, exp, img_type, train_cond, method):
     np.save(os.path.join(path_exp, f'history_{tm}.npy'), np.array(history.history))
 
 if __name__ == '__main__':
-    logging.basicConfig(
-            level=logging.DEBUG,
-            format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='train.log',
-            filemode='a'
-            )
-    log = logging.getLogger('foobar')
-    sys.stdout = StreamToLogger(log,logging.INFO)
-    sys.stderr = StreamToLogger(log,logging.ERROR)
-
     with open(f'experiments.json') as param_file:
         params = json.load(param_file)
     times=params['times']

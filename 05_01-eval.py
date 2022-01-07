@@ -12,10 +12,23 @@ from multiprocessing import Pool
 from multiprocessing import Process
 from itertools import repeat
 import matplotlib.pyplot as plt
+import sys
+import logging
+import gc
 
 
+def eval_model(exp, img_type, train_cond, test_cond, method):  
 
-def eval_model(exp, img_type, train_cond, test_cond, method):    
+    logging.basicConfig(
+            level=logging.DEBUG,
+            format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
+            filename='train.log',
+            filemode='a'
+            )
+    log = logging.getLogger('foobar')
+    sys.stdout = StreamToLogger(log,logging.INFO)
+    sys.stderr = StreamToLogger(log,logging.ERROR)
+
     tf.get_logger().setLevel('ERROR')
     with open(f'experiments.json') as param_file:
         params = json.load(param_file)
