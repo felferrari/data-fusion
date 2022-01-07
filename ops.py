@@ -6,7 +6,6 @@ from tqdm import tqdm
 from tensorflow.keras.models import Model
 from osgeo import gdal
 from tensorflow.keras.layers import Input
-from tensorflow.keras.utils import plot_model
 from skimage.morphology import area_opening
 from skimage.util.shape import view_as_windows
 from sklearn.metrics import confusion_matrix
@@ -14,11 +13,6 @@ from multiprocessing.pool import Pool
 from itertools import repeat
 from libtiff import TIFF
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-import time
-import tensorflow as tf
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-import gc
 
 class StreamToLogger(object):
     """
@@ -52,6 +46,7 @@ def load_SAR_image(patch):
     temp_db_img[temp_db_img>1] = 1
     return temp_db_img
 
+'''
 def resize_image(image, height, width):
     im_resized = np.zeros((height, width, image.shape[2]), dtype='float32')
     for b in range(image.shape[2]):
@@ -59,6 +54,7 @@ def resize_image(image, height, width):
         #(width, height) = (ref_2019.shape[1], ref_2019.shape[0])
         im_resized[:,:,b] = np.array(band.resize((width, height), resample=Image.NEAREST))
     return im_resized
+'''
 
 def filter_outliers(img, bins=1000000, bth=0.001, uth=0.999, mask=[0]):
     img[np.isnan(img)]=0 # Filter NaN values.
