@@ -73,8 +73,8 @@ def pred_model(tm, exp, img_type, test_cond, method):
 
     input_shape = (patch_size, patch_size, channels)
     n_pool = 3
-    n_rows = 12#6
-    n_cols = 6#3
+    n_rows = 24#6
+    n_cols = 12#3
     rows, cols = image_array.shape[:2]
     pad_rows = rows - np.ceil(rows/(n_rows*2**n_pool))*n_rows*2**n_pool
     pad_cols = cols - np.ceil(cols/(n_cols*2**n_pool))*n_cols*2**n_pool
