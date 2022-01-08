@@ -19,7 +19,7 @@ def mean_model(times, exp, img_type, test_cond, method):
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='train.log',
+            filename='mean.log',
             filemode='a'
             )
     log = logging.getLogger('foobar')

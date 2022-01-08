@@ -23,7 +23,7 @@ def eval_model(exp, img_type, train_cond, test_cond, method):
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='train.log',
+            filename='eval.log',
             filemode='a'
             )
     log = logging.getLogger('foobar')

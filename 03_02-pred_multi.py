@@ -20,7 +20,7 @@ def pred_model(tm, exp, img_type, test_cond, method):
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='train.log',
+            filename='pred.log',
             filemode='a'
             )
     log = logging.getLogger('foobar')
