@@ -139,7 +139,7 @@ def pred_model(tm, exp, img_type, test_cond, method):
         patches_pred_sar = np.asarray(patch_list_sar).astype(np.float32)
         patches_pred_fus = np.asarray(patch_list_fus).astype(np.float32)
 
-        del patches_pred_opt, patches_pred_sar, patches_pred_fus
+        del patch_list_opt, patch_list_sar, patch_list_fus
 
         prob_recontructed_opt = pred_reconctruct(h, w, num_patches_x, num_patches_y, patch_size_rows, patch_size_cols, patches_pred_opt)
         prob_recontructed_sar = pred_reconctruct(h, w, num_patches_x, num_patches_y, patch_size_rows, patch_size_cols, patches_pred_sar)
