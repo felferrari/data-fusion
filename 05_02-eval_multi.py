@@ -21,7 +21,7 @@ import gc
 def eval_model(exp, img_type, train_cond, test_cond, method):    
 
     logging.basicConfig(
-            level=logging.DEBUG,
+            level=logging.INFO,#logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
             filename='eval.log',
             filemode='a'
@@ -125,9 +125,9 @@ def eval_model(exp, img_type, train_cond, test_cond, method):
         gc.collect()
 
         print('Evaluating metrics...')
-        metrics_opt = metrics_AP(ProbList_opt, mean_prob_opt, final_mask1, test_ds, 625, 3)
-        metrics_sar = metrics_AP(ProbList_sar, mean_prob_sar, final_mask1, test_ds, 625, 3)
-        metrics_fus = metrics_AP(ProbList_fus, mean_prob_fus, final_mask1, test_ds, 625, 3)
+        metrics_opt = metrics_AP(ProbList_opt, mean_prob_opt, final_mask1, test_ds, 625, 4)
+        metrics_sar = metrics_AP(ProbList_sar, mean_prob_sar, final_mask1, test_ds, 625, 4)
+        metrics_fus = metrics_AP(ProbList_fus, mean_prob_fus, final_mask1, test_ds, 625, 4)
             
         np.save(os.path.join(path_exp, 'acc_metrics_opt.npy'), metrics_opt)
         np.save(os.path.join(path_exp, 'acc_metrics_sar.npy'), metrics_sar)
