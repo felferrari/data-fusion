@@ -3,3 +3,4 @@ raw
 imgs
 .ipynb*
 .pyc
+experiments_multi.json
