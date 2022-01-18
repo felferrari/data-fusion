@@ -8,21 +8,25 @@ import tensorflow as tf
 import os
 import json
 import importlib
-from multiprocessing import Pool
 from multiprocessing import Process
-from itertools import repeat
 import sys
 import logging
 
 def train_model(tm, exp, img_type, train_cond, method):  
 
+    img_path = 'imgs'
+
+    path_exp = os.path.join(img_path, 'experiments', f'exp_{exp}')
+    path_models = os.path.join(path_exp, 'models')
+    path_maps = os.path.join(path_exp, 'pred_maps')
+
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='train.log',
+            filename=os.path.join(path_exp, 'train.log'),
             filemode='a'
             )
-    log = logging.getLogger('foobar')
+    log = logging.getLogger('train')
     sys.stdout = StreamToLogger(log,logging.INFO)
     sys.stderr = StreamToLogger(log,logging.ERROR)
 
@@ -30,7 +34,7 @@ def train_model(tm, exp, img_type, train_cond, method):
     with open(f'experiments_multi.json') as param_file:
         params = json.load(param_file)
 
-    img_path = 'imgs' 
+     
     n_opt_layer = 26 #number of OPT layers, used to split de input data between OPT and SAR
 
     number_class = 3
@@ -89,9 +93,7 @@ def train_model(tm, exp, img_type, train_cond, method):
         train_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_tr, 2, batch_size)
         val_data_loader = PatchesGen(image_array, final_mask1, patch_size, overlap, grid_size, tiles_val, 2, batch_size)
 
-    path_exp = os.path.join(img_path, 'experiments', f'exp_{exp}')
-    path_models = os.path.join(path_exp, 'models')
-    path_maps = os.path.join(path_exp, 'pred_maps')
+    
 
     if not os.path.exists(path_exp):
         os.makedirs(path_exp)   

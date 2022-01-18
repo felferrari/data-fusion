@@ -31,138 +31,82 @@
         {
             "num":5,
             "img_type": "OPT",
-            "train_cond": "c_c",
+            "train_cond": "n_n",
             "test_cond": "c_c",
             "method":"ResUNET"
         },
         {
             "num":6,
             "img_type": "SAR",
-            "train_cond": "c_c",
+            "train_cond": "n_n",
             "test_cond": "c_c",
             "method":"ResUNET"
         },
         {
             "num":7,
             "img_type": "FUS",
-            "train_cond": "c_c",
+            "train_cond": "n_n",
             "test_cond": "c_c",
             "method":"Concat_ResUNET"
         },
         {
             "num":8,
             "img_type": "FUS",
-            "train_cond": "c_c",
+            "train_cond": "n_n",
             "test_cond": "c_c",
             "method":"CrossFusion_ResUNET"
         },
         {
             "num":9,
             "img_type": "OPT",
-            "train_cond": "c_c",
+            "train_cond": "mix",
             "test_cond": "n_n",
             "method":"ResUNET"
         },
         {
             "num":10,
             "img_type": "SAR",
-            "train_cond": "c_c",
+            "train_cond": "mix",
             "test_cond": "n_n",
             "method":"ResUNET"
         },
         {
             "num":11,
             "img_type": "FUS",
-            "train_cond": "c_c",
+            "train_cond": "mix",
             "test_cond": "n_n",
             "method":"Concat_ResUNET"
         },
         {
             "num":12,
             "img_type": "FUS",
-            "train_cond": "c_c",
+            "train_cond": "mix",
             "test_cond": "n_n",
             "method":"CrossFusion_ResUNET"
         },
         {
             "num":13,
             "img_type": "OPT",
-            "train_cond": "n_n",
+            "train_cond": "mix",
             "test_cond": "c_c",
             "method":"ResUNET"
         },
         {
             "num":14,
             "img_type": "SAR",
-            "train_cond": "n_n",
+            "train_cond": "mix",
             "test_cond": "c_c",
             "method":"ResUNET"
         },
         {
             "num":15,
             "img_type": "FUS",
-            "train_cond": "n_n",
+            "train_cond": "mix",
             "test_cond": "c_c",
             "method":"Concat_ResUNET"
         },
         {
             "num":16,
-            "img_type": "FUS",
-            "train_cond": "n_n",
-            "test_cond": "c_c",
-            "method":"CrossFusion_ResUNET"
-        },
-        {
-            "num":17,
-            "img_type": "OPT",
-            "train_cond": "mix",
-            "test_cond": "n_n",
-            "method":"ResUNET"
-        },
-        {
-            "num":18,
-            "img_type": "SAR",
-            "train_cond": "mix",
-            "test_cond": "n_n",
-            "method":"ResUNET"
-        },
-        {
-            "num":19,
-            "img_type": "FUS",
-            "train_cond": "mix",
-            "test_cond": "n_n",
-            "method":"Concat_ResUNET"
-        },
-        {
-            "num":20,
-            "img_type": "FUS",
-            "train_cond": "mix",
-            "test_cond": "n_n",
-            "method":"CrossFusion_ResUNET"
-        },
-        {
-            "num":21,
-            "img_type": "OPT",
-            "train_cond": "mix",
-            "test_cond": "c_c",
-            "method":"ResUNET"
-        },
-        {
-            "num":22,
-            "img_type": "SAR",
-            "train_cond": "mix",
-            "test_cond": "c_c",
-            "method":"ResUNET"
-        },
-        {
-            "num":23,
-            "img_type": "FUS",
-            "train_cond": "mix",
-            "test_cond": "c_c",
-            "method":"Concat_ResUNET"
-        },
-        {
-            "num":24,
             "img_type": "FUS",
             "train_cond": "mix",
             "test_cond": "c_c",

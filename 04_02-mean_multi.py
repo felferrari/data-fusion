@@ -1,37 +1,34 @@
 from ops import *
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-from utils.dataloader import PatchesGen
-from model.losses import WBCE
-import time
-import tensorflow as tf
 import os
 import json
 import importlib
-from multiprocessing import Pool
 from multiprocessing import Process
-from itertools import repeat
 import sys
 import logging
 
 
 def mean_model(times, exp, img_type, test_cond, method):   
 
+    img_path = 'imgs'
+
+    path_exp = os.path.join(img_path, 'experiments', f'exp_{exp}')
+    path_models = os.path.join(path_exp, 'models')
+    path_maps = os.path.join(path_exp, 'pred_maps')
+
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
-            filename='mean.log',
+            filename=os.path.join(path_exp, 'mean.log'),
             filemode='a'
             )
-    log = logging.getLogger('foobar')
+    log = logging.getLogger('mean')
     sys.stdout = StreamToLogger(log,logging.INFO)
     sys.stderr = StreamToLogger(log,logging.ERROR)
-     
-    tf.get_logger().setLevel('ERROR')
+
     with open(f'experiments_multi.json') as param_file:
         params = json.load(param_file)
 
-    img_path = 'imgs' 
+
     n_opt_layer = 26 #number of OPT layers, used to split de input data between OPT and SAR
 
     number_class = 3
