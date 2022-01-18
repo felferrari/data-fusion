@@ -15,6 +15,13 @@ def mean_model(times, exp, img_type, test_cond, method):
     path_models = os.path.join(path_exp, 'models')
     path_maps = os.path.join(path_exp, 'pred_maps')
 
+    if not os.path.exists(path_exp):
+        os.makedirs(path_exp)   
+    if not os.path.exists(path_models):
+        os.makedirs(path_models)   
+    if not os.path.exists(path_maps):
+        os.makedirs(path_maps)
+
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',

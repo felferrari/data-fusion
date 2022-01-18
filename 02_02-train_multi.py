@@ -20,6 +20,13 @@ def train_model(tm, exp, img_type, train_cond, method):
     path_models = os.path.join(path_exp, 'models')
     path_maps = os.path.join(path_exp, 'pred_maps')
 
+    if not os.path.exists(path_exp):
+        os.makedirs(path_exp)   
+    if not os.path.exists(path_models):
+        os.makedirs(path_models)   
+    if not os.path.exists(path_maps):
+        os.makedirs(path_maps)
+
     logging.basicConfig(
             level=logging.DEBUG,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
@@ -95,12 +102,7 @@ def train_model(tm, exp, img_type, train_cond, method):
 
     
 
-    if not os.path.exists(path_exp):
-        os.makedirs(path_exp)   
-    if not os.path.exists(path_models):
-        os.makedirs(path_models)   
-    if not os.path.exists(path_maps):
-        os.makedirs(path_maps)
+    
 
     datasets = train_data_loader.datasets.astype(np.uint8)
     datasets += 2*val_data_loader.datasets.astype(np.uint8)
