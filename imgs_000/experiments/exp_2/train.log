@@ -1,0 +1,777 @@
+2022-01-18 16:46:48,383:INFO:train:Training Experiment 2 time: 0
+2022-01-18 16:46:48,383:INFO:train:Training Conditions: ResUNET_SAR_n_n
+2022-01-18 16:46:55,398:INFO:train:Image stack:
+2022-01-18 16:46:55,398:INFO:train:(17730, 9203, 4)
+2022-01-18 16:46:55,836:INFO:train:Labels stack:
+2022-01-18 16:46:55,836:INFO:train:(17730, 9203)
+2022-01-18 16:47:17,257:INFO:train:Model: "res_unet"
+2022-01-18 16:47:17,257:INFO:train:_________________________________________________________________
+2022-01-18 16:47:17,257:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-18 16:47:17,257:INFO:train:=================================================================
+2022-01-18 16:47:17,257:INFO:train:resunet_encoder (ResUNET_Enc multiple                  1054272
+2022-01-18 16:47:17,257:INFO:train:_________________________________________________________________
+2022-01-18 16:47:17,257:INFO:train:resunet_decoder (ResUNET_Dec multiple                  221408
+2022-01-18 16:47:17,257:INFO:train:_________________________________________________________________
+2022-01-18 16:47:17,257:INFO:train:classifier (Classifier)      multiple                  195
+2022-01-18 16:47:17,257:INFO:train:=================================================================
+2022-01-18 16:47:17,257:INFO:train:Total params: 1,275,875
+2022-01-18 16:47:17,257:INFO:train:Trainable params: 1,275,875
+2022-01-18 16:47:17,257:INFO:train:Non-trainable params: 0
+2022-01-18 16:47:17,257:INFO:train:_________________________________________________________________
+2022-01-18 16:47:17,460:INFO:train:Epoch 1/500
+2022-01-18 16:47:32,381:INFO:train:184/184 - 15s - loss: 0.1588 - accuracy: 0.7411 - val_loss: 0.1330 - val_accuracy: 0.7643
+2022-01-18 16:47:32,381:INFO:train:
+2022-01-18 16:47:32,381:INFO:train:Epoch 00001: val_loss improved from inf to 0.13300, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:47:32,443:INFO:train:Epoch 2/500
+2022-01-18 16:47:40,756:INFO:train:184/184 - 8s - loss: 0.1451 - accuracy: 0.7729 - val_loss: 0.1034 - val_accuracy: 0.8230
+2022-01-18 16:47:40,756:INFO:train:
+2022-01-18 16:47:40,756:INFO:train:Epoch 00002: val_loss improved from 0.13300 to 0.10340, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:47:40,818:INFO:train:Epoch 3/500
+2022-01-18 16:47:49,052:INFO:train:184/184 - 8s - loss: 0.1239 - accuracy: 0.8062 - val_loss: 0.0956 - val_accuracy: 0.8281
+2022-01-18 16:47:49,052:INFO:train:
+2022-01-18 16:47:49,052:INFO:train:Epoch 00003: val_loss improved from 0.10340 to 0.09555, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:47:49,115:INFO:train:Epoch 4/500
+2022-01-18 16:47:57,442:INFO:train:184/184 - 8s - loss: 0.1047 - accuracy: 0.8347 - val_loss: 0.1095 - val_accuracy: 0.8228
+2022-01-18 16:47:57,442:INFO:train:
+2022-01-18 16:47:57,442:INFO:train:Epoch 00004: val_loss did not improve from 0.09555
+2022-01-18 16:47:57,458:INFO:train:Epoch 5/500
+2022-01-18 16:48:05,770:INFO:train:184/184 - 8s - loss: 0.1031 - accuracy: 0.8371 - val_loss: 0.0880 - val_accuracy: 0.8396
+2022-01-18 16:48:05,770:INFO:train:
+2022-01-18 16:48:05,770:INFO:train:Epoch 00005: val_loss improved from 0.09555 to 0.08799, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:48:05,848:INFO:train:Epoch 6/500
+2022-01-18 16:48:14,192:INFO:train:184/184 - 8s - loss: 0.0971 - accuracy: 0.8443 - val_loss: 0.0832 - val_accuracy: 0.8479
+2022-01-18 16:48:14,192:INFO:train:
+2022-01-18 16:48:14,192:INFO:train:Epoch 00006: val_loss improved from 0.08799 to 0.08322, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:48:14,238:INFO:train:Epoch 7/500
+2022-01-18 16:48:22,597:INFO:train:184/184 - 8s - loss: 0.0953 - accuracy: 0.8451 - val_loss: 0.0885 - val_accuracy: 0.8234
+2022-01-18 16:48:22,597:INFO:train:
+2022-01-18 16:48:22,597:INFO:train:Epoch 00007: val_loss did not improve from 0.08322
+2022-01-18 16:48:22,613:INFO:train:Epoch 8/500
+2022-01-18 16:48:30,925:INFO:train:184/184 - 8s - loss: 0.0937 - accuracy: 0.8482 - val_loss: 0.0896 - val_accuracy: 0.8419
+2022-01-18 16:48:30,925:INFO:train:
+2022-01-18 16:48:30,925:INFO:train:Epoch 00008: val_loss did not improve from 0.08322
+2022-01-18 16:48:30,941:INFO:train:Epoch 9/500
+2022-01-18 16:48:39,269:INFO:train:184/184 - 8s - loss: 0.0931 - accuracy: 0.8481 - val_loss: 0.0832 - val_accuracy: 0.8433
+2022-01-18 16:48:39,269:INFO:train:
+2022-01-18 16:48:39,269:INFO:train:Epoch 00009: val_loss improved from 0.08322 to 0.08318, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:48:39,315:INFO:train:Epoch 10/500
+2022-01-18 16:48:47,628:INFO:train:184/184 - 8s - loss: 0.0917 - accuracy: 0.8501 - val_loss: 0.0832 - val_accuracy: 0.8448
+2022-01-18 16:48:47,628:INFO:train:
+2022-01-18 16:48:47,628:INFO:train:Epoch 00010: val_loss improved from 0.08318 to 0.08317, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:48:47,690:INFO:train:Epoch 11/500
+2022-01-18 16:48:56,065:INFO:train:184/184 - 8s - loss: 0.0918 - accuracy: 0.8494 - val_loss: 0.0876 - val_accuracy: 0.8216
+2022-01-18 16:48:56,065:INFO:train:
+2022-01-18 16:48:56,065:INFO:train:Epoch 00011: val_loss did not improve from 0.08317
+2022-01-18 16:48:56,080:INFO:train:Epoch 12/500
+2022-01-18 16:49:04,424:INFO:train:184/184 - 8s - loss: 0.0906 - accuracy: 0.8508 - val_loss: 0.0844 - val_accuracy: 0.8354
+2022-01-18 16:49:04,424:INFO:train:
+2022-01-18 16:49:04,424:INFO:train:Epoch 00012: val_loss did not improve from 0.08317
+2022-01-18 16:49:04,439:INFO:train:Epoch 13/500
+2022-01-18 16:49:12,814:INFO:train:184/184 - 8s - loss: 0.0873 - accuracy: 0.8560 - val_loss: 0.0845 - val_accuracy: 0.8470
+2022-01-18 16:49:12,814:INFO:train:
+2022-01-18 16:49:12,814:INFO:train:Epoch 00013: val_loss did not improve from 0.08317
+2022-01-18 16:49:12,830:INFO:train:Epoch 14/500
+2022-01-18 16:49:21,189:INFO:train:184/184 - 8s - loss: 0.0883 - accuracy: 0.8550 - val_loss: 0.0826 - val_accuracy: 0.8486
+2022-01-18 16:49:21,189:INFO:train:
+2022-01-18 16:49:21,189:INFO:train:Epoch 00014: val_loss improved from 0.08317 to 0.08260, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:49:21,235:INFO:train:Epoch 15/500
+2022-01-18 16:49:29,563:INFO:train:184/184 - 8s - loss: 0.0884 - accuracy: 0.8548 - val_loss: 0.0785 - val_accuracy: 0.8585
+2022-01-18 16:49:29,563:INFO:train:
+2022-01-18 16:49:29,563:INFO:train:Epoch 00015: val_loss improved from 0.08260 to 0.07847, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:49:29,610:INFO:train:Epoch 16/500
+2022-01-18 16:49:38,063:INFO:train:184/184 - 8s - loss: 0.0834 - accuracy: 0.8597 - val_loss: 0.0832 - val_accuracy: 0.8490
+2022-01-18 16:49:38,063:INFO:train:
+2022-01-18 16:49:38,063:INFO:train:Epoch 00016: val_loss did not improve from 0.07847
+2022-01-18 16:49:38,078:INFO:train:Epoch 17/500
+2022-01-18 16:49:46,516:INFO:train:184/184 - 8s - loss: 0.0830 - accuracy: 0.8613 - val_loss: 0.0834 - val_accuracy: 0.8518
+2022-01-18 16:49:46,516:INFO:train:
+2022-01-18 16:49:46,516:INFO:train:Epoch 00017: val_loss did not improve from 0.07847
+2022-01-18 16:49:46,531:INFO:train:Epoch 18/500
+2022-01-18 16:49:54,890:INFO:train:184/184 - 8s - loss: 0.0820 - accuracy: 0.8621 - val_loss: 0.0800 - val_accuracy: 0.8541
+2022-01-18 16:49:54,890:INFO:train:
+2022-01-18 16:49:54,890:INFO:train:Epoch 00018: val_loss did not improve from 0.07847
+2022-01-18 16:49:54,906:INFO:train:Epoch 19/500
+2022-01-18 16:50:03,343:INFO:train:184/184 - 8s - loss: 0.0814 - accuracy: 0.8626 - val_loss: 0.0784 - val_accuracy: 0.8593
+2022-01-18 16:50:03,343:INFO:train:
+2022-01-18 16:50:03,343:INFO:train:Epoch 00019: val_loss improved from 0.07847 to 0.07839, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:50:03,390:INFO:train:Epoch 20/500
+2022-01-18 16:50:11,858:INFO:train:184/184 - 8s - loss: 0.0785 - accuracy: 0.8665 - val_loss: 0.0809 - val_accuracy: 0.8562
+2022-01-18 16:50:11,858:INFO:train:
+2022-01-18 16:50:11,858:INFO:train:Epoch 00020: val_loss did not improve from 0.07839
+2022-01-18 16:50:11,874:INFO:train:Epoch 21/500
+2022-01-18 16:50:20,233:INFO:train:184/184 - 8s - loss: 0.0791 - accuracy: 0.8656 - val_loss: 0.0813 - val_accuracy: 0.8565
+2022-01-18 16:50:20,233:INFO:train:
+2022-01-18 16:50:20,233:INFO:train:Epoch 00021: val_loss did not improve from 0.07839
+2022-01-18 16:50:20,248:INFO:train:Epoch 22/500
+2022-01-18 16:50:28,701:INFO:train:184/184 - 8s - loss: 0.0764 - accuracy: 0.8699 - val_loss: 0.0799 - val_accuracy: 0.8556
+2022-01-18 16:50:28,701:INFO:train:
+2022-01-18 16:50:28,701:INFO:train:Epoch 00022: val_loss did not improve from 0.07839
+2022-01-18 16:50:28,717:INFO:train:Epoch 23/500
+2022-01-18 16:50:37,107:INFO:train:184/184 - 8s - loss: 0.0762 - accuracy: 0.8697 - val_loss: 0.0809 - val_accuracy: 0.8588
+2022-01-18 16:50:37,107:INFO:train:
+2022-01-18 16:50:37,107:INFO:train:Epoch 00023: val_loss did not improve from 0.07839
+2022-01-18 16:50:37,107:INFO:train:Epoch 24/500
+2022-01-18 16:50:45,529:INFO:train:184/184 - 8s - loss: 0.0779 - accuracy: 0.8678 - val_loss: 0.0803 - val_accuracy: 0.8612
+2022-01-18 16:50:45,529:INFO:train:
+2022-01-18 16:50:45,529:INFO:train:Epoch 00024: val_loss did not improve from 0.07839
+2022-01-18 16:50:45,544:INFO:train:Epoch 25/500
+2022-01-18 16:50:53,966:INFO:train:184/184 - 8s - loss: 0.0744 - accuracy: 0.8721 - val_loss: 0.0810 - val_accuracy: 0.8522
+2022-01-18 16:50:53,966:INFO:train:
+2022-01-18 16:50:53,966:INFO:train:Epoch 00025: val_loss did not improve from 0.07839
+2022-01-18 16:50:53,981:INFO:train:Epoch 26/500
+2022-01-18 16:51:02,450:INFO:train:184/184 - 8s - loss: 0.0719 - accuracy: 0.8748 - val_loss: 0.0835 - val_accuracy: 0.8545
+2022-01-18 16:51:02,450:INFO:train:
+2022-01-18 16:51:02,450:INFO:train:Epoch 00026: val_loss did not improve from 0.07839
+2022-01-18 16:51:02,465:INFO:train:Epoch 27/500
+2022-01-18 16:51:10,809:INFO:train:184/184 - 8s - loss: 0.0709 - accuracy: 0.8751 - val_loss: 0.0778 - val_accuracy: 0.8609
+2022-01-18 16:51:10,809:INFO:train:
+2022-01-18 16:51:10,809:INFO:train:Epoch 00027: val_loss improved from 0.07839 to 0.07775, saving model to imgs\experiments\exp_2\models\ResUNET_0.h5
+2022-01-18 16:51:10,856:INFO:train:Epoch 28/500
+2022-01-18 16:51:19,230:INFO:train:184/184 - 8s - loss: 0.0695 - accuracy: 0.8778 - val_loss: 0.0847 - val_accuracy: 0.8579
+2022-01-18 16:51:19,230:INFO:train:
+2022-01-18 16:51:19,230:INFO:train:Epoch 00028: val_loss did not improve from 0.07775
+2022-01-18 16:51:19,246:INFO:train:Epoch 29/500
+2022-01-18 16:51:27,699:INFO:train:184/184 - 8s - loss: 0.0680 - accuracy: 0.8797 - val_loss: 0.0832 - val_accuracy: 0.8528
+2022-01-18 16:51:27,699:INFO:train:
+2022-01-18 16:51:27,699:INFO:train:Epoch 00029: val_loss did not improve from 0.07775
+2022-01-18 16:51:27,714:INFO:train:Epoch 30/500
+2022-01-18 16:51:36,136:INFO:train:184/184 - 8s - loss: 0.0670 - accuracy: 0.8814 - val_loss: 0.0859 - val_accuracy: 0.8536
+2022-01-18 16:51:36,136:INFO:train:
+2022-01-18 16:51:36,136:INFO:train:Epoch 00030: val_loss did not improve from 0.07775
+2022-01-18 16:51:36,151:INFO:train:Epoch 31/500
+2022-01-18 16:51:44,620:INFO:train:184/184 - 8s - loss: 0.0666 - accuracy: 0.8816 - val_loss: 0.0857 - val_accuracy: 0.8449
+2022-01-18 16:51:44,620:INFO:train:
+2022-01-18 16:51:44,620:INFO:train:Epoch 00031: val_loss did not improve from 0.07775
+2022-01-18 16:51:44,635:INFO:train:Epoch 32/500
+2022-01-18 16:51:52,994:INFO:train:184/184 - 8s - loss: 0.0651 - accuracy: 0.8825 - val_loss: 0.0872 - val_accuracy: 0.8568
+2022-01-18 16:51:52,994:INFO:train:
+2022-01-18 16:51:52,994:INFO:train:Epoch 00032: val_loss did not improve from 0.07775
+2022-01-18 16:51:53,010:INFO:train:Epoch 33/500
+2022-01-18 16:52:01,416:INFO:train:184/184 - 8s - loss: 0.0661 - accuracy: 0.8810 - val_loss: 0.0820 - val_accuracy: 0.8596
+2022-01-18 16:52:01,416:INFO:train:
+2022-01-18 16:52:01,416:INFO:train:Epoch 00033: val_loss did not improve from 0.07775
+2022-01-18 16:52:01,432:INFO:train:Epoch 34/500
+2022-01-18 16:52:09,931:INFO:train:184/184 - 8s - loss: 0.0637 - accuracy: 0.8833 - val_loss: 0.0857 - val_accuracy: 0.8582
+2022-01-18 16:52:09,931:INFO:train:
+2022-01-18 16:52:09,931:INFO:train:Epoch 00034: val_loss did not improve from 0.07775
+2022-01-18 16:52:09,947:INFO:train:Epoch 35/500
+2022-01-18 16:52:18,415:INFO:train:184/184 - 8s - loss: 0.0623 - accuracy: 0.8854 - val_loss: 0.0876 - val_accuracy: 0.8518
+2022-01-18 16:52:18,415:INFO:train:
+2022-01-18 16:52:18,415:INFO:train:Epoch 00035: val_loss did not improve from 0.07775
+2022-01-18 16:52:18,431:INFO:train:Epoch 36/500
+2022-01-18 16:52:26,852:INFO:train:184/184 - 8s - loss: 0.0618 - accuracy: 0.8871 - val_loss: 0.0875 - val_accuracy: 0.8537
+2022-01-18 16:52:26,852:INFO:train:
+2022-01-18 16:52:26,852:INFO:train:Epoch 00036: val_loss did not improve from 0.07775
+2022-01-18 16:52:26,868:INFO:train:Epoch 37/500
+2022-01-18 16:52:35,211:INFO:train:184/184 - 8s - loss: 0.0606 - accuracy: 0.8887 - val_loss: 0.0856 - val_accuracy: 0.8579
+2022-01-18 16:52:35,227:INFO:train:
+2022-01-18 16:52:35,227:INFO:train:Epoch 00037: val_loss did not improve from 0.07775
+2022-01-18 16:52:35,227:INFO:train:Epoch 38/500
+2022-01-18 16:52:43,586:INFO:train:184/184 - 8s - loss: 0.0609 - accuracy: 0.8881 - val_loss: 0.0852 - val_accuracy: 0.8596
+2022-01-18 16:52:43,586:INFO:train:
+2022-01-18 16:52:43,586:INFO:train:Epoch 00038: val_loss did not improve from 0.07775
+2022-01-18 16:52:43,602:INFO:train:Epoch 39/500
+2022-01-18 16:52:51,976:INFO:train:184/184 - 8s - loss: 0.0586 - accuracy: 0.8909 - val_loss: 0.0875 - val_accuracy: 0.8533
+2022-01-18 16:52:51,976:INFO:train:
+2022-01-18 16:52:51,976:INFO:train:Epoch 00039: val_loss did not improve from 0.07775
+2022-01-18 16:52:51,992:INFO:train:Epoch 40/500
+2022-01-18 16:53:00,398:INFO:train:184/184 - 8s - loss: 0.0581 - accuracy: 0.8913 - val_loss: 0.0904 - val_accuracy: 0.8500
+2022-01-18 16:53:00,398:INFO:train:
+2022-01-18 16:53:00,398:INFO:train:Epoch 00040: val_loss did not improve from 0.07775
+2022-01-18 16:53:00,413:INFO:train:Epoch 41/500
+2022-01-18 16:53:08,836:INFO:train:184/184 - 8s - loss: 0.0576 - accuracy: 0.8905 - val_loss: 0.0892 - val_accuracy: 0.8564
+2022-01-18 16:53:08,836:INFO:train:
+2022-01-18 16:53:08,836:INFO:train:Epoch 00041: val_loss did not improve from 0.07775
+2022-01-18 16:53:08,852:INFO:train:Epoch 42/500
+2022-01-18 16:53:17,273:INFO:train:184/184 - 8s - loss: 0.0562 - accuracy: 0.8931 - val_loss: 0.0914 - val_accuracy: 0.8498
+2022-01-18 16:53:17,273:INFO:train:
+2022-01-18 16:53:17,273:INFO:train:Epoch 00042: val_loss did not improve from 0.07775
+2022-01-18 16:53:17,273:INFO:train:Epoch 00042: early stopping
+2022-01-18 16:53:24,351:INFO:train:Training Experiment 2 time: 1
+2022-01-18 16:53:24,351:INFO:train:Training Conditions: ResUNET_SAR_n_n
+2022-01-18 16:53:31,851:INFO:train:Image stack:
+2022-01-18 16:53:31,851:INFO:train:(17730, 9203, 4)
+2022-01-18 16:53:32,288:INFO:train:Labels stack:
+2022-01-18 16:53:32,288:INFO:train:(17730, 9203)
+2022-01-18 16:53:53,881:INFO:train:Model: "res_unet"
+2022-01-18 16:53:53,881:INFO:train:_________________________________________________________________
+2022-01-18 16:53:53,881:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-18 16:53:53,881:INFO:train:=================================================================
+2022-01-18 16:53:53,881:INFO:train:resunet_encoder (ResUNET_Enc multiple                  1054272
+2022-01-18 16:53:53,881:INFO:train:_________________________________________________________________
+2022-01-18 16:53:53,881:INFO:train:resunet_decoder (ResUNET_Dec multiple                  221408
+2022-01-18 16:53:53,881:INFO:train:_________________________________________________________________
+2022-01-18 16:53:53,881:INFO:train:classifier (Classifier)      multiple                  195
+2022-01-18 16:53:53,881:INFO:train:=================================================================
+2022-01-18 16:53:53,881:INFO:train:Total params: 1,275,875
+2022-01-18 16:53:53,881:INFO:train:Trainable params: 1,275,875
+2022-01-18 16:53:53,881:INFO:train:Non-trainable params: 0
+2022-01-18 16:53:53,881:INFO:train:_________________________________________________________________
+2022-01-18 16:53:54,084:INFO:train:Epoch 1/500
+2022-01-18 16:54:08,818:INFO:train:184/184 - 15s - loss: 0.1617 - accuracy: 0.7322 - val_loss: 0.1316 - val_accuracy: 0.7708
+2022-01-18 16:54:08,818:INFO:train:
+2022-01-18 16:54:08,818:INFO:train:Epoch 00001: val_loss improved from inf to 0.13160, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:54:08,896:INFO:train:Epoch 2/500
+2022-01-18 16:54:17,192:INFO:train:184/184 - 8s - loss: 0.1494 - accuracy: 0.7680 - val_loss: 0.1139 - val_accuracy: 0.8107
+2022-01-18 16:54:17,192:INFO:train:
+2022-01-18 16:54:17,192:INFO:train:Epoch 00002: val_loss improved from 0.13160 to 0.11389, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:54:17,239:INFO:train:Epoch 3/500
+2022-01-18 16:54:25,567:INFO:train:184/184 - 8s - loss: 0.1296 - accuracy: 0.7996 - val_loss: 0.1484 - val_accuracy: 0.7448
+2022-01-18 16:54:25,567:INFO:train:
+2022-01-18 16:54:25,567:INFO:train:Epoch 00003: val_loss did not improve from 0.11389
+2022-01-18 16:54:25,567:INFO:train:Epoch 4/500
+2022-01-18 16:54:33,988:INFO:train:184/184 - 8s - loss: 0.1104 - accuracy: 0.8264 - val_loss: 0.1148 - val_accuracy: 0.8148
+2022-01-18 16:54:33,988:INFO:train:
+2022-01-18 16:54:33,988:INFO:train:Epoch 00004: val_loss did not improve from 0.11389
+2022-01-18 16:54:34,004:INFO:train:Epoch 5/500
+2022-01-18 16:54:42,379:INFO:train:184/184 - 8s - loss: 0.1047 - accuracy: 0.8333 - val_loss: 0.0911 - val_accuracy: 0.8368
+2022-01-18 16:54:42,379:INFO:train:
+2022-01-18 16:54:42,379:INFO:train:Epoch 00005: val_loss improved from 0.11389 to 0.09111, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:54:42,441:INFO:train:Epoch 6/500
+2022-01-18 16:54:50,800:INFO:train:184/184 - 8s - loss: 0.1010 - accuracy: 0.8386 - val_loss: 0.0868 - val_accuracy: 0.8412
+2022-01-18 16:54:50,800:INFO:train:
+2022-01-18 16:54:50,800:INFO:train:Epoch 00006: val_loss improved from 0.09111 to 0.08679, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:54:50,847:INFO:train:Epoch 7/500
+2022-01-18 16:54:59,206:INFO:train:184/184 - 8s - loss: 0.0983 - accuracy: 0.8417 - val_loss: 0.0861 - val_accuracy: 0.8454
+2022-01-18 16:54:59,206:INFO:train:
+2022-01-18 16:54:59,206:INFO:train:Epoch 00007: val_loss improved from 0.08679 to 0.08611, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:54:59,253:INFO:train:Epoch 8/500
+2022-01-18 16:55:07,659:INFO:train:184/184 - 8s - loss: 0.0975 - accuracy: 0.8432 - val_loss: 0.1107 - val_accuracy: 0.8129
+2022-01-18 16:55:07,659:INFO:train:
+2022-01-18 16:55:07,659:INFO:train:Epoch 00008: val_loss did not improve from 0.08611
+2022-01-18 16:55:07,675:INFO:train:Epoch 9/500
+2022-01-18 16:55:16,127:INFO:train:184/184 - 8s - loss: 0.0941 - accuracy: 0.8463 - val_loss: 0.0920 - val_accuracy: 0.8398
+2022-01-18 16:55:16,127:INFO:train:
+2022-01-18 16:55:16,127:INFO:train:Epoch 00009: val_loss did not improve from 0.08611
+2022-01-18 16:55:16,143:INFO:train:Epoch 10/500
+2022-01-18 16:55:24,549:INFO:train:184/184 - 8s - loss: 0.0920 - accuracy: 0.8498 - val_loss: 0.0861 - val_accuracy: 0.8414
+2022-01-18 16:55:24,549:INFO:train:
+2022-01-18 16:55:24,549:INFO:train:Epoch 00010: val_loss did not improve from 0.08611
+2022-01-18 16:55:24,564:INFO:train:Epoch 11/500
+2022-01-18 16:55:33,002:INFO:train:184/184 - 8s - loss: 0.0919 - accuracy: 0.8500 - val_loss: 0.0825 - val_accuracy: 0.8489
+2022-01-18 16:55:33,002:INFO:train:
+2022-01-18 16:55:33,002:INFO:train:Epoch 00011: val_loss improved from 0.08611 to 0.08245, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:55:33,048:INFO:train:Epoch 12/500
+2022-01-18 16:55:41,532:INFO:train:184/184 - 8s - loss: 0.0922 - accuracy: 0.8491 - val_loss: 0.0821 - val_accuracy: 0.8489
+2022-01-18 16:55:41,532:INFO:train:
+2022-01-18 16:55:41,532:INFO:train:Epoch 00012: val_loss improved from 0.08245 to 0.08206, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:55:41,579:INFO:train:Epoch 13/500
+2022-01-18 16:55:49,985:INFO:train:184/184 - 8s - loss: 0.0904 - accuracy: 0.8514 - val_loss: 0.0855 - val_accuracy: 0.8482
+2022-01-18 16:55:49,985:INFO:train:
+2022-01-18 16:55:49,985:INFO:train:Epoch 00013: val_loss did not improve from 0.08206
+2022-01-18 16:55:50,001:INFO:train:Epoch 14/500
+2022-01-18 16:55:58,344:INFO:train:184/184 - 8s - loss: 0.0889 - accuracy: 0.8538 - val_loss: 0.0804 - val_accuracy: 0.8543
+2022-01-18 16:55:58,344:INFO:train:
+2022-01-18 16:55:58,344:INFO:train:Epoch 00014: val_loss improved from 0.08206 to 0.08045, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:55:58,391:INFO:train:Epoch 15/500
+2022-01-18 16:56:06,766:INFO:train:184/184 - 8s - loss: 0.0884 - accuracy: 0.8533 - val_loss: 0.0889 - val_accuracy: 0.8443
+2022-01-18 16:56:06,766:INFO:train:
+2022-01-18 16:56:06,766:INFO:train:Epoch 00015: val_loss did not improve from 0.08045
+2022-01-18 16:56:06,781:INFO:train:Epoch 16/500
+2022-01-18 16:56:15,187:INFO:train:184/184 - 8s - loss: 0.0865 - accuracy: 0.8563 - val_loss: 0.0810 - val_accuracy: 0.8529
+2022-01-18 16:56:15,187:INFO:train:
+2022-01-18 16:56:15,187:INFO:train:Epoch 00016: val_loss did not improve from 0.08045
+2022-01-18 16:56:15,203:INFO:train:Epoch 17/500
+2022-01-18 16:56:23,687:INFO:train:184/184 - 8s - loss: 0.0866 - accuracy: 0.8557 - val_loss: 0.0836 - val_accuracy: 0.8467
+2022-01-18 16:56:23,687:INFO:train:
+2022-01-18 16:56:23,687:INFO:train:Epoch 00017: val_loss did not improve from 0.08045
+2022-01-18 16:56:23,702:INFO:train:Epoch 18/500
+2022-01-18 16:56:32,061:INFO:train:184/184 - 8s - loss: 0.0834 - accuracy: 0.8604 - val_loss: 0.0881 - val_accuracy: 0.8426
+2022-01-18 16:56:32,061:INFO:train:
+2022-01-18 16:56:32,061:INFO:train:Epoch 00018: val_loss did not improve from 0.08045
+2022-01-18 16:56:32,077:INFO:train:Epoch 19/500
+2022-01-18 16:56:40,467:INFO:train:184/184 - 8s - loss: 0.0831 - accuracy: 0.8604 - val_loss: 0.0848 - val_accuracy: 0.8496
+2022-01-18 16:56:40,467:INFO:train:
+2022-01-18 16:56:40,467:INFO:train:Epoch 00019: val_loss did not improve from 0.08045
+2022-01-18 16:56:40,483:INFO:train:Epoch 20/500
+2022-01-18 16:56:48,795:INFO:train:184/184 - 8s - loss: 0.0828 - accuracy: 0.8607 - val_loss: 0.0819 - val_accuracy: 0.8538
+2022-01-18 16:56:48,795:INFO:train:
+2022-01-18 16:56:48,795:INFO:train:Epoch 00020: val_loss did not improve from 0.08045
+2022-01-18 16:56:48,811:INFO:train:Epoch 21/500
+2022-01-18 16:56:57,232:INFO:train:184/184 - 8s - loss: 0.0795 - accuracy: 0.8654 - val_loss: 0.0813 - val_accuracy: 0.8535
+2022-01-18 16:56:57,232:INFO:train:
+2022-01-18 16:56:57,232:INFO:train:Epoch 00021: val_loss did not improve from 0.08045
+2022-01-18 16:56:57,248:INFO:train:Epoch 22/500
+2022-01-18 16:57:05,607:INFO:train:184/184 - 8s - loss: 0.0804 - accuracy: 0.8634 - val_loss: 0.0799 - val_accuracy: 0.8566
+2022-01-18 16:57:05,607:INFO:train:
+2022-01-18 16:57:05,607:INFO:train:Epoch 00022: val_loss improved from 0.08045 to 0.07988, saving model to imgs\experiments\exp_2\models\ResUNET_1.h5
+2022-01-18 16:57:05,654:INFO:train:Epoch 23/500
+2022-01-18 16:57:14,091:INFO:train:184/184 - 8s - loss: 0.0788 - accuracy: 0.8659 - val_loss: 0.0825 - val_accuracy: 0.8524
+2022-01-18 16:57:14,091:INFO:train:
+2022-01-18 16:57:14,091:INFO:train:Epoch 00023: val_loss did not improve from 0.07988
+2022-01-18 16:57:14,106:INFO:train:Epoch 24/500
+2022-01-18 16:57:22,622:INFO:train:184/184 - 9s - loss: 0.0767 - accuracy: 0.8688 - val_loss: 0.0862 - val_accuracy: 0.8502
+2022-01-18 16:57:22,622:INFO:train:
+2022-01-18 16:57:22,622:INFO:train:Epoch 00024: val_loss did not improve from 0.07988
+2022-01-18 16:57:22,637:INFO:train:Epoch 25/500
+2022-01-18 16:57:31,121:INFO:train:184/184 - 8s - loss: 0.0761 - accuracy: 0.8682 - val_loss: 0.0847 - val_accuracy: 0.8503
+2022-01-18 16:57:31,121:INFO:train:
+2022-01-18 16:57:31,121:INFO:train:Epoch 00025: val_loss did not improve from 0.07988
+2022-01-18 16:57:31,137:INFO:train:Epoch 26/500
+2022-01-18 16:57:39,480:INFO:train:184/184 - 8s - loss: 0.0747 - accuracy: 0.8714 - val_loss: 0.0844 - val_accuracy: 0.8519
+2022-01-18 16:57:39,480:INFO:train:
+2022-01-18 16:57:39,480:INFO:train:Epoch 00026: val_loss did not improve from 0.07988
+2022-01-18 16:57:39,496:INFO:train:Epoch 27/500
+2022-01-18 16:57:47,855:INFO:train:184/184 - 8s - loss: 0.0740 - accuracy: 0.8718 - val_loss: 0.0833 - val_accuracy: 0.8523
+2022-01-18 16:57:47,855:INFO:train:
+2022-01-18 16:57:47,855:INFO:train:Epoch 00027: val_loss did not improve from 0.07988
+2022-01-18 16:57:47,871:INFO:train:Epoch 28/500
+2022-01-18 16:57:56,261:INFO:train:184/184 - 8s - loss: 0.0721 - accuracy: 0.8739 - val_loss: 0.0855 - val_accuracy: 0.8493
+2022-01-18 16:57:56,261:INFO:train:
+2022-01-18 16:57:56,261:INFO:train:Epoch 00028: val_loss did not improve from 0.07988
+2022-01-18 16:57:56,276:INFO:train:Epoch 29/500
+2022-01-18 16:58:04,682:INFO:train:184/184 - 8s - loss: 0.0747 - accuracy: 0.8712 - val_loss: 0.0873 - val_accuracy: 0.8465
+2022-01-18 16:58:04,682:INFO:train:
+2022-01-18 16:58:04,682:INFO:train:Epoch 00029: val_loss did not improve from 0.07988
+2022-01-18 16:58:04,682:INFO:train:Epoch 30/500
+2022-01-18 16:58:13,182:INFO:train:184/184 - 8s - loss: 0.0709 - accuracy: 0.8758 - val_loss: 0.0889 - val_accuracy: 0.8403
+2022-01-18 16:58:13,182:INFO:train:
+2022-01-18 16:58:13,182:INFO:train:Epoch 00030: val_loss did not improve from 0.07988
+2022-01-18 16:58:13,182:INFO:train:Epoch 31/500
+2022-01-18 16:58:21,713:INFO:train:184/184 - 9s - loss: 0.0701 - accuracy: 0.8754 - val_loss: 0.0872 - val_accuracy: 0.8478
+2022-01-18 16:58:21,713:INFO:train:
+2022-01-18 16:58:21,713:INFO:train:Epoch 00031: val_loss did not improve from 0.07988
+2022-01-18 16:58:21,728:INFO:train:Epoch 32/500
+2022-01-18 16:58:30,150:INFO:train:184/184 - 8s - loss: 0.0688 - accuracy: 0.8785 - val_loss: 0.0861 - val_accuracy: 0.8503
+2022-01-18 16:58:30,150:INFO:train:
+2022-01-18 16:58:30,150:INFO:train:Epoch 00032: val_loss did not improve from 0.07988
+2022-01-18 16:58:30,166:INFO:train:Epoch 33/500
+2022-01-18 16:58:38,509:INFO:train:184/184 - 8s - loss: 0.0678 - accuracy: 0.8793 - val_loss: 0.0804 - val_accuracy: 0.8563
+2022-01-18 16:58:38,509:INFO:train:
+2022-01-18 16:58:38,509:INFO:train:Epoch 00033: val_loss did not improve from 0.07988
+2022-01-18 16:58:38,525:INFO:train:Epoch 34/500
+2022-01-18 16:58:46,930:INFO:train:184/184 - 8s - loss: 0.0675 - accuracy: 0.8801 - val_loss: 0.0813 - val_accuracy: 0.8556
+2022-01-18 16:58:46,930:INFO:train:
+2022-01-18 16:58:46,930:INFO:train:Epoch 00034: val_loss did not improve from 0.07988
+2022-01-18 16:58:46,946:INFO:train:Epoch 35/500
+2022-01-18 16:58:55,368:INFO:train:184/184 - 8s - loss: 0.0655 - accuracy: 0.8825 - val_loss: 0.0893 - val_accuracy: 0.8456
+2022-01-18 16:58:55,368:INFO:train:
+2022-01-18 16:58:55,368:INFO:train:Epoch 00035: val_loss did not improve from 0.07988
+2022-01-18 16:58:55,383:INFO:train:Epoch 36/500
+2022-01-18 16:59:03,820:INFO:train:184/184 - 8s - loss: 0.0652 - accuracy: 0.8828 - val_loss: 0.0850 - val_accuracy: 0.8524
+2022-01-18 16:59:03,820:INFO:train:
+2022-01-18 16:59:03,820:INFO:train:Epoch 00036: val_loss did not improve from 0.07988
+2022-01-18 16:59:03,836:INFO:train:Epoch 37/500
+2022-01-18 16:59:12,242:INFO:train:184/184 - 8s - loss: 0.0640 - accuracy: 0.8840 - val_loss: 0.0918 - val_accuracy: 0.8424
+2022-01-18 16:59:12,242:INFO:train:
+2022-01-18 16:59:12,242:INFO:train:Epoch 00037: val_loss did not improve from 0.07988
+2022-01-18 16:59:12,242:INFO:train:Epoch 00037: early stopping
+2022-01-18 16:59:19,304:INFO:train:Training Experiment 2 time: 2
+2022-01-18 16:59:19,304:INFO:train:Training Conditions: ResUNET_SAR_n_n
+2022-01-18 16:59:26,226:INFO:train:Image stack:
+2022-01-18 16:59:26,226:INFO:train:(17730, 9203, 4)
+2022-01-18 16:59:26,679:INFO:train:Labels stack:
+2022-01-18 16:59:26,679:INFO:train:(17730, 9203)
+2022-01-18 16:59:48,521:INFO:train:Model: "res_unet"
+2022-01-18 16:59:48,537:INFO:train:_________________________________________________________________
+2022-01-18 16:59:48,537:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-18 16:59:48,537:INFO:train:=================================================================
+2022-01-18 16:59:48,537:INFO:train:resunet_encoder (ResUNET_Enc multiple                  1054272
+2022-01-18 16:59:48,537:INFO:train:_________________________________________________________________
+2022-01-18 16:59:48,537:INFO:train:resunet_decoder (ResUNET_Dec multiple                  221408
+2022-01-18 16:59:48,537:INFO:train:_________________________________________________________________
+2022-01-18 16:59:48,537:INFO:train:classifier (Classifier)      multiple                  195
+2022-01-18 16:59:48,537:INFO:train:=================================================================
+2022-01-18 16:59:48,537:INFO:train:Total params: 1,275,875
+2022-01-18 16:59:48,537:INFO:train:Trainable params: 1,275,875
+2022-01-18 16:59:48,537:INFO:train:Non-trainable params: 0
+2022-01-18 16:59:48,537:INFO:train:_________________________________________________________________
+2022-01-18 16:59:48,756:INFO:train:Epoch 1/500
+2022-01-18 17:00:03,771:INFO:train:184/184 - 15s - loss: 0.1591 - accuracy: 0.7408 - val_loss: 0.1384 - val_accuracy: 0.7609
+2022-01-18 17:00:03,771:INFO:train:
+2022-01-18 17:00:03,771:INFO:train:Epoch 00001: val_loss improved from inf to 0.13838, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:00:03,849:INFO:train:Epoch 2/500
+2022-01-18 17:00:12,224:INFO:train:184/184 - 8s - loss: 0.1386 - accuracy: 0.7834 - val_loss: 0.0995 - val_accuracy: 0.8259
+2022-01-18 17:00:12,224:INFO:train:
+2022-01-18 17:00:12,224:INFO:train:Epoch 00002: val_loss improved from 0.13838 to 0.09946, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:00:12,270:INFO:train:Epoch 3/500
+2022-01-18 17:00:20,661:INFO:train:184/184 - 8s - loss: 0.1137 - accuracy: 0.8236 - val_loss: 0.1050 - val_accuracy: 0.8263
+2022-01-18 17:00:20,661:INFO:train:
+2022-01-18 17:00:20,661:INFO:train:Epoch 00003: val_loss did not improve from 0.09946
+2022-01-18 17:00:20,676:INFO:train:Epoch 4/500
+2022-01-18 17:00:29,082:INFO:train:184/184 - 8s - loss: 0.1032 - accuracy: 0.8364 - val_loss: 0.1312 - val_accuracy: 0.7894
+2022-01-18 17:00:29,082:INFO:train:
+2022-01-18 17:00:29,082:INFO:train:Epoch 00004: val_loss did not improve from 0.09946
+2022-01-18 17:00:29,098:INFO:train:Epoch 5/500
+2022-01-18 17:00:37,504:INFO:train:184/184 - 8s - loss: 0.1022 - accuracy: 0.8370 - val_loss: 0.0933 - val_accuracy: 0.8379
+2022-01-18 17:00:37,504:INFO:train:
+2022-01-18 17:00:37,504:INFO:train:Epoch 00005: val_loss improved from 0.09946 to 0.09329, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:00:37,582:INFO:train:Epoch 6/500
+2022-01-18 17:00:45,910:INFO:train:184/184 - 8s - loss: 0.0995 - accuracy: 0.8409 - val_loss: 0.0882 - val_accuracy: 0.8435
+2022-01-18 17:00:45,910:INFO:train:
+2022-01-18 17:00:45,910:INFO:train:Epoch 00006: val_loss improved from 0.09329 to 0.08817, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:00:45,956:INFO:train:Epoch 7/500
+2022-01-18 17:00:54,347:INFO:train:184/184 - 8s - loss: 0.0953 - accuracy: 0.8464 - val_loss: 0.0873 - val_accuracy: 0.8402
+2022-01-18 17:00:54,347:INFO:train:
+2022-01-18 17:00:54,347:INFO:train:Epoch 00007: val_loss improved from 0.08817 to 0.08727, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:00:54,394:INFO:train:Epoch 8/500
+2022-01-18 17:01:02,784:INFO:train:184/184 - 8s - loss: 0.0960 - accuracy: 0.8454 - val_loss: 0.0940 - val_accuracy: 0.8346
+2022-01-18 17:01:02,784:INFO:train:
+2022-01-18 17:01:02,784:INFO:train:Epoch 00008: val_loss did not improve from 0.08727
+2022-01-18 17:01:02,799:INFO:train:Epoch 9/500
+2022-01-18 17:01:11,127:INFO:train:184/184 - 8s - loss: 0.0956 - accuracy: 0.8462 - val_loss: 0.0959 - val_accuracy: 0.8370
+2022-01-18 17:01:11,127:INFO:train:
+2022-01-18 17:01:11,127:INFO:train:Epoch 00009: val_loss did not improve from 0.08727
+2022-01-18 17:01:11,127:INFO:train:Epoch 10/500
+2022-01-18 17:01:19,517:INFO:train:184/184 - 8s - loss: 0.0919 - accuracy: 0.8500 - val_loss: 0.0838 - val_accuracy: 0.8475
+2022-01-18 17:01:19,533:INFO:train:
+2022-01-18 17:01:19,533:INFO:train:Epoch 00010: val_loss improved from 0.08727 to 0.08383, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:01:19,580:INFO:train:Epoch 11/500
+2022-01-18 17:01:27,970:INFO:train:184/184 - 8s - loss: 0.0902 - accuracy: 0.8522 - val_loss: 0.0843 - val_accuracy: 0.8473
+2022-01-18 17:01:27,970:INFO:train:
+2022-01-18 17:01:27,970:INFO:train:Epoch 00011: val_loss did not improve from 0.08383
+2022-01-18 17:01:27,986:INFO:train:Epoch 12/500
+2022-01-18 17:01:36,376:INFO:train:184/184 - 8s - loss: 0.0897 - accuracy: 0.8523 - val_loss: 0.0969 - val_accuracy: 0.8359
+2022-01-18 17:01:36,376:INFO:train:
+2022-01-18 17:01:36,376:INFO:train:Epoch 00012: val_loss did not improve from 0.08383
+2022-01-18 17:01:36,392:INFO:train:Epoch 13/500
+2022-01-18 17:01:44,735:INFO:train:184/184 - 8s - loss: 0.0882 - accuracy: 0.8542 - val_loss: 0.0821 - val_accuracy: 0.8532
+2022-01-18 17:01:44,735:INFO:train:
+2022-01-18 17:01:44,735:INFO:train:Epoch 00013: val_loss improved from 0.08383 to 0.08207, saving model to imgs\experiments\exp_2\models\ResUNET_2.h5
+2022-01-18 17:01:44,782:INFO:train:Epoch 14/500
+2022-01-18 17:01:53,188:INFO:train:184/184 - 8s - loss: 0.0881 - accuracy: 0.8546 - val_loss: 0.0831 - val_accuracy: 0.8464
+2022-01-18 17:01:53,188:INFO:train:
+2022-01-18 17:01:53,188:INFO:train:Epoch 00014: val_loss did not improve from 0.08207
+2022-01-18 17:01:53,203:INFO:train:Epoch 15/500
+2022-01-18 17:02:01,547:INFO:train:184/184 - 8s - loss: 0.0855 - accuracy: 0.8575 - val_loss: 0.0859 - val_accuracy: 0.8468
+2022-01-18 17:02:01,547:INFO:train:
+2022-01-18 17:02:01,547:INFO:train:Epoch 00015: val_loss did not improve from 0.08207
+2022-01-18 17:02:01,563:INFO:train:Epoch 16/500
+2022-01-18 17:02:09,937:INFO:train:184/184 - 8s - loss: 0.0850 - accuracy: 0.8581 - val_loss: 0.0842 - val_accuracy: 0.8487
+2022-01-18 17:02:09,937:INFO:train:
+2022-01-18 17:02:09,937:INFO:train:Epoch 00016: val_loss did not improve from 0.08207
+2022-01-18 17:02:09,953:INFO:train:Epoch 17/500
+2022-01-18 17:02:18,343:INFO:train:184/184 - 8s - loss: 0.0862 - accuracy: 0.8571 - val_loss: 0.0838 - val_accuracy: 0.8489
+2022-01-18 17:02:18,343:INFO:train:
+2022-01-18 17:02:18,343:INFO:train:Epoch 00017: val_loss did not improve from 0.08207
+2022-01-18 17:02:18,359:INFO:train:Epoch 18/500
+2022-01-18 17:02:26,780:INFO:train:184/184 - 8s - loss: 0.0833 - accuracy: 0.8611 - val_loss: 0.0873 - val_accuracy: 0.8474
+2022-01-18 17:02:26,780:INFO:train:
+2022-01-18 17:02:26,780:INFO:train:Epoch 00018: val_loss did not improve from 0.08207
+2022-01-18 17:02:26,796:INFO:train:Epoch 19/500
+2022-01-18 17:02:35,249:INFO:train:184/184 - 8s - loss: 0.0830 - accuracy: 0.8617 - val_loss: 0.0891 - val_accuracy: 0.8431
+2022-01-18 17:02:35,249:INFO:train:
+2022-01-18 17:02:35,249:INFO:train:Epoch 00019: val_loss did not improve from 0.08207
+2022-01-18 17:02:35,264:INFO:train:Epoch 20/500
+2022-01-18 17:02:43,733:INFO:train:184/184 - 8s - loss: 0.0827 - accuracy: 0.8632 - val_loss: 0.0894 - val_accuracy: 0.8447
+2022-01-18 17:02:43,733:INFO:train:
+2022-01-18 17:02:43,733:INFO:train:Epoch 00020: val_loss did not improve from 0.08207
+2022-01-18 17:02:43,748:INFO:train:Epoch 21/500
+2022-01-18 17:02:52,138:INFO:train:184/184 - 8s - loss: 0.0804 - accuracy: 0.8662 - val_loss: 0.0833 - val_accuracy: 0.8487
+2022-01-18 17:02:52,154:INFO:train:
+2022-01-18 17:02:52,154:INFO:train:Epoch 00021: val_loss did not improve from 0.08207
+2022-01-18 17:02:52,154:INFO:train:Epoch 22/500
+2022-01-18 17:03:00,466:INFO:train:184/184 - 8s - loss: 0.0794 - accuracy: 0.8670 - val_loss: 0.0824 - val_accuracy: 0.8515
+2022-01-18 17:03:00,466:INFO:train:
+2022-01-18 17:03:00,466:INFO:train:Epoch 00022: val_loss did not improve from 0.08207
+2022-01-18 17:03:00,482:INFO:train:Epoch 23/500
+2022-01-18 17:03:08,810:INFO:train:184/184 - 8s - loss: 0.0776 - accuracy: 0.8698 - val_loss: 0.0844 - val_accuracy: 0.8559
+2022-01-18 17:03:08,810:INFO:train:
+2022-01-18 17:03:08,810:INFO:train:Epoch 00023: val_loss did not improve from 0.08207
+2022-01-18 17:03:08,825:INFO:train:Epoch 24/500
+2022-01-18 17:03:17,184:INFO:train:184/184 - 8s - loss: 0.0771 - accuracy: 0.8706 - val_loss: 0.0957 - val_accuracy: 0.8421
+2022-01-18 17:03:17,184:INFO:train:
+2022-01-18 17:03:17,184:INFO:train:Epoch 00024: val_loss did not improve from 0.08207
+2022-01-18 17:03:17,215:INFO:train:Epoch 25/500
+2022-01-18 17:03:25,621:INFO:train:184/184 - 8s - loss: 0.0750 - accuracy: 0.8723 - val_loss: 0.0880 - val_accuracy: 0.8514
+2022-01-18 17:03:25,621:INFO:train:
+2022-01-18 17:03:25,621:INFO:train:Epoch 00025: val_loss did not improve from 0.08207
+2022-01-18 17:03:25,637:INFO:train:Epoch 26/500
+2022-01-18 17:03:33,980:INFO:train:184/184 - 8s - loss: 0.0729 - accuracy: 0.8745 - val_loss: 0.0893 - val_accuracy: 0.8451
+2022-01-18 17:03:33,980:INFO:train:
+2022-01-18 17:03:33,980:INFO:train:Epoch 00026: val_loss did not improve from 0.08207
+2022-01-18 17:03:33,996:INFO:train:Epoch 27/500
+2022-01-18 17:03:42,292:INFO:train:184/184 - 8s - loss: 0.0725 - accuracy: 0.8762 - val_loss: 0.0940 - val_accuracy: 0.8462
+2022-01-18 17:03:42,292:INFO:train:
+2022-01-18 17:03:42,292:INFO:train:Epoch 00027: val_loss did not improve from 0.08207
+2022-01-18 17:03:42,308:INFO:train:Epoch 28/500
+2022-01-18 17:03:50,730:INFO:train:184/184 - 8s - loss: 0.0718 - accuracy: 0.8765 - val_loss: 0.0822 - val_accuracy: 0.8585
+2022-01-18 17:03:50,730:INFO:train:
+2022-01-18 17:03:50,730:INFO:train:Epoch 00028: val_loss did not improve from 0.08207
+2022-01-18 17:03:50,730:INFO:train:Epoch 00028: early stopping
+2022-01-18 17:03:57,776:INFO:train:Training Experiment 2 time: 3
+2022-01-18 17:03:57,776:INFO:train:Training Conditions: ResUNET_SAR_n_n
+2022-01-18 17:04:05,151:INFO:train:Image stack:
+2022-01-18 17:04:05,151:INFO:train:(17730, 9203, 4)
+2022-01-18 17:04:05,573:INFO:train:Labels stack:
+2022-01-18 17:04:05,573:INFO:train:(17730, 9203)
+2022-01-18 17:04:27,525:INFO:train:Model: "res_unet"
+2022-01-18 17:04:27,525:INFO:train:_________________________________________________________________
+2022-01-18 17:04:27,525:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-18 17:04:27,525:INFO:train:=================================================================
+2022-01-18 17:04:27,525:INFO:train:resunet_encoder (ResUNET_Enc multiple                  1054272
+2022-01-18 17:04:27,525:INFO:train:_________________________________________________________________
+2022-01-18 17:04:27,525:INFO:train:resunet_decoder (ResUNET_Dec multiple                  221408
+2022-01-18 17:04:27,525:INFO:train:_________________________________________________________________
+2022-01-18 17:04:27,525:INFO:train:classifier (Classifier)      multiple                  195
+2022-01-18 17:04:27,525:INFO:train:=================================================================
+2022-01-18 17:04:27,525:INFO:train:Total params: 1,275,875
+2022-01-18 17:04:27,525:INFO:train:Trainable params: 1,275,875
+2022-01-18 17:04:27,525:INFO:train:Non-trainable params: 0
+2022-01-18 17:04:27,525:INFO:train:_________________________________________________________________
+2022-01-18 17:04:27,728:INFO:train:Epoch 1/500
+2022-01-18 17:04:42,547:INFO:train:184/184 - 15s - loss: 0.1573 - accuracy: 0.7507 - val_loss: 0.1346 - val_accuracy: 0.7833
+2022-01-18 17:04:42,547:INFO:train:
+2022-01-18 17:04:42,547:INFO:train:Epoch 00001: val_loss improved from inf to 0.13461, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:04:42,594:INFO:train:Epoch 2/500
+2022-01-18 17:04:50,999:INFO:train:184/184 - 8s - loss: 0.1370 - accuracy: 0.7878 - val_loss: 0.1246 - val_accuracy: 0.7972
+2022-01-18 17:04:50,999:INFO:train:
+2022-01-18 17:04:50,999:INFO:train:Epoch 00002: val_loss improved from 0.13461 to 0.12463, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:04:51,046:INFO:train:Epoch 3/500
+2022-01-18 17:04:59,452:INFO:train:184/184 - 8s - loss: 0.1071 - accuracy: 0.8312 - val_loss: 0.0906 - val_accuracy: 0.8364
+2022-01-18 17:04:59,452:INFO:train:
+2022-01-18 17:04:59,452:INFO:train:Epoch 00003: val_loss improved from 0.12463 to 0.09061, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:04:59,499:INFO:train:Epoch 4/500
+2022-01-18 17:05:07,889:INFO:train:184/184 - 8s - loss: 0.1056 - accuracy: 0.8339 - val_loss: 0.0957 - val_accuracy: 0.8349
+2022-01-18 17:05:07,889:INFO:train:
+2022-01-18 17:05:07,889:INFO:train:Epoch 00004: val_loss did not improve from 0.09061
+2022-01-18 17:05:07,905:INFO:train:Epoch 5/500
+2022-01-18 17:05:16,311:INFO:train:184/184 - 8s - loss: 0.0992 - accuracy: 0.8408 - val_loss: 0.1242 - val_accuracy: 0.8019
+2022-01-18 17:05:16,311:INFO:train:
+2022-01-18 17:05:16,311:INFO:train:Epoch 00005: val_loss did not improve from 0.09061
+2022-01-18 17:05:16,326:INFO:train:Epoch 6/500
+2022-01-18 17:05:24,701:INFO:train:184/184 - 8s - loss: 0.0961 - accuracy: 0.8438 - val_loss: 0.0967 - val_accuracy: 0.8369
+2022-01-18 17:05:24,701:INFO:train:
+2022-01-18 17:05:24,701:INFO:train:Epoch 00006: val_loss did not improve from 0.09061
+2022-01-18 17:05:24,717:INFO:train:Epoch 7/500
+2022-01-18 17:05:33,138:INFO:train:184/184 - 8s - loss: 0.0943 - accuracy: 0.8460 - val_loss: 0.0958 - val_accuracy: 0.8376
+2022-01-18 17:05:33,138:INFO:train:
+2022-01-18 17:05:33,138:INFO:train:Epoch 00007: val_loss did not improve from 0.09061
+2022-01-18 17:05:33,154:INFO:train:Epoch 8/500
+2022-01-18 17:05:41,622:INFO:train:184/184 - 8s - loss: 0.0936 - accuracy: 0.8480 - val_loss: 0.1175 - val_accuracy: 0.8174
+2022-01-18 17:05:41,622:INFO:train:
+2022-01-18 17:05:41,622:INFO:train:Epoch 00008: val_loss did not improve from 0.09061
+2022-01-18 17:05:41,638:INFO:train:Epoch 9/500
+2022-01-18 17:05:50,028:INFO:train:184/184 - 8s - loss: 0.0911 - accuracy: 0.8513 - val_loss: 0.0882 - val_accuracy: 0.8464
+2022-01-18 17:05:50,028:INFO:train:
+2022-01-18 17:05:50,028:INFO:train:Epoch 00009: val_loss improved from 0.09061 to 0.08822, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:05:50,075:INFO:train:Epoch 10/500
+2022-01-18 17:05:58,418:INFO:train:184/184 - 8s - loss: 0.0932 - accuracy: 0.8482 - val_loss: 0.0858 - val_accuracy: 0.8522
+2022-01-18 17:05:58,418:INFO:train:
+2022-01-18 17:05:58,418:INFO:train:Epoch 00010: val_loss improved from 0.08822 to 0.08582, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:05:58,496:INFO:train:Epoch 11/500
+2022-01-18 17:06:06,952:INFO:train:184/184 - 8s - loss: 0.0886 - accuracy: 0.8550 - val_loss: 0.0816 - val_accuracy: 0.8594
+2022-01-18 17:06:06,952:INFO:train:
+2022-01-18 17:06:06,952:INFO:train:Epoch 00011: val_loss improved from 0.08582 to 0.08160, saving model to imgs\experiments\exp_2\models\ResUNET_3.h5
+2022-01-18 17:06:07,014:INFO:train:Epoch 12/500
+2022-01-18 17:06:15,436:INFO:train:184/184 - 8s - loss: 0.0882 - accuracy: 0.8537 - val_loss: 0.0880 - val_accuracy: 0.8508
+2022-01-18 17:06:15,452:INFO:train:
+2022-01-18 17:06:15,452:INFO:train:Epoch 00012: val_loss did not improve from 0.08160
+2022-01-18 17:06:15,452:INFO:train:Epoch 13/500
+2022-01-18 17:06:23,826:INFO:train:184/184 - 8s - loss: 0.0856 - accuracy: 0.8578 - val_loss: 0.0893 - val_accuracy: 0.8471
+2022-01-18 17:06:23,826:INFO:train:
+2022-01-18 17:06:23,826:INFO:train:Epoch 00013: val_loss did not improve from 0.08160
+2022-01-18 17:06:23,842:INFO:train:Epoch 14/500
+2022-01-18 17:06:32,248:INFO:train:184/184 - 8s - loss: 0.0868 - accuracy: 0.8570 - val_loss: 0.1060 - val_accuracy: 0.8317
+2022-01-18 17:06:32,248:INFO:train:
+2022-01-18 17:06:32,248:INFO:train:Epoch 00014: val_loss did not improve from 0.08160
+2022-01-18 17:06:32,263:INFO:train:Epoch 15/500
+2022-01-18 17:06:40,529:INFO:train:184/184 - 8s - loss: 0.0848 - accuracy: 0.8589 - val_loss: 0.0821 - val_accuracy: 0.8574
+2022-01-18 17:06:40,529:INFO:train:
+2022-01-18 17:06:40,529:INFO:train:Epoch 00015: val_loss did not improve from 0.08160
+2022-01-18 17:06:40,544:INFO:train:Epoch 16/500
+2022-01-18 17:06:48,903:INFO:train:184/184 - 8s - loss: 0.0850 - accuracy: 0.8592 - val_loss: 0.0904 - val_accuracy: 0.8448
+2022-01-18 17:06:48,903:INFO:train:
+2022-01-18 17:06:48,903:INFO:train:Epoch 00016: val_loss did not improve from 0.08160
+2022-01-18 17:06:48,919:INFO:train:Epoch 17/500
+2022-01-18 17:06:57,372:INFO:train:184/184 - 8s - loss: 0.0804 - accuracy: 0.8647 - val_loss: 0.0848 - val_accuracy: 0.8559
+2022-01-18 17:06:57,372:INFO:train:
+2022-01-18 17:06:57,372:INFO:train:Epoch 00017: val_loss did not improve from 0.08160
+2022-01-18 17:06:57,387:INFO:train:Epoch 18/500
+2022-01-18 17:07:05,840:INFO:train:184/184 - 8s - loss: 0.0807 - accuracy: 0.8638 - val_loss: 0.1040 - val_accuracy: 0.8354
+2022-01-18 17:07:05,840:INFO:train:
+2022-01-18 17:07:05,840:INFO:train:Epoch 00018: val_loss did not improve from 0.08160
+2022-01-18 17:07:05,856:INFO:train:Epoch 19/500
+2022-01-18 17:07:14,277:INFO:train:184/184 - 8s - loss: 0.0791 - accuracy: 0.8663 - val_loss: 0.0862 - val_accuracy: 0.8368
+2022-01-18 17:07:14,277:INFO:train:
+2022-01-18 17:07:14,277:INFO:train:Epoch 00019: val_loss did not improve from 0.08160
+2022-01-18 17:07:14,293:INFO:train:Epoch 20/500
+2022-01-18 17:07:22,667:INFO:train:184/184 - 8s - loss: 0.0789 - accuracy: 0.8669 - val_loss: 0.0883 - val_accuracy: 0.8433
+2022-01-18 17:07:22,667:INFO:train:
+2022-01-18 17:07:22,683:INFO:train:Epoch 00020: val_loss did not improve from 0.08160
+2022-01-18 17:07:22,683:INFO:train:Epoch 21/500
+2022-01-18 17:07:31,120:INFO:train:184/184 - 8s - loss: 0.0759 - accuracy: 0.8706 - val_loss: 0.1009 - val_accuracy: 0.8407
+2022-01-18 17:07:31,120:INFO:train:
+2022-01-18 17:07:31,120:INFO:train:Epoch 00021: val_loss did not improve from 0.08160
+2022-01-18 17:07:31,136:INFO:train:Epoch 22/500
+2022-01-18 17:07:39,510:INFO:train:184/184 - 8s - loss: 0.0766 - accuracy: 0.8697 - val_loss: 0.0835 - val_accuracy: 0.8555
+2022-01-18 17:07:39,510:INFO:train:
+2022-01-18 17:07:39,510:INFO:train:Epoch 00022: val_loss did not improve from 0.08160
+2022-01-18 17:07:39,526:INFO:train:Epoch 23/500
+2022-01-18 17:07:47,901:INFO:train:184/184 - 8s - loss: 0.0739 - accuracy: 0.8727 - val_loss: 0.0871 - val_accuracy: 0.8512
+2022-01-18 17:07:47,901:INFO:train:
+2022-01-18 17:07:47,901:INFO:train:Epoch 00023: val_loss did not improve from 0.08160
+2022-01-18 17:07:47,916:INFO:train:Epoch 24/500
+2022-01-18 17:07:56,306:INFO:train:184/184 - 8s - loss: 0.0731 - accuracy: 0.8740 - val_loss: 0.0927 - val_accuracy: 0.8514
+2022-01-18 17:07:56,322:INFO:train:
+2022-01-18 17:07:56,322:INFO:train:Epoch 00024: val_loss did not improve from 0.08160
+2022-01-18 17:07:56,322:INFO:train:Epoch 25/500
+2022-01-18 17:08:04,822:INFO:train:184/184 - 8s - loss: 0.0737 - accuracy: 0.8735 - val_loss: 0.0868 - val_accuracy: 0.8489
+2022-01-18 17:08:04,822:INFO:train:
+2022-01-18 17:08:04,822:INFO:train:Epoch 00025: val_loss did not improve from 0.08160
+2022-01-18 17:08:04,822:INFO:train:Epoch 26/500
+2022-01-18 17:08:13,274:INFO:train:184/184 - 8s - loss: 0.0710 - accuracy: 0.8764 - val_loss: 0.0945 - val_accuracy: 0.8431
+2022-01-18 17:08:13,274:INFO:train:
+2022-01-18 17:08:13,274:INFO:train:Epoch 00026: val_loss did not improve from 0.08160
+2022-01-18 17:08:13,274:INFO:train:Epoch 00026: early stopping
+2022-01-18 17:08:20,352:INFO:train:Training Experiment 2 time: 4
+2022-01-18 17:08:20,352:INFO:train:Training Conditions: ResUNET_SAR_n_n
+2022-01-18 17:08:27,258:INFO:train:Image stack:
+2022-01-18 17:08:27,258:INFO:train:(17730, 9203, 4)
+2022-01-18 17:08:27,711:INFO:train:Labels stack:
+2022-01-18 17:08:27,711:INFO:train:(17730, 9203)
+2022-01-18 17:08:49,695:INFO:train:Model: "res_unet"
+2022-01-18 17:08:49,695:INFO:train:_________________________________________________________________
+2022-01-18 17:08:49,695:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-18 17:08:49,695:INFO:train:=================================================================
+2022-01-18 17:08:49,695:INFO:train:resunet_encoder (ResUNET_Enc multiple                  1054272
+2022-01-18 17:08:49,695:INFO:train:_________________________________________________________________
+2022-01-18 17:08:49,695:INFO:train:resunet_decoder (ResUNET_Dec multiple                  221408
+2022-01-18 17:08:49,695:INFO:train:_________________________________________________________________
+2022-01-18 17:08:49,695:INFO:train:classifier (Classifier)      multiple                  195
+2022-01-18 17:08:49,695:INFO:train:=================================================================
+2022-01-18 17:08:49,695:INFO:train:Total params: 1,275,875
+2022-01-18 17:08:49,695:INFO:train:Trainable params: 1,275,875
+2022-01-18 17:08:49,695:INFO:train:Non-trainable params: 0
+2022-01-18 17:08:49,695:INFO:train:_________________________________________________________________
+2022-01-18 17:08:49,882:INFO:train:Epoch 1/500
+2022-01-18 17:09:04,569:INFO:train:184/184 - 15s - loss: 0.1553 - accuracy: 0.7577 - val_loss: 0.1433 - val_accuracy: 0.7646
+2022-01-18 17:09:04,569:INFO:train:
+2022-01-18 17:09:04,569:INFO:train:Epoch 00001: val_loss improved from inf to 0.14332, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:04,616:INFO:train:Epoch 2/500
+2022-01-18 17:09:12,881:INFO:train:184/184 - 8s - loss: 0.1384 - accuracy: 0.7868 - val_loss: 0.1182 - val_accuracy: 0.8108
+2022-01-18 17:09:12,881:INFO:train:
+2022-01-18 17:09:12,881:INFO:train:Epoch 00002: val_loss improved from 0.14332 to 0.11816, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:12,944:INFO:train:Epoch 3/500
+2022-01-18 17:09:21,178:INFO:train:184/184 - 8s - loss: 0.1119 - accuracy: 0.8253 - val_loss: 0.0951 - val_accuracy: 0.8269
+2022-01-18 17:09:21,178:INFO:train:
+2022-01-18 17:09:21,178:INFO:train:Epoch 00003: val_loss improved from 0.11816 to 0.09508, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:21,225:INFO:train:Epoch 4/500
+2022-01-18 17:09:29,505:INFO:train:184/184 - 8s - loss: 0.1071 - accuracy: 0.8305 - val_loss: 0.0936 - val_accuracy: 0.8354
+2022-01-18 17:09:29,505:INFO:train:
+2022-01-18 17:09:29,505:INFO:train:Epoch 00004: val_loss improved from 0.09508 to 0.09364, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:29,552:INFO:train:Epoch 5/500
+2022-01-18 17:09:37,849:INFO:train:184/184 - 8s - loss: 0.1013 - accuracy: 0.8375 - val_loss: 0.0953 - val_accuracy: 0.8290
+2022-01-18 17:09:37,864:INFO:train:
+2022-01-18 17:09:37,864:INFO:train:Epoch 00005: val_loss did not improve from 0.09364
+2022-01-18 17:09:37,864:INFO:train:Epoch 6/500
+2022-01-18 17:09:46,192:INFO:train:184/184 - 8s - loss: 0.0965 - accuracy: 0.8432 - val_loss: 0.0899 - val_accuracy: 0.8415
+2022-01-18 17:09:46,192:INFO:train:
+2022-01-18 17:09:46,192:INFO:train:Epoch 00006: val_loss improved from 0.09364 to 0.08992, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:46,255:INFO:train:Epoch 7/500
+2022-01-18 17:09:54,645:INFO:train:184/184 - 8s - loss: 0.0952 - accuracy: 0.8451 - val_loss: 0.0884 - val_accuracy: 0.8387
+2022-01-18 17:09:54,645:INFO:train:
+2022-01-18 17:09:54,645:INFO:train:Epoch 00007: val_loss improved from 0.08992 to 0.08836, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:09:54,692:INFO:train:Epoch 8/500
+2022-01-18 17:10:03,207:INFO:train:184/184 - 9s - loss: 0.0933 - accuracy: 0.8471 - val_loss: 0.0868 - val_accuracy: 0.8420
+2022-01-18 17:10:03,223:INFO:train:
+2022-01-18 17:10:03,223:INFO:train:Epoch 00008: val_loss improved from 0.08836 to 0.08682, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:10:03,270:INFO:train:Epoch 9/500
+2022-01-18 17:10:11,769:INFO:train:184/184 - 8s - loss: 0.0922 - accuracy: 0.8488 - val_loss: 0.0855 - val_accuracy: 0.8466
+2022-01-18 17:10:11,769:INFO:train:
+2022-01-18 17:10:11,769:INFO:train:Epoch 00009: val_loss improved from 0.08682 to 0.08553, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:10:11,816:INFO:train:Epoch 10/500
+2022-01-18 17:10:20,316:INFO:train:184/184 - 8s - loss: 0.0921 - accuracy: 0.8499 - val_loss: 0.0903 - val_accuracy: 0.8381
+2022-01-18 17:10:20,316:INFO:train:
+2022-01-18 17:10:20,316:INFO:train:Epoch 00010: val_loss did not improve from 0.08553
+2022-01-18 17:10:20,331:INFO:train:Epoch 11/500
+2022-01-18 17:10:28,737:INFO:train:184/184 - 8s - loss: 0.0880 - accuracy: 0.8533 - val_loss: 0.0826 - val_accuracy: 0.8552
+2022-01-18 17:10:28,737:INFO:train:
+2022-01-18 17:10:28,737:INFO:train:Epoch 00011: val_loss improved from 0.08553 to 0.08263, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:10:28,784:INFO:train:Epoch 12/500
+2022-01-18 17:10:37,128:INFO:train:184/184 - 8s - loss: 0.0886 - accuracy: 0.8541 - val_loss: 0.0862 - val_accuracy: 0.8453
+2022-01-18 17:10:37,128:INFO:train:
+2022-01-18 17:10:37,128:INFO:train:Epoch 00012: val_loss did not improve from 0.08263
+2022-01-18 17:10:37,128:INFO:train:Epoch 13/500
+2022-01-18 17:10:45,471:INFO:train:184/184 - 8s - loss: 0.0867 - accuracy: 0.8563 - val_loss: 0.0872 - val_accuracy: 0.8434
+2022-01-18 17:10:45,471:INFO:train:
+2022-01-18 17:10:45,471:INFO:train:Epoch 00013: val_loss did not improve from 0.08263
+2022-01-18 17:10:45,487:INFO:train:Epoch 14/500
+2022-01-18 17:10:53,861:INFO:train:184/184 - 8s - loss: 0.0858 - accuracy: 0.8576 - val_loss: 0.0836 - val_accuracy: 0.8483
+2022-01-18 17:10:53,861:INFO:train:
+2022-01-18 17:10:53,861:INFO:train:Epoch 00014: val_loss did not improve from 0.08263
+2022-01-18 17:10:53,877:INFO:train:Epoch 15/500
+2022-01-18 17:11:02,189:INFO:train:184/184 - 8s - loss: 0.0842 - accuracy: 0.8601 - val_loss: 0.0843 - val_accuracy: 0.8518
+2022-01-18 17:11:02,189:INFO:train:
+2022-01-18 17:11:02,189:INFO:train:Epoch 00015: val_loss did not improve from 0.08263
+2022-01-18 17:11:02,189:INFO:train:Epoch 16/500
+2022-01-18 17:11:10,579:INFO:train:184/184 - 8s - loss: 0.0839 - accuracy: 0.8600 - val_loss: 0.0945 - val_accuracy: 0.8390
+2022-01-18 17:11:10,579:INFO:train:
+2022-01-18 17:11:10,579:INFO:train:Epoch 00016: val_loss did not improve from 0.08263
+2022-01-18 17:11:10,595:INFO:train:Epoch 17/500
+2022-01-18 17:11:18,923:INFO:train:184/184 - 8s - loss: 0.0841 - accuracy: 0.8602 - val_loss: 0.0834 - val_accuracy: 0.8538
+2022-01-18 17:11:18,923:INFO:train:
+2022-01-18 17:11:18,923:INFO:train:Epoch 00017: val_loss did not improve from 0.08263
+2022-01-18 17:11:18,938:INFO:train:Epoch 18/500
+2022-01-18 17:11:27,250:INFO:train:184/184 - 8s - loss: 0.0796 - accuracy: 0.8657 - val_loss: 0.0856 - val_accuracy: 0.8574
+2022-01-18 17:11:27,250:INFO:train:
+2022-01-18 17:11:27,250:INFO:train:Epoch 00018: val_loss did not improve from 0.08263
+2022-01-18 17:11:27,250:INFO:train:Epoch 19/500
+2022-01-18 17:11:35,562:INFO:train:184/184 - 8s - loss: 0.0786 - accuracy: 0.8665 - val_loss: 0.0843 - val_accuracy: 0.8519
+2022-01-18 17:11:35,562:INFO:train:
+2022-01-18 17:11:35,562:INFO:train:Epoch 00019: val_loss did not improve from 0.08263
+2022-01-18 17:11:35,578:INFO:train:Epoch 20/500
+2022-01-18 17:11:43,953:INFO:train:184/184 - 8s - loss: 0.0775 - accuracy: 0.8678 - val_loss: 0.0812 - val_accuracy: 0.8589
+2022-01-18 17:11:43,953:INFO:train:
+2022-01-18 17:11:43,953:INFO:train:Epoch 00020: val_loss improved from 0.08263 to 0.08124, saving model to imgs\experiments\exp_2\models\ResUNET_4.h5
+2022-01-18 17:11:44,000:INFO:train:Epoch 21/500
+2022-01-18 17:11:52,468:INFO:train:184/184 - 8s - loss: 0.0769 - accuracy: 0.8676 - val_loss: 0.0835 - val_accuracy: 0.8566
+2022-01-18 17:11:52,468:INFO:train:
+2022-01-18 17:11:52,468:INFO:train:Epoch 00021: val_loss did not improve from 0.08124
+2022-01-18 17:11:52,484:INFO:train:Epoch 22/500
+2022-01-18 17:12:00,889:INFO:train:184/184 - 8s - loss: 0.0747 - accuracy: 0.8716 - val_loss: 0.0817 - val_accuracy: 0.8572
+2022-01-18 17:12:00,889:INFO:train:
+2022-01-18 17:12:00,889:INFO:train:Epoch 00022: val_loss did not improve from 0.08124
+2022-01-18 17:12:00,905:INFO:train:Epoch 23/500
+2022-01-18 17:12:09,295:INFO:train:184/184 - 8s - loss: 0.0734 - accuracy: 0.8719 - val_loss: 0.0904 - val_accuracy: 0.8461
+2022-01-18 17:12:09,311:INFO:train:
+2022-01-18 17:12:09,311:INFO:train:Epoch 00023: val_loss did not improve from 0.08124
+2022-01-18 17:12:09,311:INFO:train:Epoch 24/500
+2022-01-18 17:12:17,748:INFO:train:184/184 - 8s - loss: 0.0723 - accuracy: 0.8726 - val_loss: 0.0961 - val_accuracy: 0.8442
+2022-01-18 17:12:17,764:INFO:train:
+2022-01-18 17:12:17,764:INFO:train:Epoch 00024: val_loss did not improve from 0.08124
+2022-01-18 17:12:17,764:INFO:train:Epoch 25/500
+2022-01-18 17:12:26,123:INFO:train:184/184 - 8s - loss: 0.0705 - accuracy: 0.8754 - val_loss: 0.0873 - val_accuracy: 0.8564
+2022-01-18 17:12:26,123:INFO:train:
+2022-01-18 17:12:26,123:INFO:train:Epoch 00025: val_loss did not improve from 0.08124
+2022-01-18 17:12:26,138:INFO:train:Epoch 26/500
+2022-01-18 17:12:34,497:INFO:train:184/184 - 8s - loss: 0.0707 - accuracy: 0.8754 - val_loss: 0.0855 - val_accuracy: 0.8575
+2022-01-18 17:12:34,497:INFO:train:
+2022-01-18 17:12:34,497:INFO:train:Epoch 00026: val_loss did not improve from 0.08124
+2022-01-18 17:12:34,513:INFO:train:Epoch 27/500
+2022-01-18 17:12:42,919:INFO:train:184/184 - 8s - loss: 0.0693 - accuracy: 0.8771 - val_loss: 0.0835 - val_accuracy: 0.8601
+2022-01-18 17:12:42,919:INFO:train:
+2022-01-18 17:12:42,919:INFO:train:Epoch 00027: val_loss did not improve from 0.08124
+2022-01-18 17:12:42,934:INFO:train:Epoch 28/500
+2022-01-18 17:12:51,356:INFO:train:184/184 - 8s - loss: 0.0684 - accuracy: 0.8783 - val_loss: 0.0818 - val_accuracy: 0.8604
+2022-01-18 17:12:51,356:INFO:train:
+2022-01-18 17:12:51,356:INFO:train:Epoch 00028: val_loss did not improve from 0.08124
+2022-01-18 17:12:51,372:INFO:train:Epoch 29/500
+2022-01-18 17:12:59,856:INFO:train:184/184 - 8s - loss: 0.0659 - accuracy: 0.8819 - val_loss: 0.0863 - val_accuracy: 0.8579
+2022-01-18 17:12:59,856:INFO:train:
+2022-01-18 17:12:59,856:INFO:train:Epoch 00029: val_loss did not improve from 0.08124
+2022-01-18 17:12:59,871:INFO:train:Epoch 30/500
+2022-01-18 17:13:08,418:INFO:train:184/184 - 9s - loss: 0.0655 - accuracy: 0.8824 - val_loss: 0.0933 - val_accuracy: 0.8478
+2022-01-18 17:13:08,418:INFO:train:
+2022-01-18 17:13:08,433:INFO:train:Epoch 00030: val_loss did not improve from 0.08124
+2022-01-18 17:13:08,433:INFO:train:Epoch 31/500
+2022-01-18 17:13:16,839:INFO:train:184/184 - 8s - loss: 0.0648 - accuracy: 0.8836 - val_loss: 0.0840 - val_accuracy: 0.8585
+2022-01-18 17:13:16,839:INFO:train:
+2022-01-18 17:13:16,839:INFO:train:Epoch 00031: val_loss did not improve from 0.08124
+2022-01-18 17:13:16,855:INFO:train:Epoch 32/500
+2022-01-18 17:13:25,229:INFO:train:184/184 - 8s - loss: 0.0634 - accuracy: 0.8845 - val_loss: 0.0926 - val_accuracy: 0.8496
+2022-01-18 17:13:25,229:INFO:train:
+2022-01-18 17:13:25,229:INFO:train:Epoch 00032: val_loss did not improve from 0.08124
+2022-01-18 17:13:25,245:INFO:train:Epoch 33/500
+2022-01-18 17:13:33,667:INFO:train:184/184 - 8s - loss: 0.0627 - accuracy: 0.8854 - val_loss: 0.0899 - val_accuracy: 0.8569
+2022-01-18 17:13:33,667:INFO:train:
+2022-01-18 17:13:33,667:INFO:train:Epoch 00033: val_loss did not improve from 0.08124
+2022-01-18 17:13:33,682:INFO:train:Epoch 34/500
+2022-01-18 17:13:41,994:INFO:train:184/184 - 8s - loss: 0.0606 - accuracy: 0.8874 - val_loss: 0.0919 - val_accuracy: 0.8508
+2022-01-18 17:13:41,994:INFO:train:
+2022-01-18 17:13:41,994:INFO:train:Epoch 00034: val_loss did not improve from 0.08124
+2022-01-18 17:13:42,010:INFO:train:Epoch 35/500
+2022-01-18 17:13:50,369:INFO:train:184/184 - 8s - loss: 0.0604 - accuracy: 0.8876 - val_loss: 0.0891 - val_accuracy: 0.8565
+2022-01-18 17:13:50,369:INFO:train:
+2022-01-18 17:13:50,369:INFO:train:Epoch 00035: val_loss did not improve from 0.08124
+2022-01-18 17:13:50,369:INFO:train:Epoch 00035: early stopping

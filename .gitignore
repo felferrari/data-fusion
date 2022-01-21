@@ -1,6 +1,9 @@
 *__pycache__*
 raw
 imgs
-.ipynb*
-.pyc
-experiments_multi.json
+*.ipynb*
+*.pyc
+*.npy
+*.h5
+*.pyc
+*.pyc
