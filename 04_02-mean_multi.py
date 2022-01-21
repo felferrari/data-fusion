@@ -23,7 +23,7 @@ def mean_model(times, exp, img_type, test_cond, method):
         os.makedirs(path_maps)
 
     logging.basicConfig(
-            level=logging.DEBUG,
+            level=logging.INFO,
             format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',
             filename=os.path.join(path_exp, 'mean.log'),
             filemode='a'
