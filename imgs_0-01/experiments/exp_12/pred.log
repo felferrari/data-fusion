@@ -1,0 +1,35 @@
+2022-01-22 16:41:27,950:INFO:pred:Predicting Experiment 12 time: 0
+2022-01-22 16:41:27,950:INFO:pred:Conditions: CrossFusion_ResUNET_FUS_n_n
+2022-01-22 16:43:16,633:INFO:pred:Image stack:
+2022-01-22 16:43:16,633:INFO:pred:(17730, 9203, 30)
+2022-01-22 16:43:16,633:INFO:pred:-126.0
+2022-01-22 16:43:16,633:INFO:pred:-13.0
+2022-01-22 16:45:36,262:INFO:pred:time prediction model 0: 81.45
+2022-01-22 16:46:08,370:INFO:pred:Predicting Experiment 12 time: 1
+2022-01-22 16:46:08,370:INFO:pred:Conditions: CrossFusion_ResUNET_FUS_n_n
+2022-01-22 16:47:14,336:INFO:pred:Image stack:
+2022-01-22 16:47:14,336:INFO:pred:(17730, 9203, 30)
+2022-01-22 16:47:14,336:INFO:pred:-126.0
+2022-01-22 16:47:14,336:INFO:pred:-13.0
+2022-01-22 16:49:37,732:INFO:pred:time prediction model 1: 81.76
+2022-01-22 16:50:27,611:INFO:pred:Predicting Experiment 12 time: 2
+2022-01-22 16:50:27,611:INFO:pred:Conditions: CrossFusion_ResUNET_FUS_n_n
+2022-01-22 16:51:33,561:INFO:pred:Image stack:
+2022-01-22 16:51:33,561:INFO:pred:(17730, 9203, 30)
+2022-01-22 16:51:33,577:INFO:pred:-126.0
+2022-01-22 16:51:33,577:INFO:pred:-13.0
+2022-01-22 16:53:59,173:INFO:pred:time prediction model 2: 82.12
+2022-01-22 16:54:37,890:INFO:pred:Predicting Experiment 12 time: 3
+2022-01-22 16:54:37,906:INFO:pred:Conditions: CrossFusion_ResUNET_FUS_n_n
+2022-01-22 16:55:43,278:INFO:pred:Image stack:
+2022-01-22 16:55:43,278:INFO:pred:(17730, 9203, 30)
+2022-01-22 16:55:43,278:INFO:pred:-126.0
+2022-01-22 16:55:43,278:INFO:pred:-13.0
+2022-01-22 16:58:18,103:INFO:pred:time prediction model 3: 88.58
+2022-01-22 16:59:11,882:INFO:pred:Predicting Experiment 12 time: 4
+2022-01-22 16:59:11,882:INFO:pred:Conditions: CrossFusion_ResUNET_FUS_n_n
+2022-01-22 17:00:17,629:INFO:pred:Image stack:
+2022-01-22 17:00:17,629:INFO:pred:(17730, 9203, 30)
+2022-01-22 17:00:17,629:INFO:pred:-126.0
+2022-01-22 17:00:17,629:INFO:pred:-13.0
+2022-01-22 17:02:42,264:INFO:pred:time prediction model 4: 85.80
