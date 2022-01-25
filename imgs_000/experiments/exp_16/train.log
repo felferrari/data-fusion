@@ -1,0 +1,791 @@
+2022-01-19 17:24:06,831:INFO:train:Training Experiment 16 time: 0
+2022-01-19 17:24:06,831:INFO:train:Training Conditions: CrossFusion_ResUNET_FUS_mix
+2022-01-19 17:27:43,665:INFO:train:Image1 stack:
+2022-01-19 17:27:43,681:INFO:train:(17730, 9203, 30)
+2022-01-19 17:27:43,681:INFO:train:Image2 stack:
+2022-01-19 17:27:43,681:INFO:train:(17730, 9203, 30)
+2022-01-19 17:27:47,602:INFO:train:Labels stack:
+2022-01-19 17:27:47,602:INFO:train:(17730, 9203)
+2022-01-19 17:28:17,414:INFO:train:Model: "cross_fusion__res_unet"
+2022-01-19 17:28:17,414:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,414:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-19 17:28:17,414:INFO:train:=================================================================
+2022-01-19 17:28:17,429:INFO:train:opt_encoder (ResUNET_Encoder multiple                  1066944
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:sar_encoder (ResUNET_Encoder multiple                  1054272
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:opt_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:sar_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:fus_cross (CrossFusion)      multiple                  518531
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:opt_classifier (Classifier)  multiple                  195
+2022-01-19 17:28:17,429:INFO:train:_________________________________________________________________
+2022-01-19 17:28:17,429:INFO:train:sar_classifier (Classifier)  multiple                  195
+2022-01-19 17:28:17,429:INFO:train:=================================================================
+2022-01-19 17:28:17,445:INFO:train:Total params: 3,082,953
+2022-01-19 17:28:17,445:INFO:train:Trainable params: 3,082,057
+2022-01-19 17:28:17,445:INFO:train:Non-trainable params: 896
+2022-01-19 17:28:17,445:INFO:train:_________________________________________________________________
+2022-01-19 17:28:18,804:INFO:train:Epoch 1/10
+2022-01-19 17:29:42,816:INFO:train:368/368 - 84s - opt_accuracy: 0.7502 - sar_accuracy: 0.7526 - fus_accuracy: 0.5854 - opt_loss: 0.1442 - sar_loss: 0.1577 - fus_loss: 0.2582 - loss: 0.5601 - val_opt_accuracy: 0.8189 - val_sar_accuracy: 0.8090 - val_fus_accuracy: 0.5841 - val_opt_loss: 0.1030 - val_sar_loss: 0.1240 - val_fus_loss: 0.2413 - val_loss: 0.4684
+2022-01-19 17:29:42,832:INFO:train:Epoch 2/10
+2022-01-19 17:30:41,657:INFO:train:368/368 - 59s - opt_accuracy: 0.7922 - sar_accuracy: 0.7797 - fus_accuracy: 0.5688 - opt_loss: 0.1221 - sar_loss: 0.1439 - fus_loss: 0.2569 - loss: 0.5229 - val_opt_accuracy: 0.8258 - val_sar_accuracy: 0.8199 - val_fus_accuracy: 0.5064 - val_opt_loss: 0.1009 - val_sar_loss: 0.1142 - val_fus_loss: 0.2475 - val_loss: 0.4625
+2022-01-19 17:30:41,673:INFO:train:Epoch 3/10
+2022-01-19 17:31:40,592:INFO:train:368/368 - 59s - opt_accuracy: 0.8068 - sar_accuracy: 0.8128 - fus_accuracy: 0.5456 - opt_loss: 0.1133 - sar_loss: 0.1223 - fus_loss: 0.2678 - loss: 0.5034 - val_opt_accuracy: 0.8378 - val_sar_accuracy: 0.8265 - val_fus_accuracy: 0.5245 - val_opt_loss: 0.0958 - val_sar_loss: 0.1063 - val_fus_loss: 0.2628 - val_loss: 0.4649
+2022-01-19 17:31:40,608:INFO:train:Epoch 4/10
+2022-01-19 17:32:39,527:INFO:train:368/368 - 59s - opt_accuracy: 0.8144 - sar_accuracy: 0.8266 - fus_accuracy: 0.5375 - opt_loss: 0.1087 - sar_loss: 0.1101 - fus_loss: 0.2708 - loss: 0.4896 - val_opt_accuracy: 0.8346 - val_sar_accuracy: 0.8272 - val_fus_accuracy: 0.5226 - val_opt_loss: 0.0961 - val_sar_loss: 0.1053 - val_fus_loss: 0.2591 - val_loss: 0.4604
+2022-01-19 17:32:39,542:INFO:train:Epoch 5/10
+2022-01-19 17:33:38,477:INFO:train:368/368 - 59s - opt_accuracy: 0.8202 - sar_accuracy: 0.8325 - fus_accuracy: 0.5408 - opt_loss: 0.1056 - sar_loss: 0.1052 - fus_loss: 0.2712 - loss: 0.4820 - val_opt_accuracy: 0.8403 - val_sar_accuracy: 0.8259 - val_fus_accuracy: 0.4942 - val_opt_loss: 0.0916 - val_sar_loss: 0.1066 - val_fus_loss: 0.2671 - val_loss: 0.4653
+2022-01-19 17:33:38,493:INFO:train:Epoch 6/10
+2022-01-19 17:34:37,537:INFO:train:368/368 - 59s - opt_accuracy: 0.8267 - sar_accuracy: 0.8372 - fus_accuracy: 0.5394 - opt_loss: 0.1023 - sar_loss: 0.1017 - fus_loss: 0.2708 - loss: 0.4747 - val_opt_accuracy: 0.8430 - val_sar_accuracy: 0.8197 - val_fus_accuracy: 0.5120 - val_opt_loss: 0.0915 - val_sar_loss: 0.1107 - val_fus_loss: 0.2778 - val_loss: 0.4799
+2022-01-19 17:34:37,553:INFO:train:Epoch 7/10
+2022-01-19 17:35:36,534:INFO:train:368/368 - 59s - opt_accuracy: 0.8330 - sar_accuracy: 0.8424 - fus_accuracy: 0.5406 - opt_loss: 0.0997 - sar_loss: 0.0982 - fus_loss: 0.2699 - loss: 0.4678 - val_opt_accuracy: 0.8456 - val_sar_accuracy: 0.8272 - val_fus_accuracy: 0.5211 - val_opt_loss: 0.0943 - val_sar_loss: 0.0965 - val_fus_loss: 0.3080 - val_loss: 0.4987
+2022-01-19 17:35:36,550:INFO:train:Epoch 8/10
+2022-01-19 17:36:35,484:INFO:train:368/368 - 59s - opt_accuracy: 0.8376 - sar_accuracy: 0.8428 - fus_accuracy: 0.5418 - opt_loss: 0.0978 - sar_loss: 0.0976 - fus_loss: 0.2696 - loss: 0.4651 - val_opt_accuracy: 0.8440 - val_sar_accuracy: 0.8474 - val_fus_accuracy: 0.5043 - val_opt_loss: 0.0922 - val_sar_loss: 0.0860 - val_fus_loss: 0.2931 - val_loss: 0.4714
+2022-01-19 17:36:35,500:INFO:train:Epoch 9/10
+2022-01-19 17:37:34,466:INFO:train:368/368 - 59s - opt_accuracy: 0.8421 - sar_accuracy: 0.8467 - fus_accuracy: 0.5427 - opt_loss: 0.0949 - sar_loss: 0.0955 - fus_loss: 0.2684 - loss: 0.4588 - val_opt_accuracy: 0.8426 - val_sar_accuracy: 0.8159 - val_fus_accuracy: 0.5282 - val_opt_loss: 0.0933 - val_sar_loss: 0.1069 - val_fus_loss: 0.2851 - val_loss: 0.4853
+2022-01-19 17:37:34,482:INFO:train:Epoch 10/10
+2022-01-19 17:38:33,323:INFO:train:368/368 - 59s - opt_accuracy: 0.8437 - sar_accuracy: 0.8489 - fus_accuracy: 0.5421 - opt_loss: 0.0938 - sar_loss: 0.0935 - fus_loss: 0.2689 - loss: 0.4562 - val_opt_accuracy: 0.8555 - val_sar_accuracy: 0.7947 - val_fus_accuracy: 0.5076 - val_opt_loss: 0.0881 - val_sar_loss: 0.0990 - val_fus_loss: 0.2846 - val_loss: 0.4717
+2022-01-19 17:38:33,448:INFO:train:Epoch 1/500
+2022-01-19 17:40:44,411:INFO:train:368/368 - 131s - opt_accuracy: 0.8006 - sar_accuracy: 0.8090 - fus_accuracy: 0.8463 - opt_loss: 0.1198 - sar_loss: 0.1227 - fus_loss: 0.1354 - loss: 0.3778 - val_opt_accuracy: 0.8168 - val_sar_accuracy: 0.8236 - val_fus_accuracy: 0.8570 - val_opt_loss: 0.0962 - val_sar_loss: 0.1093 - val_fus_loss: 0.1196 - val_loss: 0.3251
+2022-01-19 17:40:44,411:INFO:train:
+2022-01-19 17:40:44,411:INFO:train:Epoch 00001: val_fus_loss improved from inf to 0.11957, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 17:40:44,770:INFO:train:Epoch 2/500
+2022-01-19 17:42:47,233:INFO:train:368/368 - 122s - opt_accuracy: 0.8186 - sar_accuracy: 0.8329 - fus_accuracy: 0.8689 - opt_loss: 0.1094 - sar_loss: 0.1057 - fus_loss: 0.1078 - loss: 0.3229 - val_opt_accuracy: 0.8304 - val_sar_accuracy: 0.8161 - val_fus_accuracy: 0.8572 - val_opt_loss: 0.0968 - val_sar_loss: 0.1166 - val_fus_loss: 0.1103 - val_loss: 0.3237
+2022-01-19 17:42:47,233:INFO:train:
+2022-01-19 17:42:47,233:INFO:train:Epoch 00002: val_fus_loss improved from 0.11957 to 0.11026, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 17:42:47,343:INFO:train:Epoch 3/500
+2022-01-19 17:44:49,853:INFO:train:368/368 - 123s - opt_accuracy: 0.8251 - sar_accuracy: 0.8374 - fus_accuracy: 0.8751 - opt_loss: 0.1052 - sar_loss: 0.1026 - fus_loss: 0.0940 - loss: 0.3018 - val_opt_accuracy: 0.8426 - val_sar_accuracy: 0.8299 - val_fus_accuracy: 0.8639 - val_opt_loss: 0.0908 - val_sar_loss: 0.0978 - val_fus_loss: 0.0900 - val_loss: 0.2785
+2022-01-19 17:44:49,853:INFO:train:
+2022-01-19 17:44:49,853:INFO:train:Epoch 00003: val_fus_loss improved from 0.11026 to 0.08995, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 17:44:49,962:INFO:train:Epoch 4/500
+2022-01-19 17:46:52,316:INFO:train:368/368 - 122s - opt_accuracy: 0.8322 - sar_accuracy: 0.8446 - fus_accuracy: 0.8807 - opt_loss: 0.1013 - sar_loss: 0.0972 - fus_loss: 0.0849 - loss: 0.2835 - val_opt_accuracy: 0.8341 - val_sar_accuracy: 0.8381 - val_fus_accuracy: 0.8642 - val_opt_loss: 0.0931 - val_sar_loss: 0.0970 - val_fus_loss: 0.0955 - val_loss: 0.2857
+2022-01-19 17:46:52,316:INFO:train:
+2022-01-19 17:46:52,316:INFO:train:Epoch 00004: val_fus_loss did not improve from 0.08995
+2022-01-19 17:46:52,332:INFO:train:Epoch 5/500
+2022-01-19 17:48:54,707:INFO:train:368/368 - 122s - opt_accuracy: 0.8385 - sar_accuracy: 0.8468 - fus_accuracy: 0.8833 - opt_loss: 0.0977 - sar_loss: 0.0944 - fus_loss: 0.0790 - loss: 0.2710 - val_opt_accuracy: 0.8435 - val_sar_accuracy: 0.8328 - val_fus_accuracy: 0.8617 - val_opt_loss: 0.0915 - val_sar_loss: 0.0995 - val_fus_loss: 0.0908 - val_loss: 0.2818
+2022-01-19 17:48:54,707:INFO:train:
+2022-01-19 17:48:54,707:INFO:train:Epoch 00005: val_fus_loss did not improve from 0.08995
+2022-01-19 17:48:54,722:INFO:train:Epoch 6/500
+2022-01-19 17:50:56,983:INFO:train:368/368 - 122s - opt_accuracy: 0.8411 - sar_accuracy: 0.8499 - fus_accuracy: 0.8854 - opt_loss: 0.0956 - sar_loss: 0.0929 - fus_loss: 0.0752 - loss: 0.2636 - val_opt_accuracy: 0.8496 - val_sar_accuracy: 0.8432 - val_fus_accuracy: 0.8585 - val_opt_loss: 0.0927 - val_sar_loss: 0.0838 - val_fus_loss: 0.0892 - val_loss: 0.2657
+2022-01-19 17:50:56,983:INFO:train:
+2022-01-19 17:50:56,983:INFO:train:Epoch 00006: val_fus_loss improved from 0.08995 to 0.08923, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 17:50:57,092:INFO:train:Epoch 7/500
+2022-01-19 17:52:59,149:INFO:train:368/368 - 122s - opt_accuracy: 0.8454 - sar_accuracy: 0.8518 - fus_accuracy: 0.8880 - opt_loss: 0.0928 - sar_loss: 0.0913 - fus_loss: 0.0721 - loss: 0.2562 - val_opt_accuracy: 0.8472 - val_sar_accuracy: 0.8514 - val_fus_accuracy: 0.8616 - val_opt_loss: 0.0940 - val_sar_loss: 0.0796 - val_fus_loss: 0.0794 - val_loss: 0.2531
+2022-01-19 17:52:59,149:INFO:train:
+2022-01-19 17:52:59,149:INFO:train:Epoch 00007: val_fus_loss improved from 0.08923 to 0.07942, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 17:52:59,243:INFO:train:Epoch 8/500
+2022-01-19 17:55:01,487:INFO:train:368/368 - 122s - opt_accuracy: 0.8494 - sar_accuracy: 0.8563 - fus_accuracy: 0.8907 - opt_loss: 0.0894 - sar_loss: 0.0876 - fus_loss: 0.0691 - loss: 0.2462 - val_opt_accuracy: 0.8496 - val_sar_accuracy: 0.8558 - val_fus_accuracy: 0.8560 - val_opt_loss: 0.0905 - val_sar_loss: 0.0821 - val_fus_loss: 0.0836 - val_loss: 0.2562
+2022-01-19 17:55:01,487:INFO:train:
+2022-01-19 17:55:01,487:INFO:train:Epoch 00008: val_fus_loss did not improve from 0.07942
+2022-01-19 17:55:01,503:INFO:train:Epoch 9/500
+2022-01-19 17:57:03,826:INFO:train:368/368 - 122s - opt_accuracy: 0.8534 - sar_accuracy: 0.8535 - fus_accuracy: 0.8912 - opt_loss: 0.0874 - sar_loss: 0.0909 - fus_loss: 0.0680 - loss: 0.2463 - val_opt_accuracy: 0.8578 - val_sar_accuracy: 0.8458 - val_fus_accuracy: 0.8740 - val_opt_loss: 0.0883 - val_sar_loss: 0.0876 - val_fus_loss: 0.0799 - val_loss: 0.2557
+2022-01-19 17:57:03,826:INFO:train:
+2022-01-19 17:57:03,826:INFO:train:Epoch 00009: val_fus_loss did not improve from 0.07942
+2022-01-19 17:57:03,841:INFO:train:Epoch 10/500
+2022-01-19 17:59:05,961:INFO:train:368/368 - 122s - opt_accuracy: 0.8576 - sar_accuracy: 0.8596 - fus_accuracy: 0.8955 - opt_loss: 0.0839 - sar_loss: 0.0853 - fus_loss: 0.0635 - loss: 0.2327 - val_opt_accuracy: 0.8489 - val_sar_accuracy: 0.8510 - val_fus_accuracy: 0.8751 - val_opt_loss: 0.0962 - val_sar_loss: 0.0841 - val_fus_loss: 0.0805 - val_loss: 0.2609
+2022-01-19 17:59:05,961:INFO:train:
+2022-01-19 17:59:05,961:INFO:train:Epoch 00010: val_fus_loss did not improve from 0.07942
+2022-01-19 17:59:05,976:INFO:train:Epoch 11/500
+2022-01-19 18:01:08,289:INFO:train:368/368 - 122s - opt_accuracy: 0.8601 - sar_accuracy: 0.8613 - fus_accuracy: 0.8978 - opt_loss: 0.0811 - sar_loss: 0.0829 - fus_loss: 0.0610 - loss: 0.2250 - val_opt_accuracy: 0.8511 - val_sar_accuracy: 0.8465 - val_fus_accuracy: 0.8776 - val_opt_loss: 0.0978 - val_sar_loss: 0.0923 - val_fus_loss: 0.0833 - val_loss: 0.2734
+2022-01-19 18:01:08,289:INFO:train:
+2022-01-19 18:01:08,289:INFO:train:Epoch 00011: val_fus_loss did not improve from 0.07942
+2022-01-19 18:01:08,320:INFO:train:Epoch 12/500
+2022-01-19 18:03:10,690:INFO:train:368/368 - 122s - opt_accuracy: 0.8631 - sar_accuracy: 0.8663 - fus_accuracy: 0.9007 - opt_loss: 0.0784 - sar_loss: 0.0790 - fus_loss: 0.0583 - loss: 0.2157 - val_opt_accuracy: 0.8461 - val_sar_accuracy: 0.8520 - val_fus_accuracy: 0.8713 - val_opt_loss: 0.0970 - val_sar_loss: 0.0840 - val_fus_loss: 0.0840 - val_loss: 0.2650
+2022-01-19 18:03:10,690:INFO:train:
+2022-01-19 18:03:10,690:INFO:train:Epoch 00012: val_fus_loss did not improve from 0.07942
+2022-01-19 18:03:10,705:INFO:train:Epoch 13/500
+2022-01-19 18:05:12,935:INFO:train:368/368 - 122s - opt_accuracy: 0.8676 - sar_accuracy: 0.8677 - fus_accuracy: 0.9025 - opt_loss: 0.0756 - sar_loss: 0.0780 - fus_loss: 0.0565 - loss: 0.2100 - val_opt_accuracy: 0.8481 - val_sar_accuracy: 0.8525 - val_fus_accuracy: 0.8717 - val_opt_loss: 0.0965 - val_sar_loss: 0.0812 - val_fus_loss: 0.0785 - val_loss: 0.2561
+2022-01-19 18:05:12,935:INFO:train:
+2022-01-19 18:05:12,935:INFO:train:Epoch 00013: val_fus_loss improved from 0.07942 to 0.07845, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_0.h5
+2022-01-19 18:05:13,045:INFO:train:Epoch 14/500
+2022-01-19 18:07:14,821:INFO:train:368/368 - 122s - opt_accuracy: 0.8710 - sar_accuracy: 0.8695 - fus_accuracy: 0.9051 - opt_loss: 0.0723 - sar_loss: 0.0766 - fus_loss: 0.0540 - loss: 0.2029 - val_opt_accuracy: 0.8470 - val_sar_accuracy: 0.8533 - val_fus_accuracy: 0.8724 - val_opt_loss: 0.1082 - val_sar_loss: 0.0818 - val_fus_loss: 0.0857 - val_loss: 0.2757
+2022-01-19 18:07:14,821:INFO:train:
+2022-01-19 18:07:14,821:INFO:train:Epoch 00014: val_fus_loss did not improve from 0.07845
+2022-01-19 18:07:14,836:INFO:train:Epoch 15/500
+2022-01-19 18:09:16,753:INFO:train:368/368 - 122s - opt_accuracy: 0.8761 - sar_accuracy: 0.8734 - fus_accuracy: 0.9091 - opt_loss: 0.0689 - sar_loss: 0.0735 - fus_loss: 0.0509 - loss: 0.1933 - val_opt_accuracy: 0.8503 - val_sar_accuracy: 0.8537 - val_fus_accuracy: 0.8700 - val_opt_loss: 0.1069 - val_sar_loss: 0.0816 - val_fus_loss: 0.0826 - val_loss: 0.2712
+2022-01-19 18:09:16,753:INFO:train:
+2022-01-19 18:09:16,753:INFO:train:Epoch 00015: val_fus_loss did not improve from 0.07845
+2022-01-19 18:09:16,768:INFO:train:Epoch 16/500
+2022-01-19 18:11:18,560:INFO:train:368/368 - 122s - opt_accuracy: 0.8797 - sar_accuracy: 0.8760 - fus_accuracy: 0.9105 - opt_loss: 0.0652 - sar_loss: 0.0712 - fus_loss: 0.0487 - loss: 0.1852 - val_opt_accuracy: 0.8471 - val_sar_accuracy: 0.8560 - val_fus_accuracy: 0.8769 - val_opt_loss: 0.1150 - val_sar_loss: 0.0825 - val_fus_loss: 0.0836 - val_loss: 0.2811
+2022-01-19 18:11:18,560:INFO:train:
+2022-01-19 18:11:18,560:INFO:train:Epoch 00016: val_fus_loss did not improve from 0.07845
+2022-01-19 18:11:18,575:INFO:train:Epoch 17/500
+2022-01-19 18:13:20,382:INFO:train:368/368 - 122s - opt_accuracy: 0.8829 - sar_accuracy: 0.8769 - fus_accuracy: 0.9132 - opt_loss: 0.0628 - sar_loss: 0.0697 - fus_loss: 0.0469 - loss: 0.1794 - val_opt_accuracy: 0.8394 - val_sar_accuracy: 0.8458 - val_fus_accuracy: 0.8724 - val_opt_loss: 0.1109 - val_sar_loss: 0.0931 - val_fus_loss: 0.0890 - val_loss: 0.2930
+2022-01-19 18:13:20,382:INFO:train:
+2022-01-19 18:13:20,382:INFO:train:Epoch 00017: val_fus_loss did not improve from 0.07845
+2022-01-19 18:13:20,398:INFO:train:Epoch 18/500
+2022-01-19 18:15:22,158:INFO:train:368/368 - 122s - opt_accuracy: 0.8844 - sar_accuracy: 0.8791 - fus_accuracy: 0.9142 - opt_loss: 0.0624 - sar_loss: 0.0683 - fus_loss: 0.0459 - loss: 0.1766 - val_opt_accuracy: 0.8492 - val_sar_accuracy: 0.8585 - val_fus_accuracy: 0.8767 - val_opt_loss: 0.1093 - val_sar_loss: 0.0835 - val_fus_loss: 0.0814 - val_loss: 0.2742
+2022-01-19 18:15:22,158:INFO:train:
+2022-01-19 18:15:22,158:INFO:train:Epoch 00018: val_fus_loss did not improve from 0.07845
+2022-01-19 18:15:22,174:INFO:train:Epoch 19/500
+2022-01-19 18:17:23,918:INFO:train:368/368 - 122s - opt_accuracy: 0.8889 - sar_accuracy: 0.8816 - fus_accuracy: 0.9171 - opt_loss: 0.0581 - sar_loss: 0.0660 - fus_loss: 0.0435 - loss: 0.1677 - val_opt_accuracy: 0.8426 - val_sar_accuracy: 0.8496 - val_fus_accuracy: 0.8711 - val_opt_loss: 0.1155 - val_sar_loss: 0.0893 - val_fus_loss: 0.0900 - val_loss: 0.2948
+2022-01-19 18:17:23,918:INFO:train:
+2022-01-19 18:17:23,918:INFO:train:Epoch 00019: val_fus_loss did not improve from 0.07845
+2022-01-19 18:17:23,934:INFO:train:Epoch 20/500
+2022-01-19 18:19:25,694:INFO:train:368/368 - 122s - opt_accuracy: 0.8931 - sar_accuracy: 0.8845 - fus_accuracy: 0.9195 - opt_loss: 0.0553 - sar_loss: 0.0637 - fus_loss: 0.0414 - loss: 0.1603 - val_opt_accuracy: 0.8490 - val_sar_accuracy: 0.8441 - val_fus_accuracy: 0.8682 - val_opt_loss: 0.1243 - val_sar_loss: 0.0914 - val_fus_loss: 0.0912 - val_loss: 0.3069
+2022-01-19 18:19:25,694:INFO:train:
+2022-01-19 18:19:25,694:INFO:train:Epoch 00020: val_fus_loss did not improve from 0.07845
+2022-01-19 18:19:25,710:INFO:train:Epoch 21/500
+2022-01-19 18:21:27,517:INFO:train:368/368 - 122s - opt_accuracy: 0.8953 - sar_accuracy: 0.8864 - fus_accuracy: 0.9211 - opt_loss: 0.0539 - sar_loss: 0.0622 - fus_loss: 0.0402 - loss: 0.1562 - val_opt_accuracy: 0.8523 - val_sar_accuracy: 0.8454 - val_fus_accuracy: 0.8753 - val_opt_loss: 0.1287 - val_sar_loss: 0.0887 - val_fus_loss: 0.0878 - val_loss: 0.3052
+2022-01-19 18:21:27,517:INFO:train:
+2022-01-19 18:21:27,517:INFO:train:Epoch 00021: val_fus_loss did not improve from 0.07845
+2022-01-19 18:21:27,533:INFO:train:Epoch 22/500
+2022-01-19 18:23:29,199:INFO:train:368/368 - 122s - opt_accuracy: 0.8959 - sar_accuracy: 0.8876 - fus_accuracy: 0.9220 - opt_loss: 0.0530 - sar_loss: 0.0612 - fus_loss: 0.0396 - loss: 0.1539 - val_opt_accuracy: 0.8499 - val_sar_accuracy: 0.8536 - val_fus_accuracy: 0.8764 - val_opt_loss: 0.1311 - val_sar_loss: 0.0879 - val_fus_loss: 0.0847 - val_loss: 0.3037
+2022-01-19 18:23:29,199:INFO:train:
+2022-01-19 18:23:29,199:INFO:train:Epoch 00022: val_fus_loss did not improve from 0.07845
+2022-01-19 18:23:29,215:INFO:train:Epoch 23/500
+2022-01-19 18:25:30,944:INFO:train:368/368 - 122s - opt_accuracy: 0.9010 - sar_accuracy: 0.8893 - fus_accuracy: 0.9238 - opt_loss: 0.0493 - sar_loss: 0.0593 - fus_loss: 0.0378 - loss: 0.1465 - val_opt_accuracy: 0.8476 - val_sar_accuracy: 0.8561 - val_fus_accuracy: 0.8733 - val_opt_loss: 0.1362 - val_sar_loss: 0.0846 - val_fus_loss: 0.0846 - val_loss: 0.3053
+2022-01-19 18:25:30,944:INFO:train:
+2022-01-19 18:25:30,944:INFO:train:Epoch 00023: val_fus_loss did not improve from 0.07845
+2022-01-19 18:25:30,959:INFO:train:Epoch 24/500
+2022-01-19 18:27:32,719:INFO:train:368/368 - 122s - opt_accuracy: 0.9009 - sar_accuracy: 0.8908 - fus_accuracy: 0.9242 - opt_loss: 0.0498 - sar_loss: 0.0584 - fus_loss: 0.0376 - loss: 0.1458 - val_opt_accuracy: 0.8428 - val_sar_accuracy: 0.8570 - val_fus_accuracy: 0.8730 - val_opt_loss: 0.1314 - val_sar_loss: 0.0852 - val_fus_loss: 0.0878 - val_loss: 0.3044
+2022-01-19 18:27:32,719:INFO:train:
+2022-01-19 18:27:32,719:INFO:train:Epoch 00024: val_fus_loss did not improve from 0.07845
+2022-01-19 18:27:32,735:INFO:train:Epoch 25/500
+2022-01-19 18:29:34,652:INFO:train:368/368 - 122s - opt_accuracy: 0.9038 - sar_accuracy: 0.8918 - fus_accuracy: 0.9263 - opt_loss: 0.0476 - sar_loss: 0.0569 - fus_loss: 0.0359 - loss: 0.1404 - val_opt_accuracy: 0.8486 - val_sar_accuracy: 0.8516 - val_fus_accuracy: 0.8717 - val_opt_loss: 0.1179 - val_sar_loss: 0.0876 - val_fus_loss: 0.0910 - val_loss: 0.2965
+2022-01-19 18:29:34,652:INFO:train:
+2022-01-19 18:29:34,652:INFO:train:Epoch 00025: val_fus_loss did not improve from 0.07845
+2022-01-19 18:29:34,667:INFO:train:Epoch 26/500
+2022-01-19 18:31:36,521:INFO:train:368/368 - 122s - opt_accuracy: 0.9064 - sar_accuracy: 0.8938 - fus_accuracy: 0.9277 - opt_loss: 0.0455 - sar_loss: 0.0552 - fus_loss: 0.0346 - loss: 0.1353 - val_opt_accuracy: 0.8511 - val_sar_accuracy: 0.8572 - val_fus_accuracy: 0.8712 - val_opt_loss: 0.1207 - val_sar_loss: 0.0886 - val_fus_loss: 0.0863 - val_loss: 0.2956
+2022-01-19 18:31:36,521:INFO:train:
+2022-01-19 18:31:36,521:INFO:train:Epoch 00026: val_fus_loss did not improve from 0.07845
+2022-01-19 18:31:36,537:INFO:train:Epoch 27/500
+2022-01-19 18:33:38,188:INFO:train:368/368 - 122s - opt_accuracy: 0.9079 - sar_accuracy: 0.8956 - fus_accuracy: 0.9286 - opt_loss: 0.0446 - sar_loss: 0.0541 - fus_loss: 0.0342 - loss: 0.1328 - val_opt_accuracy: 0.8460 - val_sar_accuracy: 0.8530 - val_fus_accuracy: 0.8705 - val_opt_loss: 0.1296 - val_sar_loss: 0.0900 - val_fus_loss: 0.0856 - val_loss: 0.3051
+2022-01-19 18:33:38,188:INFO:train:
+2022-01-19 18:33:38,188:INFO:train:Epoch 00027: val_fus_loss did not improve from 0.07845
+2022-01-19 18:33:38,203:INFO:train:Epoch 28/500
+2022-01-19 18:35:40,110:INFO:train:368/368 - 122s - opt_accuracy: 0.9101 - sar_accuracy: 0.8971 - fus_accuracy: 0.9303 - opt_loss: 0.0428 - sar_loss: 0.0528 - fus_loss: 0.0329 - loss: 0.1285 - val_opt_accuracy: 0.8447 - val_sar_accuracy: 0.8514 - val_fus_accuracy: 0.8696 - val_opt_loss: 0.1348 - val_sar_loss: 0.0984 - val_fus_loss: 0.0920 - val_loss: 0.3252
+2022-01-19 18:35:40,110:INFO:train:
+2022-01-19 18:35:40,110:INFO:train:Epoch 00028: val_fus_loss did not improve from 0.07845
+2022-01-19 18:35:40,110:INFO:train:Epoch 00028: early stopping
+2022-01-19 18:35:59,312:INFO:train:Training Experiment 16 time: 1
+2022-01-19 18:35:59,312:INFO:train:Training Conditions: CrossFusion_ResUNET_FUS_mix
+2022-01-19 18:39:36,303:INFO:train:Image1 stack:
+2022-01-19 18:39:36,303:INFO:train:(17730, 9203, 30)
+2022-01-19 18:39:36,303:INFO:train:Image2 stack:
+2022-01-19 18:39:36,303:INFO:train:(17730, 9203, 30)
+2022-01-19 18:39:40,240:INFO:train:Labels stack:
+2022-01-19 18:39:40,240:INFO:train:(17730, 9203)
+2022-01-19 18:40:25,707:INFO:train:Model: "cross_fusion__res_unet"
+2022-01-19 18:40:25,707:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,707:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-19 18:40:25,707:INFO:train:=================================================================
+2022-01-19 18:40:25,722:INFO:train:opt_encoder (ResUNET_Encoder multiple                  1066944
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:sar_encoder (ResUNET_Encoder multiple                  1054272
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:opt_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:sar_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:fus_cross (CrossFusion)      multiple                  518531
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:opt_classifier (Classifier)  multiple                  195
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:25,722:INFO:train:sar_classifier (Classifier)  multiple                  195
+2022-01-19 18:40:25,722:INFO:train:=================================================================
+2022-01-19 18:40:25,722:INFO:train:Total params: 3,082,953
+2022-01-19 18:40:25,722:INFO:train:Trainable params: 3,082,057
+2022-01-19 18:40:25,722:INFO:train:Non-trainable params: 896
+2022-01-19 18:40:25,722:INFO:train:_________________________________________________________________
+2022-01-19 18:40:26,926:INFO:train:Epoch 1/10
+2022-01-19 18:41:56,687:INFO:train:368/368 - 90s - opt_accuracy: 0.7580 - sar_accuracy: 0.7472 - fus_accuracy: 0.6106 - opt_loss: 0.1380 - sar_loss: 0.1586 - fus_loss: 0.2599 - loss: 0.5565 - val_opt_accuracy: 0.7970 - val_sar_accuracy: 0.7819 - val_fus_accuracy: 0.6031 - val_opt_loss: 0.1070 - val_sar_loss: 0.1288 - val_fus_loss: 0.2583 - val_loss: 0.4941
+2022-01-19 18:41:56,703:INFO:train:Epoch 2/10
+2022-01-19 18:42:54,481:INFO:train:368/368 - 58s - opt_accuracy: 0.7938 - sar_accuracy: 0.7713 - fus_accuracy: 0.6178 - opt_loss: 0.1185 - sar_loss: 0.1490 - fus_loss: 0.2570 - loss: 0.5245 - val_opt_accuracy: 0.8184 - val_sar_accuracy: 0.8113 - val_fus_accuracy: 0.6372 - val_opt_loss: 0.0984 - val_sar_loss: 0.1162 - val_fus_loss: 0.2366 - val_loss: 0.4512
+2022-01-19 18:42:54,497:INFO:train:Epoch 3/10
+2022-01-19 18:43:52,401:INFO:train:368/368 - 58s - opt_accuracy: 0.8079 - sar_accuracy: 0.8103 - fus_accuracy: 0.6046 - opt_loss: 0.1115 - sar_loss: 0.1234 - fus_loss: 0.2624 - loss: 0.4973 - val_opt_accuracy: 0.8247 - val_sar_accuracy: 0.8310 - val_fus_accuracy: 0.6483 - val_opt_loss: 0.0980 - val_sar_loss: 0.1087 - val_fus_loss: 0.2248 - val_loss: 0.4316
+2022-01-19 18:43:52,416:INFO:train:Epoch 4/10
+2022-01-19 18:44:50,695:INFO:train:368/368 - 58s - opt_accuracy: 0.8168 - sar_accuracy: 0.8281 - fus_accuracy: 0.5979 - opt_loss: 0.1076 - sar_loss: 0.1103 - fus_loss: 0.2619 - loss: 0.4798 - val_opt_accuracy: 0.8323 - val_sar_accuracy: 0.8399 - val_fus_accuracy: 0.6180 - val_opt_loss: 0.0965 - val_sar_loss: 0.0963 - val_fus_loss: 0.2603 - val_loss: 0.4531
+2022-01-19 18:44:50,711:INFO:train:Epoch 5/10
+2022-01-19 18:45:49,067:INFO:train:368/368 - 58s - opt_accuracy: 0.8253 - sar_accuracy: 0.8346 - fus_accuracy: 0.5909 - opt_loss: 0.1041 - sar_loss: 0.1045 - fus_loss: 0.2624 - loss: 0.4709 - val_opt_accuracy: 0.8390 - val_sar_accuracy: 0.8437 - val_fus_accuracy: 0.6204 - val_opt_loss: 0.0941 - val_sar_loss: 0.0882 - val_fus_loss: 0.2606 - val_loss: 0.4429
+2022-01-19 18:45:49,083:INFO:train:Epoch 6/10
+2022-01-19 18:46:47,518:INFO:train:368/368 - 58s - opt_accuracy: 0.8318 - sar_accuracy: 0.8388 - fus_accuracy: 0.5898 - opt_loss: 0.1010 - sar_loss: 0.1005 - fus_loss: 0.2627 - loss: 0.4642 - val_opt_accuracy: 0.8433 - val_sar_accuracy: 0.8450 - val_fus_accuracy: 0.6307 - val_opt_loss: 0.0911 - val_sar_loss: 0.0877 - val_fus_loss: 0.2594 - val_loss: 0.4383
+2022-01-19 18:46:47,534:INFO:train:Epoch 7/10
+2022-01-19 18:47:45,922:INFO:train:368/368 - 58s - opt_accuracy: 0.8358 - sar_accuracy: 0.8396 - fus_accuracy: 0.5849 - opt_loss: 0.0978 - sar_loss: 0.1005 - fus_loss: 0.2668 - loss: 0.4650 - val_opt_accuracy: 0.8328 - val_sar_accuracy: 0.8414 - val_fus_accuracy: 0.6080 - val_opt_loss: 0.0986 - val_sar_loss: 0.0914 - val_fus_loss: 0.2668 - val_loss: 0.4568
+2022-01-19 18:47:45,937:INFO:train:Epoch 8/10
+2022-01-19 18:48:44,294:INFO:train:368/368 - 58s - opt_accuracy: 0.8386 - sar_accuracy: 0.8441 - fus_accuracy: 0.5855 - opt_loss: 0.0963 - sar_loss: 0.0967 - fus_loss: 0.2659 - loss: 0.4589 - val_opt_accuracy: 0.8409 - val_sar_accuracy: 0.8473 - val_fus_accuracy: 0.6307 - val_opt_loss: 0.0928 - val_sar_loss: 0.0897 - val_fus_loss: 0.2524 - val_loss: 0.4349
+2022-01-19 18:48:44,310:INFO:train:Epoch 9/10
+2022-01-19 18:49:42,557:INFO:train:368/368 - 58s - opt_accuracy: 0.8425 - sar_accuracy: 0.8447 - fus_accuracy: 0.5823 - opt_loss: 0.0939 - sar_loss: 0.0966 - fus_loss: 0.2678 - loss: 0.4582 - val_opt_accuracy: 0.8421 - val_sar_accuracy: 0.8471 - val_fus_accuracy: 0.6137 - val_opt_loss: 0.0946 - val_sar_loss: 0.0899 - val_fus_loss: 0.2611 - val_loss: 0.4456
+2022-01-19 18:49:42,573:INFO:train:Epoch 10/10
+2022-01-19 18:50:41,101:INFO:train:368/368 - 59s - opt_accuracy: 0.8466 - sar_accuracy: 0.8446 - fus_accuracy: 0.5837 - opt_loss: 0.0914 - sar_loss: 0.0974 - fus_loss: 0.2689 - loss: 0.4577 - val_opt_accuracy: 0.8390 - val_sar_accuracy: 0.8537 - val_fus_accuracy: 0.6243 - val_opt_loss: 0.0973 - val_sar_loss: 0.0819 - val_fus_loss: 0.2548 - val_loss: 0.4341
+2022-01-19 18:50:41,242:INFO:train:Epoch 1/500
+2022-01-19 18:52:50,268:INFO:train:368/368 - 129s - opt_accuracy: 0.8037 - sar_accuracy: 0.8057 - fus_accuracy: 0.8504 - opt_loss: 0.1171 - sar_loss: 0.1252 - fus_loss: 0.1351 - loss: 0.3774 - val_opt_accuracy: 0.8188 - val_sar_accuracy: 0.8396 - val_fus_accuracy: 0.8458 - val_opt_loss: 0.0997 - val_sar_loss: 0.0900 - val_fus_loss: 0.1234 - val_loss: 0.3131
+2022-01-19 18:52:50,268:INFO:train:
+2022-01-19 18:52:50,268:INFO:train:Epoch 00001: val_fus_loss improved from inf to 0.12339, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_1.h5
+2022-01-19 18:52:50,596:INFO:train:Epoch 2/500
+2022-01-19 18:54:50,559:INFO:train:368/368 - 120s - opt_accuracy: 0.8178 - sar_accuracy: 0.8269 - fus_accuracy: 0.8698 - opt_loss: 0.1088 - sar_loss: 0.1106 - fus_loss: 0.1099 - loss: 0.3293 - val_opt_accuracy: 0.8131 - val_sar_accuracy: 0.8404 - val_fus_accuracy: 0.8183 - val_opt_loss: 0.1086 - val_sar_loss: 0.0966 - val_fus_loss: 0.1286 - val_loss: 0.3338
+2022-01-19 18:54:50,559:INFO:train:
+2022-01-19 18:54:50,559:INFO:train:Epoch 00002: val_fus_loss did not improve from 0.12339
+2022-01-19 18:54:50,575:INFO:train:Epoch 3/500
+2022-01-19 18:56:50,632:INFO:train:368/368 - 120s - opt_accuracy: 0.8259 - sar_accuracy: 0.8382 - fus_accuracy: 0.8756 - opt_loss: 0.1047 - sar_loss: 0.1028 - fus_loss: 0.0977 - loss: 0.3052 - val_opt_accuracy: 0.8398 - val_sar_accuracy: 0.8439 - val_fus_accuracy: 0.8607 - val_opt_loss: 0.0953 - val_sar_loss: 0.0897 - val_fus_loss: 0.1022 - val_loss: 0.2872
+2022-01-19 18:56:50,632:INFO:train:
+2022-01-19 18:56:50,632:INFO:train:Epoch 00003: val_fus_loss improved from 0.12339 to 0.10217, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_1.h5
+2022-01-19 18:56:50,741:INFO:train:Epoch 4/500
+2022-01-19 18:58:50,673:INFO:train:368/368 - 120s - opt_accuracy: 0.8316 - sar_accuracy: 0.8383 - fus_accuracy: 0.8798 - opt_loss: 0.1010 - sar_loss: 0.1019 - fus_loss: 0.0886 - loss: 0.2914 - val_opt_accuracy: 0.8331 - val_sar_accuracy: 0.8377 - val_fus_accuracy: 0.8418 - val_opt_loss: 0.0969 - val_sar_loss: 0.0927 - val_fus_loss: 0.1079 - val_loss: 0.2975
+2022-01-19 18:58:50,673:INFO:train:
+2022-01-19 18:58:50,673:INFO:train:Epoch 00004: val_fus_loss did not improve from 0.10217
+2022-01-19 18:58:50,689:INFO:train:Epoch 5/500
+2022-01-19 19:00:50,824:INFO:train:368/368 - 120s - opt_accuracy: 0.8389 - sar_accuracy: 0.8455 - fus_accuracy: 0.8837 - opt_loss: 0.0971 - sar_loss: 0.0959 - fus_loss: 0.0815 - loss: 0.2746 - val_opt_accuracy: 0.8419 - val_sar_accuracy: 0.8375 - val_fus_accuracy: 0.8515 - val_opt_loss: 0.0964 - val_sar_loss: 0.0873 - val_fus_loss: 0.0896 - val_loss: 0.2733
+2022-01-19 19:00:50,824:INFO:train:
+2022-01-19 19:00:50,824:INFO:train:Epoch 00005: val_fus_loss improved from 0.10217 to 0.08957, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_1.h5
+2022-01-19 19:00:50,934:INFO:train:Epoch 6/500
+2022-01-19 19:02:50,997:INFO:train:368/368 - 120s - opt_accuracy: 0.8436 - sar_accuracy: 0.8471 - fus_accuracy: 0.8855 - opt_loss: 0.0944 - sar_loss: 0.0946 - fus_loss: 0.0774 - loss: 0.2664 - val_opt_accuracy: 0.8317 - val_sar_accuracy: 0.8234 - val_fus_accuracy: 0.8382 - val_opt_loss: 0.1045 - val_sar_loss: 0.1160 - val_fus_loss: 0.1169 - val_loss: 0.3375
+2022-01-19 19:02:50,997:INFO:train:
+2022-01-19 19:02:50,997:INFO:train:Epoch 00006: val_fus_loss did not improve from 0.08957
+2022-01-19 19:02:51,013:INFO:train:Epoch 7/500
+2022-01-19 19:04:50,898:INFO:train:368/368 - 120s - opt_accuracy: 0.8468 - sar_accuracy: 0.8488 - fus_accuracy: 0.8880 - opt_loss: 0.0924 - sar_loss: 0.0942 - fus_loss: 0.0742 - loss: 0.2608 - val_opt_accuracy: 0.8431 - val_sar_accuracy: 0.8496 - val_fus_accuracy: 0.8731 - val_opt_loss: 0.0932 - val_sar_loss: 0.0814 - val_fus_loss: 0.0763 - val_loss: 0.2509
+2022-01-19 19:04:50,898:INFO:train:
+2022-01-19 19:04:50,898:INFO:train:Epoch 00007: val_fus_loss improved from 0.08957 to 0.07630, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_1.h5
+2022-01-19 19:04:51,008:INFO:train:Epoch 8/500
+2022-01-19 19:06:50,841:INFO:train:368/368 - 120s - opt_accuracy: 0.8512 - sar_accuracy: 0.8553 - fus_accuracy: 0.8913 - opt_loss: 0.0890 - sar_loss: 0.0878 - fus_loss: 0.0697 - loss: 0.2465 - val_opt_accuracy: 0.8402 - val_sar_accuracy: 0.8490 - val_fus_accuracy: 0.8633 - val_opt_loss: 0.0974 - val_sar_loss: 0.0797 - val_fus_loss: 0.0825 - val_loss: 0.2595
+2022-01-19 19:06:50,841:INFO:train:
+2022-01-19 19:06:50,841:INFO:train:Epoch 00008: val_fus_loss did not improve from 0.07630
+2022-01-19 19:06:50,856:INFO:train:Epoch 9/500
+2022-01-19 19:08:50,757:INFO:train:368/368 - 120s - opt_accuracy: 0.8540 - sar_accuracy: 0.8564 - fus_accuracy: 0.8937 - opt_loss: 0.0863 - sar_loss: 0.0885 - fus_loss: 0.0668 - loss: 0.2416 - val_opt_accuracy: 0.8464 - val_sar_accuracy: 0.8542 - val_fus_accuracy: 0.8688 - val_opt_loss: 0.0943 - val_sar_loss: 0.0814 - val_fus_loss: 0.0772 - val_loss: 0.2529
+2022-01-19 19:08:50,773:INFO:train:
+2022-01-19 19:08:50,773:INFO:train:Epoch 00009: val_fus_loss did not improve from 0.07630
+2022-01-19 19:08:50,773:INFO:train:Epoch 10/500
+2022-01-19 19:10:50,861:INFO:train:368/368 - 120s - opt_accuracy: 0.8609 - sar_accuracy: 0.8586 - fus_accuracy: 0.8962 - opt_loss: 0.0827 - sar_loss: 0.0857 - fus_loss: 0.0641 - loss: 0.2324 - val_opt_accuracy: 0.8499 - val_sar_accuracy: 0.8534 - val_fus_accuracy: 0.8633 - val_opt_loss: 0.0942 - val_sar_loss: 0.0819 - val_fus_loss: 0.0853 - val_loss: 0.2615
+2022-01-19 19:10:50,861:INFO:train:
+2022-01-19 19:10:50,861:INFO:train:Epoch 00010: val_fus_loss did not improve from 0.07630
+2022-01-19 19:10:50,877:INFO:train:Epoch 11/500
+2022-01-19 19:12:51,106:INFO:train:368/368 - 120s - opt_accuracy: 0.8629 - sar_accuracy: 0.8637 - fus_accuracy: 0.8995 - opt_loss: 0.0802 - sar_loss: 0.0838 - fus_loss: 0.0613 - loss: 0.2252 - val_opt_accuracy: 0.8493 - val_sar_accuracy: 0.8600 - val_fus_accuracy: 0.8700 - val_opt_loss: 0.0942 - val_sar_loss: 0.0803 - val_fus_loss: 0.0839 - val_loss: 0.2584
+2022-01-19 19:12:51,106:INFO:train:
+2022-01-19 19:12:51,106:INFO:train:Epoch 00011: val_fus_loss did not improve from 0.07630
+2022-01-19 19:12:51,122:INFO:train:Epoch 12/500
+2022-01-19 19:14:51,273:INFO:train:368/368 - 120s - opt_accuracy: 0.8665 - sar_accuracy: 0.8673 - fus_accuracy: 0.9024 - opt_loss: 0.0770 - sar_loss: 0.0803 - fus_loss: 0.0581 - loss: 0.2154 - val_opt_accuracy: 0.8448 - val_sar_accuracy: 0.8496 - val_fus_accuracy: 0.8645 - val_opt_loss: 0.0996 - val_sar_loss: 0.0890 - val_fus_loss: 0.0854 - val_loss: 0.2740
+2022-01-19 19:14:51,273:INFO:train:
+2022-01-19 19:14:51,273:INFO:train:Epoch 00012: val_fus_loss did not improve from 0.07630
+2022-01-19 19:14:51,288:INFO:train:Epoch 13/500
+2022-01-19 19:16:51,361:INFO:train:368/368 - 120s - opt_accuracy: 0.8722 - sar_accuracy: 0.8678 - fus_accuracy: 0.9054 - opt_loss: 0.0726 - sar_loss: 0.0787 - fus_loss: 0.0549 - loss: 0.2062 - val_opt_accuracy: 0.8392 - val_sar_accuracy: 0.8456 - val_fus_accuracy: 0.8465 - val_opt_loss: 0.1032 - val_sar_loss: 0.0893 - val_fus_loss: 0.0969 - val_loss: 0.2894
+2022-01-19 19:16:51,361:INFO:train:
+2022-01-19 19:16:51,361:INFO:train:Epoch 00013: val_fus_loss did not improve from 0.07630
+2022-01-19 19:16:51,377:INFO:train:Epoch 14/500
+2022-01-19 19:18:51,215:INFO:train:368/368 - 120s - opt_accuracy: 0.8756 - sar_accuracy: 0.8713 - fus_accuracy: 0.9078 - opt_loss: 0.0697 - sar_loss: 0.0763 - fus_loss: 0.0525 - loss: 0.1985 - val_opt_accuracy: 0.8480 - val_sar_accuracy: 0.8583 - val_fus_accuracy: 0.8717 - val_opt_loss: 0.1007 - val_sar_loss: 0.0827 - val_fus_loss: 0.0866 - val_loss: 0.2700
+2022-01-19 19:18:51,215:INFO:train:
+2022-01-19 19:18:51,215:INFO:train:Epoch 00014: val_fus_loss did not improve from 0.07630
+2022-01-19 19:18:51,231:INFO:train:Epoch 15/500
+2022-01-19 19:20:51,366:INFO:train:368/368 - 120s - opt_accuracy: 0.8791 - sar_accuracy: 0.8738 - fus_accuracy: 0.9098 - opt_loss: 0.0669 - sar_loss: 0.0736 - fus_loss: 0.0506 - loss: 0.1910 - val_opt_accuracy: 0.8507 - val_sar_accuracy: 0.8565 - val_fus_accuracy: 0.8688 - val_opt_loss: 0.1076 - val_sar_loss: 0.0815 - val_fus_loss: 0.0887 - val_loss: 0.2778
+2022-01-19 19:20:51,366:INFO:train:
+2022-01-19 19:20:51,366:INFO:train:Epoch 00015: val_fus_loss did not improve from 0.07630
+2022-01-19 19:20:51,382:INFO:train:Epoch 16/500
+2022-01-19 19:22:51,642:INFO:train:368/368 - 120s - opt_accuracy: 0.8798 - sar_accuracy: 0.8754 - fus_accuracy: 0.9102 - opt_loss: 0.0669 - sar_loss: 0.0728 - fus_loss: 0.0503 - loss: 0.1900 - val_opt_accuracy: 0.8468 - val_sar_accuracy: 0.8540 - val_fus_accuracy: 0.8678 - val_opt_loss: 0.1057 - val_sar_loss: 0.0828 - val_fus_loss: 0.0840 - val_loss: 0.2726
+2022-01-19 19:22:51,642:INFO:train:
+2022-01-19 19:22:51,642:INFO:train:Epoch 00016: val_fus_loss did not improve from 0.07630
+2022-01-19 19:22:51,658:INFO:train:Epoch 17/500
+2022-01-19 19:24:51,715:INFO:train:368/368 - 120s - opt_accuracy: 0.8844 - sar_accuracy: 0.8794 - fus_accuracy: 0.9141 - opt_loss: 0.0614 - sar_loss: 0.0687 - fus_loss: 0.0466 - loss: 0.1767 - val_opt_accuracy: 0.8505 - val_sar_accuracy: 0.8559 - val_fus_accuracy: 0.8685 - val_opt_loss: 0.1032 - val_sar_loss: 0.0834 - val_fus_loss: 0.0828 - val_loss: 0.2693
+2022-01-19 19:24:51,715:INFO:train:
+2022-01-19 19:24:51,715:INFO:train:Epoch 00017: val_fus_loss did not improve from 0.07630
+2022-01-19 19:24:51,730:INFO:train:Epoch 18/500
+2022-01-19 19:26:51,835:INFO:train:368/368 - 120s - opt_accuracy: 0.8872 - sar_accuracy: 0.8824 - fus_accuracy: 0.9164 - opt_loss: 0.0598 - sar_loss: 0.0667 - fus_loss: 0.0444 - loss: 0.1710 - val_opt_accuracy: 0.8497 - val_sar_accuracy: 0.8566 - val_fus_accuracy: 0.8698 - val_opt_loss: 0.1188 - val_sar_loss: 0.0830 - val_fus_loss: 0.0866 - val_loss: 0.2884
+2022-01-19 19:26:51,835:INFO:train:
+2022-01-19 19:26:51,835:INFO:train:Epoch 00018: val_fus_loss did not improve from 0.07630
+2022-01-19 19:26:51,850:INFO:train:Epoch 19/500
+2022-01-19 19:28:51,735:INFO:train:368/368 - 120s - opt_accuracy: 0.8897 - sar_accuracy: 0.8829 - fus_accuracy: 0.9173 - opt_loss: 0.0573 - sar_loss: 0.0655 - fus_loss: 0.0431 - loss: 0.1659 - val_opt_accuracy: 0.8516 - val_sar_accuracy: 0.8547 - val_fus_accuracy: 0.8739 - val_opt_loss: 0.1143 - val_sar_loss: 0.0831 - val_fus_loss: 0.0821 - val_loss: 0.2795
+2022-01-19 19:28:51,735:INFO:train:
+2022-01-19 19:28:51,735:INFO:train:Epoch 00019: val_fus_loss did not improve from 0.07630
+2022-01-19 19:28:51,751:INFO:train:Epoch 20/500
+2022-01-19 19:30:51,895:INFO:train:368/368 - 120s - opt_accuracy: 0.8944 - sar_accuracy: 0.8846 - fus_accuracy: 0.9199 - opt_loss: 0.0542 - sar_loss: 0.0634 - fus_loss: 0.0412 - loss: 0.1589 - val_opt_accuracy: 0.8461 - val_sar_accuracy: 0.8508 - val_fus_accuracy: 0.8653 - val_opt_loss: 0.1201 - val_sar_loss: 0.0884 - val_fus_loss: 0.0873 - val_loss: 0.2958
+2022-01-19 19:30:51,895:INFO:train:
+2022-01-19 19:30:51,895:INFO:train:Epoch 00020: val_fus_loss did not improve from 0.07630
+2022-01-19 19:30:51,910:INFO:train:Epoch 21/500
+2022-01-19 19:32:51,827:INFO:train:368/368 - 120s - opt_accuracy: 0.8966 - sar_accuracy: 0.8869 - fus_accuracy: 0.9211 - opt_loss: 0.0521 - sar_loss: 0.0612 - fus_loss: 0.0398 - loss: 0.1530 - val_opt_accuracy: 0.8431 - val_sar_accuracy: 0.8557 - val_fus_accuracy: 0.8607 - val_opt_loss: 0.1371 - val_sar_loss: 0.0852 - val_fus_loss: 0.0980 - val_loss: 0.3202
+2022-01-19 19:32:51,827:INFO:train:
+2022-01-19 19:32:51,827:INFO:train:Epoch 00021: val_fus_loss did not improve from 0.07630
+2022-01-19 19:32:51,843:INFO:train:Epoch 22/500
+2022-01-19 19:34:52,119:INFO:train:368/368 - 120s - opt_accuracy: 0.8984 - sar_accuracy: 0.8888 - fus_accuracy: 0.9226 - opt_loss: 0.0506 - sar_loss: 0.0603 - fus_loss: 0.0388 - loss: 0.1497 - val_opt_accuracy: 0.8482 - val_sar_accuracy: 0.8547 - val_fus_accuracy: 0.8647 - val_opt_loss: 0.1312 - val_sar_loss: 0.0881 - val_fus_loss: 0.0895 - val_loss: 0.3089
+2022-01-19 19:34:52,119:INFO:train:
+2022-01-19 19:34:52,119:INFO:train:Epoch 00022: val_fus_loss did not improve from 0.07630
+2022-01-19 19:34:52,119:INFO:train:Epoch 00022: early stopping
+2022-01-19 19:35:01,013:INFO:train:Training Experiment 16 time: 2
+2022-01-19 19:35:01,013:INFO:train:Training Conditions: CrossFusion_ResUNET_FUS_mix
+2022-01-19 19:38:38,456:INFO:train:Image1 stack:
+2022-01-19 19:38:38,456:INFO:train:(17730, 9203, 30)
+2022-01-19 19:38:38,456:INFO:train:Image2 stack:
+2022-01-19 19:38:38,456:INFO:train:(17730, 9203, 30)
+2022-01-19 19:38:42,378:INFO:train:Labels stack:
+2022-01-19 19:38:42,378:INFO:train:(17730, 9203)
+2022-01-19 19:39:12,423:INFO:train:Model: "cross_fusion__res_unet"
+2022-01-19 19:39:12,423:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,423:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-19 19:39:12,423:INFO:train:=================================================================
+2022-01-19 19:39:12,423:INFO:train:opt_encoder (ResUNET_Encoder multiple                  1066944
+2022-01-19 19:39:12,423:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:sar_encoder (ResUNET_Encoder multiple                  1054272
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:opt_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:sar_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:fus_cross (CrossFusion)      multiple                  518531
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:opt_classifier (Classifier)  multiple                  195
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:12,439:INFO:train:sar_classifier (Classifier)  multiple                  195
+2022-01-19 19:39:12,439:INFO:train:=================================================================
+2022-01-19 19:39:12,439:INFO:train:Total params: 3,082,953
+2022-01-19 19:39:12,439:INFO:train:Trainable params: 3,082,057
+2022-01-19 19:39:12,439:INFO:train:Non-trainable params: 896
+2022-01-19 19:39:12,439:INFO:train:_________________________________________________________________
+2022-01-19 19:39:13,955:INFO:train:Epoch 1/10
+2022-01-19 19:40:38,873:INFO:train:368/368 - 85s - opt_accuracy: 0.7450 - sar_accuracy: 0.7471 - fus_accuracy: 0.6301 - opt_loss: 0.1454 - sar_loss: 0.1591 - fus_loss: 0.2515 - loss: 0.5560 - val_opt_accuracy: 0.8018 - val_sar_accuracy: 0.7560 - val_fus_accuracy: 0.6142 - val_opt_loss: 0.1043 - val_sar_loss: 0.1379 - val_fus_loss: 0.2616 - val_loss: 0.5038
+2022-01-19 19:40:38,888:INFO:train:Epoch 2/10
+2022-01-19 19:41:36,448:INFO:train:368/368 - 58s - opt_accuracy: 0.7934 - sar_accuracy: 0.7665 - fus_accuracy: 0.6335 - opt_loss: 0.1207 - sar_loss: 0.1513 - fus_loss: 0.2507 - loss: 0.5227 - val_opt_accuracy: 0.8118 - val_sar_accuracy: 0.7811 - val_fus_accuracy: 0.5997 - val_opt_loss: 0.1080 - val_sar_loss: 0.1357 - val_fus_loss: 0.2634 - val_loss: 0.5070
+2022-01-19 19:41:36,464:INFO:train:Epoch 3/10
+2022-01-19 19:42:34,102:INFO:train:368/368 - 58s - opt_accuracy: 0.8064 - sar_accuracy: 0.7884 - fus_accuracy: 0.6366 - opt_loss: 0.1126 - sar_loss: 0.1375 - fus_loss: 0.2503 - loss: 0.5003 - val_opt_accuracy: 0.8206 - val_sar_accuracy: 0.8319 - val_fus_accuracy: 0.6157 - val_opt_loss: 0.0977 - val_sar_loss: 0.1000 - val_fus_loss: 0.2533 - val_loss: 0.4511
+2022-01-19 19:42:34,118:INFO:train:Epoch 4/10
+2022-01-19 19:43:31,678:INFO:train:368/368 - 58s - opt_accuracy: 0.8131 - sar_accuracy: 0.8264 - fus_accuracy: 0.6152 - opt_loss: 0.1089 - sar_loss: 0.1107 - fus_loss: 0.2620 - loss: 0.4817 - val_opt_accuracy: 0.8169 - val_sar_accuracy: 0.8246 - val_fus_accuracy: 0.6080 - val_opt_loss: 0.0940 - val_sar_loss: 0.1044 - val_fus_loss: 0.2587 - val_loss: 0.4571
+2022-01-19 19:43:31,693:INFO:train:Epoch 5/10
+2022-01-19 19:44:29,316:INFO:train:368/368 - 58s - opt_accuracy: 0.8182 - sar_accuracy: 0.8301 - fus_accuracy: 0.6130 - opt_loss: 0.1057 - sar_loss: 0.1069 - fus_loss: 0.2640 - loss: 0.4765 - val_opt_accuracy: 0.8085 - val_sar_accuracy: 0.8274 - val_fus_accuracy: 0.5937 - val_opt_loss: 0.0995 - val_sar_loss: 0.1036 - val_fus_loss: 0.2593 - val_loss: 0.4623
+2022-01-19 19:44:29,331:INFO:train:Epoch 6/10
+2022-01-19 19:45:26,985:INFO:train:368/368 - 58s - opt_accuracy: 0.8254 - sar_accuracy: 0.8371 - fus_accuracy: 0.6046 - opt_loss: 0.1024 - sar_loss: 0.1021 - fus_loss: 0.2678 - loss: 0.4723 - val_opt_accuracy: 0.7904 - val_sar_accuracy: 0.7814 - val_fus_accuracy: 0.5891 - val_opt_loss: 0.1187 - val_sar_loss: 0.1334 - val_fus_loss: 0.2754 - val_loss: 0.5276
+2022-01-19 19:45:27,001:INFO:train:Epoch 7/10
+2022-01-19 19:46:24,545:INFO:train:368/368 - 58s - opt_accuracy: 0.8306 - sar_accuracy: 0.8418 - fus_accuracy: 0.6014 - opt_loss: 0.0998 - sar_loss: 0.0985 - fus_loss: 0.2684 - loss: 0.4668 - val_opt_accuracy: 0.8200 - val_sar_accuracy: 0.7806 - val_fus_accuracy: 0.5800 - val_opt_loss: 0.0989 - val_sar_loss: 0.1257 - val_fus_loss: 0.2843 - val_loss: 0.5089
+2022-01-19 19:46:24,561:INFO:train:Epoch 8/10
+2022-01-19 19:47:22,261:INFO:train:368/368 - 58s - opt_accuracy: 0.8364 - sar_accuracy: 0.8425 - fus_accuracy: 0.6000 - opt_loss: 0.0970 - sar_loss: 0.0982 - fus_loss: 0.2696 - loss: 0.4648 - val_opt_accuracy: 0.8268 - val_sar_accuracy: 0.8006 - val_fus_accuracy: 0.6231 - val_opt_loss: 0.1024 - val_sar_loss: 0.1214 - val_fus_loss: 0.2552 - val_loss: 0.4790
+2022-01-19 19:47:22,277:INFO:train:Epoch 9/10
+2022-01-19 19:48:19,852:INFO:train:368/368 - 58s - opt_accuracy: 0.8421 - sar_accuracy: 0.8451 - fus_accuracy: 0.5992 - opt_loss: 0.0940 - sar_loss: 0.0965 - fus_loss: 0.2700 - loss: 0.4604 - val_opt_accuracy: 0.8070 - val_sar_accuracy: 0.8436 - val_fus_accuracy: 0.6065 - val_opt_loss: 0.1136 - val_sar_loss: 0.0922 - val_fus_loss: 0.2458 - val_loss: 0.4516
+2022-01-19 19:48:19,868:INFO:train:Epoch 10/10
+2022-01-19 19:49:17,240:INFO:train:368/368 - 57s - opt_accuracy: 0.8458 - sar_accuracy: 0.8457 - fus_accuracy: 0.5985 - opt_loss: 0.0920 - sar_loss: 0.0953 - fus_loss: 0.2701 - loss: 0.4574 - val_opt_accuracy: 0.8329 - val_sar_accuracy: 0.8375 - val_fus_accuracy: 0.5973 - val_opt_loss: 0.0975 - val_sar_loss: 0.0989 - val_fus_loss: 0.2596 - val_loss: 0.4560
+2022-01-19 19:49:17,381:INFO:train:Epoch 1/500
+2022-01-19 19:51:26,547:INFO:train:368/368 - 129s - opt_accuracy: 0.7997 - sar_accuracy: 0.8060 - fus_accuracy: 0.8496 - opt_loss: 0.1181 - sar_loss: 0.1251 - fus_loss: 0.1335 - loss: 0.3768 - val_opt_accuracy: 0.8149 - val_sar_accuracy: 0.8314 - val_fus_accuracy: 0.8373 - val_opt_loss: 0.1006 - val_sar_loss: 0.1043 - val_fus_loss: 0.1258 - val_loss: 0.3307
+2022-01-19 19:51:26,547:INFO:train:
+2022-01-19 19:51:26,547:INFO:train:Epoch 00001: val_fus_loss improved from inf to 0.12582, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 19:51:26,922:INFO:train:Epoch 2/500
+2022-01-19 19:53:27,839:INFO:train:368/368 - 121s - opt_accuracy: 0.8205 - sar_accuracy: 0.8329 - fus_accuracy: 0.8715 - opt_loss: 0.1079 - sar_loss: 0.1059 - fus_loss: 0.1047 - loss: 0.3184 - val_opt_accuracy: 0.8371 - val_sar_accuracy: 0.8430 - val_fus_accuracy: 0.8601 - val_opt_loss: 0.0920 - val_sar_loss: 0.0913 - val_fus_loss: 0.1013 - val_loss: 0.2847
+2022-01-19 19:53:27,839:INFO:train:
+2022-01-19 19:53:27,839:INFO:train:Epoch 00002: val_fus_loss improved from 0.12582 to 0.10133, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 19:53:27,948:INFO:train:Epoch 3/500
+2022-01-19 19:55:28,646:INFO:train:368/368 - 121s - opt_accuracy: 0.8256 - sar_accuracy: 0.8397 - fus_accuracy: 0.8754 - opt_loss: 0.1041 - sar_loss: 0.1013 - fus_loss: 0.0922 - loss: 0.2976 - val_opt_accuracy: 0.8429 - val_sar_accuracy: 0.8498 - val_fus_accuracy: 0.8640 - val_opt_loss: 0.0920 - val_sar_loss: 0.0850 - val_fus_loss: 0.0935 - val_loss: 0.2704
+2022-01-19 19:55:28,646:INFO:train:
+2022-01-19 19:55:28,646:INFO:train:Epoch 00003: val_fus_loss improved from 0.10133 to 0.09345, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 19:55:28,755:INFO:train:Epoch 4/500
+2022-01-19 19:57:29,609:INFO:train:368/368 - 121s - opt_accuracy: 0.8338 - sar_accuracy: 0.8358 - fus_accuracy: 0.8793 - opt_loss: 0.1001 - sar_loss: 0.1010 - fus_loss: 0.0846 - loss: 0.2856 - val_opt_accuracy: 0.8298 - val_sar_accuracy: 0.8510 - val_fus_accuracy: 0.8717 - val_opt_loss: 0.0959 - val_sar_loss: 0.0842 - val_fus_loss: 0.0857 - val_loss: 0.2659
+2022-01-19 19:57:29,609:INFO:train:
+2022-01-19 19:57:29,609:INFO:train:Epoch 00004: val_fus_loss improved from 0.09345 to 0.08572, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 19:57:29,719:INFO:train:Epoch 5/500
+2022-01-19 19:59:30,635:INFO:train:368/368 - 121s - opt_accuracy: 0.8397 - sar_accuracy: 0.8455 - fus_accuracy: 0.8824 - opt_loss: 0.0970 - sar_loss: 0.0961 - fus_loss: 0.0792 - loss: 0.2723 - val_opt_accuracy: 0.8270 - val_sar_accuracy: 0.8460 - val_fus_accuracy: 0.8595 - val_opt_loss: 0.1015 - val_sar_loss: 0.0883 - val_fus_loss: 0.0942 - val_loss: 0.2841
+2022-01-19 19:59:30,635:INFO:train:
+2022-01-19 19:59:30,635:INFO:train:Epoch 00005: val_fus_loss did not improve from 0.08572
+2022-01-19 19:59:30,651:INFO:train:Epoch 6/500
+2022-01-19 20:01:31,552:INFO:train:368/368 - 121s - opt_accuracy: 0.8407 - sar_accuracy: 0.8470 - fus_accuracy: 0.8841 - opt_loss: 0.0957 - sar_loss: 0.0957 - fus_loss: 0.0762 - loss: 0.2676 - val_opt_accuracy: 0.8379 - val_sar_accuracy: 0.8518 - val_fus_accuracy: 0.8640 - val_opt_loss: 0.0958 - val_sar_loss: 0.0821 - val_fus_loss: 0.0836 - val_loss: 0.2616
+2022-01-19 20:01:31,552:INFO:train:
+2022-01-19 20:01:31,552:INFO:train:Epoch 00006: val_fus_loss improved from 0.08572 to 0.08364, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 20:01:31,646:INFO:train:Epoch 7/500
+2022-01-19 20:03:32,359:INFO:train:368/368 - 121s - opt_accuracy: 0.8463 - sar_accuracy: 0.8522 - fus_accuracy: 0.8888 - opt_loss: 0.0913 - sar_loss: 0.0906 - fus_loss: 0.0713 - loss: 0.2532 - val_opt_accuracy: 0.8411 - val_sar_accuracy: 0.8554 - val_fus_accuracy: 0.8726 - val_opt_loss: 0.0904 - val_sar_loss: 0.0827 - val_fus_loss: 0.0801 - val_loss: 0.2532
+2022-01-19 20:03:32,359:INFO:train:
+2022-01-19 20:03:32,359:INFO:train:Epoch 00007: val_fus_loss improved from 0.08364 to 0.08006, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 20:03:32,468:INFO:train:Epoch 8/500
+2022-01-19 20:05:33,180:INFO:train:368/368 - 121s - opt_accuracy: 0.8512 - sar_accuracy: 0.8579 - fus_accuracy: 0.8916 - opt_loss: 0.0882 - sar_loss: 0.0873 - fus_loss: 0.0681 - loss: 0.2436 - val_opt_accuracy: 0.8363 - val_sar_accuracy: 0.8366 - val_fus_accuracy: 0.8702 - val_opt_loss: 0.0977 - val_sar_loss: 0.0935 - val_fus_loss: 0.0812 - val_loss: 0.2724
+2022-01-19 20:05:33,180:INFO:train:
+2022-01-19 20:05:33,180:INFO:train:Epoch 00008: val_fus_loss did not improve from 0.08006
+2022-01-19 20:05:33,195:INFO:train:Epoch 9/500
+2022-01-19 20:07:33,784:INFO:train:368/368 - 121s - opt_accuracy: 0.8547 - sar_accuracy: 0.8561 - fus_accuracy: 0.8927 - opt_loss: 0.0849 - sar_loss: 0.0877 - fus_loss: 0.0665 - loss: 0.2392 - val_opt_accuracy: 0.8351 - val_sar_accuracy: 0.8512 - val_fus_accuracy: 0.8725 - val_opt_loss: 0.1018 - val_sar_loss: 0.0862 - val_fus_loss: 0.0798 - val_loss: 0.2677
+2022-01-19 20:07:33,784:INFO:train:
+2022-01-19 20:07:33,784:INFO:train:Epoch 00009: val_fus_loss improved from 0.08006 to 0.07980, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 20:07:33,893:INFO:train:Epoch 10/500
+2022-01-19 20:09:34,138:INFO:train:368/368 - 120s - opt_accuracy: 0.8592 - sar_accuracy: 0.8593 - fus_accuracy: 0.8961 - opt_loss: 0.0822 - sar_loss: 0.0860 - fus_loss: 0.0632 - loss: 0.2314 - val_opt_accuracy: 0.8273 - val_sar_accuracy: 0.8575 - val_fus_accuracy: 0.8749 - val_opt_loss: 0.1016 - val_sar_loss: 0.0811 - val_fus_loss: 0.0813 - val_loss: 0.2639
+2022-01-19 20:09:34,138:INFO:train:
+2022-01-19 20:09:34,138:INFO:train:Epoch 00010: val_fus_loss did not improve from 0.07980
+2022-01-19 20:09:34,153:INFO:train:Epoch 11/500
+2022-01-19 20:11:34,586:INFO:train:368/368 - 120s - opt_accuracy: 0.8623 - sar_accuracy: 0.8629 - fus_accuracy: 0.8984 - opt_loss: 0.0793 - sar_loss: 0.0835 - fus_loss: 0.0612 - loss: 0.2240 - val_opt_accuracy: 0.8379 - val_sar_accuracy: 0.8475 - val_fus_accuracy: 0.8646 - val_opt_loss: 0.0975 - val_sar_loss: 0.0890 - val_fus_loss: 0.0831 - val_loss: 0.2696
+2022-01-19 20:11:34,586:INFO:train:
+2022-01-19 20:11:34,586:INFO:train:Epoch 00011: val_fus_loss did not improve from 0.07980
+2022-01-19 20:11:34,601:INFO:train:Epoch 12/500
+2022-01-19 20:13:34,924:INFO:train:368/368 - 120s - opt_accuracy: 0.8661 - sar_accuracy: 0.8656 - fus_accuracy: 0.9006 - opt_loss: 0.0763 - sar_loss: 0.0810 - fus_loss: 0.0590 - loss: 0.2163 - val_opt_accuracy: 0.8419 - val_sar_accuracy: 0.8615 - val_fus_accuracy: 0.8710 - val_opt_loss: 0.1028 - val_sar_loss: 0.0787 - val_fus_loss: 0.0825 - val_loss: 0.2640
+2022-01-19 20:13:34,924:INFO:train:
+2022-01-19 20:13:34,924:INFO:train:Epoch 00012: val_fus_loss did not improve from 0.07980
+2022-01-19 20:13:34,940:INFO:train:Epoch 13/500
+2022-01-19 20:15:35,184:INFO:train:368/368 - 120s - opt_accuracy: 0.8703 - sar_accuracy: 0.8694 - fus_accuracy: 0.9041 - opt_loss: 0.0730 - sar_loss: 0.0781 - fus_loss: 0.0558 - loss: 0.2069 - val_opt_accuracy: 0.8364 - val_sar_accuracy: 0.8563 - val_fus_accuracy: 0.8762 - val_opt_loss: 0.1135 - val_sar_loss: 0.0810 - val_fus_loss: 0.0762 - val_loss: 0.2708
+2022-01-19 20:15:35,184:INFO:train:
+2022-01-19 20:15:35,184:INFO:train:Epoch 00013: val_fus_loss improved from 0.07980 to 0.07621, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_2.h5
+2022-01-19 20:15:35,294:INFO:train:Epoch 14/500
+2022-01-19 20:17:35,570:INFO:train:368/368 - 120s - opt_accuracy: 0.8742 - sar_accuracy: 0.8713 - fus_accuracy: 0.9060 - opt_loss: 0.0703 - sar_loss: 0.0765 - fus_loss: 0.0540 - loss: 0.2008 - val_opt_accuracy: 0.8431 - val_sar_accuracy: 0.8534 - val_fus_accuracy: 0.8710 - val_opt_loss: 0.1005 - val_sar_loss: 0.0848 - val_fus_loss: 0.0778 - val_loss: 0.2631
+2022-01-19 20:17:35,570:INFO:train:
+2022-01-19 20:17:35,585:INFO:train:Epoch 00014: val_fus_loss did not improve from 0.07621
+2022-01-19 20:17:35,585:INFO:train:Epoch 15/500
+2022-01-19 20:19:36,049:INFO:train:368/368 - 120s - opt_accuracy: 0.8772 - sar_accuracy: 0.8721 - fus_accuracy: 0.9075 - opt_loss: 0.0684 - sar_loss: 0.0751 - fus_loss: 0.0523 - loss: 0.1958 - val_opt_accuracy: 0.8395 - val_sar_accuracy: 0.8610 - val_fus_accuracy: 0.8692 - val_opt_loss: 0.1055 - val_sar_loss: 0.0787 - val_fus_loss: 0.0784 - val_loss: 0.2626
+2022-01-19 20:19:36,049:INFO:train:
+2022-01-19 20:19:36,049:INFO:train:Epoch 00015: val_fus_loss did not improve from 0.07621
+2022-01-19 20:19:36,064:INFO:train:Epoch 16/500
+2022-01-19 20:21:36,762:INFO:train:368/368 - 121s - opt_accuracy: 0.8829 - sar_accuracy: 0.8757 - fus_accuracy: 0.9108 - opt_loss: 0.0634 - sar_loss: 0.0728 - fus_loss: 0.0497 - loss: 0.1859 - val_opt_accuracy: 0.8485 - val_sar_accuracy: 0.8509 - val_fus_accuracy: 0.8702 - val_opt_loss: 0.1004 - val_sar_loss: 0.0874 - val_fus_loss: 0.0810 - val_loss: 0.2687
+2022-01-19 20:21:36,762:INFO:train:
+2022-01-19 20:21:36,762:INFO:train:Epoch 00016: val_fus_loss did not improve from 0.07621
+2022-01-19 20:21:36,778:INFO:train:Epoch 17/500
+2022-01-19 20:23:36,976:INFO:train:368/368 - 120s - opt_accuracy: 0.8863 - sar_accuracy: 0.8780 - fus_accuracy: 0.9138 - opt_loss: 0.0608 - sar_loss: 0.0702 - fus_loss: 0.0470 - loss: 0.1780 - val_opt_accuracy: 0.8400 - val_sar_accuracy: 0.8598 - val_fus_accuracy: 0.8611 - val_opt_loss: 0.1146 - val_sar_loss: 0.0796 - val_fus_loss: 0.0828 - val_loss: 0.2771
+2022-01-19 20:23:36,976:INFO:train:
+2022-01-19 20:23:36,991:INFO:train:Epoch 00017: val_fus_loss did not improve from 0.07621
+2022-01-19 20:23:37,007:INFO:train:Epoch 18/500
+2022-01-19 20:25:37,236:INFO:train:368/368 - 120s - opt_accuracy: 0.8893 - sar_accuracy: 0.8799 - fus_accuracy: 0.9163 - opt_loss: 0.0586 - sar_loss: 0.0683 - fus_loss: 0.0449 - loss: 0.1717 - val_opt_accuracy: 0.8473 - val_sar_accuracy: 0.8570 - val_fus_accuracy: 0.8646 - val_opt_loss: 0.1168 - val_sar_loss: 0.0818 - val_fus_loss: 0.0870 - val_loss: 0.2856
+2022-01-19 20:25:37,236:INFO:train:
+2022-01-19 20:25:37,236:INFO:train:Epoch 00018: val_fus_loss did not improve from 0.07621
+2022-01-19 20:25:37,252:INFO:train:Epoch 19/500
+2022-01-19 20:27:37,574:INFO:train:368/368 - 120s - opt_accuracy: 0.8925 - sar_accuracy: 0.8817 - fus_accuracy: 0.9181 - opt_loss: 0.0555 - sar_loss: 0.0667 - fus_loss: 0.0430 - loss: 0.1652 - val_opt_accuracy: 0.8326 - val_sar_accuracy: 0.8566 - val_fus_accuracy: 0.8648 - val_opt_loss: 0.1219 - val_sar_loss: 0.0837 - val_fus_loss: 0.0837 - val_loss: 0.2893
+2022-01-19 20:27:37,574:INFO:train:
+2022-01-19 20:27:37,574:INFO:train:Epoch 00019: val_fus_loss did not improve from 0.07621
+2022-01-19 20:27:37,590:INFO:train:Epoch 20/500
+2022-01-19 20:29:37,819:INFO:train:368/368 - 120s - opt_accuracy: 0.8928 - sar_accuracy: 0.8825 - fus_accuracy: 0.9187 - opt_loss: 0.0558 - sar_loss: 0.0661 - fus_loss: 0.0427 - loss: 0.1646 - val_opt_accuracy: 0.8389 - val_sar_accuracy: 0.8535 - val_fus_accuracy: 0.8721 - val_opt_loss: 0.1202 - val_sar_loss: 0.0845 - val_fus_loss: 0.0796 - val_loss: 0.2843
+2022-01-19 20:29:37,819:INFO:train:
+2022-01-19 20:29:37,819:INFO:train:Epoch 00020: val_fus_loss did not improve from 0.07621
+2022-01-19 20:29:37,835:INFO:train:Epoch 21/500
+2022-01-19 20:31:38,205:INFO:train:368/368 - 120s - opt_accuracy: 0.8978 - sar_accuracy: 0.8858 - fus_accuracy: 0.9216 - opt_loss: 0.0515 - sar_loss: 0.0629 - fus_loss: 0.0398 - loss: 0.1543 - val_opt_accuracy: 0.8425 - val_sar_accuracy: 0.8555 - val_fus_accuracy: 0.8665 - val_opt_loss: 0.1186 - val_sar_loss: 0.0878 - val_fus_loss: 0.0868 - val_loss: 0.2931
+2022-01-19 20:31:38,205:INFO:train:
+2022-01-19 20:31:38,205:INFO:train:Epoch 00021: val_fus_loss did not improve from 0.07621
+2022-01-19 20:31:38,220:INFO:train:Epoch 22/500
+2022-01-19 20:33:38,559:INFO:train:368/368 - 120s - opt_accuracy: 0.8978 - sar_accuracy: 0.8866 - fus_accuracy: 0.9214 - opt_loss: 0.0523 - sar_loss: 0.0621 - fus_loss: 0.0398 - loss: 0.1542 - val_opt_accuracy: 0.8410 - val_sar_accuracy: 0.8589 - val_fus_accuracy: 0.8633 - val_opt_loss: 0.1317 - val_sar_loss: 0.0866 - val_fus_loss: 0.0935 - val_loss: 0.3118
+2022-01-19 20:33:38,559:INFO:train:
+2022-01-19 20:33:38,559:INFO:train:Epoch 00022: val_fus_loss did not improve from 0.07621
+2022-01-19 20:33:38,574:INFO:train:Epoch 23/500
+2022-01-19 20:35:38,813:INFO:train:368/368 - 120s - opt_accuracy: 0.9031 - sar_accuracy: 0.8892 - fus_accuracy: 0.9250 - opt_loss: 0.0480 - sar_loss: 0.0601 - fus_loss: 0.0375 - loss: 0.1456 - val_opt_accuracy: 0.8386 - val_sar_accuracy: 0.8569 - val_fus_accuracy: 0.8655 - val_opt_loss: 0.1244 - val_sar_loss: 0.0880 - val_fus_loss: 0.0877 - val_loss: 0.3001
+2022-01-19 20:35:38,813:INFO:train:
+2022-01-19 20:35:38,813:INFO:train:Epoch 00023: val_fus_loss did not improve from 0.07621
+2022-01-19 20:35:38,828:INFO:train:Epoch 24/500
+2022-01-19 20:37:39,292:INFO:train:368/368 - 120s - opt_accuracy: 0.9051 - sar_accuracy: 0.8905 - fus_accuracy: 0.9260 - opt_loss: 0.0468 - sar_loss: 0.0589 - fus_loss: 0.0365 - loss: 0.1423 - val_opt_accuracy: 0.8358 - val_sar_accuracy: 0.8555 - val_fus_accuracy: 0.8711 - val_opt_loss: 0.1378 - val_sar_loss: 0.0879 - val_fus_loss: 0.0961 - val_loss: 0.3219
+2022-01-19 20:37:39,292:INFO:train:
+2022-01-19 20:37:39,292:INFO:train:Epoch 00024: val_fus_loss did not improve from 0.07621
+2022-01-19 20:37:39,323:INFO:train:Epoch 25/500
+2022-01-19 20:39:39,739:INFO:train:368/368 - 120s - opt_accuracy: 0.9074 - sar_accuracy: 0.8911 - fus_accuracy: 0.9269 - opt_loss: 0.0456 - sar_loss: 0.0581 - fus_loss: 0.0357 - loss: 0.1394 - val_opt_accuracy: 0.8385 - val_sar_accuracy: 0.8569 - val_fus_accuracy: 0.8660 - val_opt_loss: 0.1344 - val_sar_loss: 0.0860 - val_fus_loss: 0.0934 - val_loss: 0.3139
+2022-01-19 20:39:39,739:INFO:train:
+2022-01-19 20:39:39,739:INFO:train:Epoch 00025: val_fus_loss did not improve from 0.07621
+2022-01-19 20:39:39,755:INFO:train:Epoch 26/500
+2022-01-19 20:41:40,047:INFO:train:368/368 - 120s - opt_accuracy: 0.9082 - sar_accuracy: 0.8935 - fus_accuracy: 0.9281 - opt_loss: 0.0448 - sar_loss: 0.0561 - fus_loss: 0.0349 - loss: 0.1358 - val_opt_accuracy: 0.8374 - val_sar_accuracy: 0.8584 - val_fus_accuracy: 0.8668 - val_opt_loss: 0.1287 - val_sar_loss: 0.0893 - val_fus_loss: 0.0880 - val_loss: 0.3060
+2022-01-19 20:41:40,047:INFO:train:
+2022-01-19 20:41:40,047:INFO:train:Epoch 00026: val_fus_loss did not improve from 0.07621
+2022-01-19 20:41:40,062:INFO:train:Epoch 27/500
+2022-01-19 20:43:40,448:INFO:train:368/368 - 120s - opt_accuracy: 0.9108 - sar_accuracy: 0.8932 - fus_accuracy: 0.9296 - opt_loss: 0.0434 - sar_loss: 0.0561 - fus_loss: 0.0339 - loss: 0.1334 - val_opt_accuracy: 0.8326 - val_sar_accuracy: 0.8550 - val_fus_accuracy: 0.8655 - val_opt_loss: 0.1350 - val_sar_loss: 0.0900 - val_fus_loss: 0.0909 - val_loss: 0.3160
+2022-01-19 20:43:40,448:INFO:train:
+2022-01-19 20:43:40,448:INFO:train:Epoch 00027: val_fus_loss did not improve from 0.07621
+2022-01-19 20:43:40,463:INFO:train:Epoch 28/500
+2022-01-19 20:45:40,739:INFO:train:368/368 - 120s - opt_accuracy: 0.9134 - sar_accuracy: 0.8960 - fus_accuracy: 0.9314 - opt_loss: 0.0414 - sar_loss: 0.0538 - fus_loss: 0.0325 - loss: 0.1277 - val_opt_accuracy: 0.8318 - val_sar_accuracy: 0.8561 - val_fus_accuracy: 0.8689 - val_opt_loss: 0.1368 - val_sar_loss: 0.0899 - val_fus_loss: 0.0871 - val_loss: 0.3138
+2022-01-19 20:45:40,739:INFO:train:
+2022-01-19 20:45:40,739:INFO:train:Epoch 00028: val_fus_loss did not improve from 0.07621
+2022-01-19 20:45:40,739:INFO:train:Epoch 00028: early stopping
+2022-01-19 20:45:51,004:INFO:train:Training Experiment 16 time: 3
+2022-01-19 20:45:51,004:INFO:train:Training Conditions: CrossFusion_ResUNET_FUS_mix
+2022-01-19 20:49:28,278:INFO:train:Image1 stack:
+2022-01-19 20:49:28,278:INFO:train:(17730, 9203, 30)
+2022-01-19 20:49:28,278:INFO:train:Image2 stack:
+2022-01-19 20:49:28,278:INFO:train:(17730, 9203, 30)
+2022-01-19 20:49:32,231:INFO:train:Labels stack:
+2022-01-19 20:49:32,231:INFO:train:(17730, 9203)
+2022-01-19 20:50:01,730:INFO:train:Model: "cross_fusion__res_unet"
+2022-01-19 20:50:01,730:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,730:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-19 20:50:01,730:INFO:train:=================================================================
+2022-01-19 20:50:01,745:INFO:train:opt_encoder (ResUNET_Encoder multiple                  1066944
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:sar_encoder (ResUNET_Encoder multiple                  1054272
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:opt_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:sar_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:fus_cross (CrossFusion)      multiple                  518531
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:opt_classifier (Classifier)  multiple                  195
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:01,745:INFO:train:sar_classifier (Classifier)  multiple                  195
+2022-01-19 20:50:01,745:INFO:train:=================================================================
+2022-01-19 20:50:01,745:INFO:train:Total params: 3,082,953
+2022-01-19 20:50:01,745:INFO:train:Trainable params: 3,082,057
+2022-01-19 20:50:01,745:INFO:train:Non-trainable params: 896
+2022-01-19 20:50:01,745:INFO:train:_________________________________________________________________
+2022-01-19 20:50:03,105:INFO:train:Epoch 1/10
+2022-01-19 20:51:24,211:INFO:train:368/368 - 81s - opt_accuracy: 0.7554 - sar_accuracy: 0.7513 - fus_accuracy: 0.5711 - opt_loss: 0.1417 - sar_loss: 0.1585 - fus_loss: 0.2933 - loss: 0.5935 - val_opt_accuracy: 0.8026 - val_sar_accuracy: 0.7888 - val_fus_accuracy: 0.5158 - val_opt_loss: 0.1044 - val_sar_loss: 0.1236 - val_fus_loss: 0.3847 - val_loss: 0.6127
+2022-01-19 20:51:24,226:INFO:train:Epoch 2/10
+2022-01-19 20:52:20,927:INFO:train:368/368 - 57s - opt_accuracy: 0.7972 - sar_accuracy: 0.7707 - fus_accuracy: 0.5490 - opt_loss: 0.1184 - sar_loss: 0.1501 - fus_loss: 0.3099 - loss: 0.5784 - val_opt_accuracy: 0.8138 - val_sar_accuracy: 0.7594 - val_fus_accuracy: 0.5074 - val_opt_loss: 0.1005 - val_sar_loss: 0.1350 - val_fus_loss: 0.3708 - val_loss: 0.6063
+2022-01-19 20:52:20,942:INFO:train:Epoch 3/10
+2022-01-19 20:53:17,534:INFO:train:368/368 - 57s - opt_accuracy: 0.8135 - sar_accuracy: 0.7914 - fus_accuracy: 0.5366 - opt_loss: 0.1105 - sar_loss: 0.1360 - fus_loss: 0.3214 - loss: 0.5679 - val_opt_accuracy: 0.8017 - val_sar_accuracy: 0.8267 - val_fus_accuracy: 0.4964 - val_opt_loss: 0.1098 - val_sar_loss: 0.1063 - val_fus_loss: 0.3844 - val_loss: 0.6005
+2022-01-19 20:53:17,549:INFO:train:Epoch 4/10
+2022-01-19 20:54:14,187:INFO:train:368/368 - 57s - opt_accuracy: 0.8221 - sar_accuracy: 0.8199 - fus_accuracy: 0.5344 - opt_loss: 0.1064 - sar_loss: 0.1171 - fus_loss: 0.3237 - loss: 0.5472 - val_opt_accuracy: 0.8258 - val_sar_accuracy: 0.7864 - val_fus_accuracy: 0.5227 - val_opt_loss: 0.0962 - val_sar_loss: 0.1275 - val_fus_loss: 0.3569 - val_loss: 0.5806
+2022-01-19 20:54:14,203:INFO:train:Epoch 5/10
+2022-01-19 20:55:10,997:INFO:train:368/368 - 57s - opt_accuracy: 0.8289 - sar_accuracy: 0.8321 - fus_accuracy: 0.5384 - opt_loss: 0.1033 - sar_loss: 0.1079 - fus_loss: 0.3202 - loss: 0.5315 - val_opt_accuracy: 0.7986 - val_sar_accuracy: 0.8165 - val_fus_accuracy: 0.5326 - val_opt_loss: 0.1192 - val_sar_loss: 0.1160 - val_fus_loss: 0.3131 - val_loss: 0.5483
+2022-01-19 20:55:11,013:INFO:train:Epoch 6/10
+2022-01-19 20:56:07,667:INFO:train:368/368 - 57s - opt_accuracy: 0.8340 - sar_accuracy: 0.8382 - fus_accuracy: 0.5408 - opt_loss: 0.1005 - sar_loss: 0.1019 - fus_loss: 0.3153 - loss: 0.5178 - val_opt_accuracy: 0.8162 - val_sar_accuracy: 0.7975 - val_fus_accuracy: 0.5244 - val_opt_loss: 0.1068 - val_sar_loss: 0.1306 - val_fus_loss: 0.3340 - val_loss: 0.5714
+2022-01-19 20:56:07,682:INFO:train:Epoch 7/10
+2022-01-19 20:57:04,383:INFO:train:368/368 - 57s - opt_accuracy: 0.8391 - sar_accuracy: 0.8412 - fus_accuracy: 0.5444 - opt_loss: 0.0975 - sar_loss: 0.0994 - fus_loss: 0.3101 - loss: 0.5070 - val_opt_accuracy: 0.8245 - val_sar_accuracy: 0.7516 - val_fus_accuracy: 0.5520 - val_opt_loss: 0.1048 - val_sar_loss: 0.1549 - val_fus_loss: 0.3008 - val_loss: 0.5605
+2022-01-19 20:57:04,399:INFO:train:Epoch 8/10
+2022-01-19 20:58:01,037:INFO:train:368/368 - 57s - opt_accuracy: 0.8425 - sar_accuracy: 0.8410 - fus_accuracy: 0.5485 - opt_loss: 0.0954 - sar_loss: 0.0996 - fus_loss: 0.3067 - loss: 0.5017 - val_opt_accuracy: 0.8131 - val_sar_accuracy: 0.8301 - val_fus_accuracy: 0.5389 - val_opt_loss: 0.1132 - val_sar_loss: 0.1044 - val_fus_loss: 0.3131 - val_loss: 0.5307
+2022-01-19 20:58:01,052:INFO:train:Epoch 9/10
+2022-01-19 20:58:57,878:INFO:train:368/368 - 57s - opt_accuracy: 0.8434 - sar_accuracy: 0.8469 - fus_accuracy: 0.5498 - opt_loss: 0.0947 - sar_loss: 0.0952 - fus_loss: 0.3050 - loss: 0.4949 - val_opt_accuracy: 0.8069 - val_sar_accuracy: 0.8306 - val_fus_accuracy: 0.5332 - val_opt_loss: 0.1199 - val_sar_loss: 0.1080 - val_fus_loss: 0.3141 - val_loss: 0.5421
+2022-01-19 20:58:57,894:INFO:train:Epoch 10/10
+2022-01-19 20:59:54,485:INFO:train:368/368 - 57s - opt_accuracy: 0.8490 - sar_accuracy: 0.8470 - fus_accuracy: 0.5493 - opt_loss: 0.0914 - sar_loss: 0.0949 - fus_loss: 0.3050 - loss: 0.4913 - val_opt_accuracy: 0.8228 - val_sar_accuracy: 0.8308 - val_fus_accuracy: 0.5367 - val_opt_loss: 0.1175 - val_sar_loss: 0.1037 - val_fus_loss: 0.3160 - val_loss: 0.5372
+2022-01-19 20:59:54,626:INFO:train:Epoch 1/500
+2022-01-19 21:02:00,886:INFO:train:368/368 - 126s - opt_accuracy: 0.8056 - sar_accuracy: 0.8035 - fus_accuracy: 0.8478 - opt_loss: 0.1186 - sar_loss: 0.1366 - fus_loss: 0.1372 - loss: 0.3924 - val_opt_accuracy: 0.7985 - val_sar_accuracy: 0.8221 - val_fus_accuracy: 0.7976 - val_opt_loss: 0.1083 - val_sar_loss: 0.1140 - val_fus_loss: 0.1540 - val_loss: 0.3763
+2022-01-19 21:02:00,886:INFO:train:
+2022-01-19 21:02:00,886:INFO:train:Epoch 00001: val_fus_loss improved from inf to 0.15404, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:02:01,167:INFO:train:Epoch 2/500
+2022-01-19 21:03:58,537:INFO:train:368/368 - 117s - opt_accuracy: 0.8197 - sar_accuracy: 0.8286 - fus_accuracy: 0.8677 - opt_loss: 0.1097 - sar_loss: 0.1091 - fus_loss: 0.1111 - loss: 0.3299 - val_opt_accuracy: 0.8322 - val_sar_accuracy: 0.8002 - val_fus_accuracy: 0.8195 - val_opt_loss: 0.0951 - val_sar_loss: 0.1255 - val_fus_loss: 0.1466 - val_loss: 0.3672
+2022-01-19 21:03:58,537:INFO:train:
+2022-01-19 21:03:58,537:INFO:train:Epoch 00002: val_fus_loss improved from 0.15404 to 0.14663, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:03:58,662:INFO:train:Epoch 3/500
+2022-01-19 21:05:56,523:INFO:train:368/368 - 118s - opt_accuracy: 0.8314 - sar_accuracy: 0.8384 - fus_accuracy: 0.8761 - opt_loss: 0.1031 - sar_loss: 0.1017 - fus_loss: 0.0951 - loss: 0.3000 - val_opt_accuracy: 0.8202 - val_sar_accuracy: 0.7862 - val_fus_accuracy: 0.8097 - val_opt_loss: 0.1038 - val_sar_loss: 0.1322 - val_fus_loss: 0.1362 - val_loss: 0.3722
+2022-01-19 21:05:56,523:INFO:train:
+2022-01-19 21:05:56,523:INFO:train:Epoch 00003: val_fus_loss improved from 0.14663 to 0.13621, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:05:56,632:INFO:train:Epoch 4/500
+2022-01-19 21:07:54,517:INFO:train:368/368 - 118s - opt_accuracy: 0.8356 - sar_accuracy: 0.8390 - fus_accuracy: 0.8795 - opt_loss: 0.1000 - sar_loss: 0.1016 - fus_loss: 0.0870 - loss: 0.2887 - val_opt_accuracy: 0.8209 - val_sar_accuracy: 0.8412 - val_fus_accuracy: 0.8516 - val_opt_loss: 0.1016 - val_sar_loss: 0.0933 - val_fus_loss: 0.0995 - val_loss: 0.2944
+2022-01-19 21:07:54,517:INFO:train:
+2022-01-19 21:07:54,517:INFO:train:Epoch 00004: val_fus_loss improved from 0.13621 to 0.09950, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:07:54,627:INFO:train:Epoch 5/500
+2022-01-19 21:09:52,575:INFO:train:368/368 - 118s - opt_accuracy: 0.8345 - sar_accuracy: 0.8457 - fus_accuracy: 0.8806 - opt_loss: 0.0990 - sar_loss: 0.0968 - fus_loss: 0.0819 - loss: 0.2776 - val_opt_accuracy: 0.8296 - val_sar_accuracy: 0.8479 - val_fus_accuracy: 0.8598 - val_opt_loss: 0.1009 - val_sar_loss: 0.0906 - val_fus_loss: 0.0971 - val_loss: 0.2887
+2022-01-19 21:09:52,575:INFO:train:
+2022-01-19 21:09:52,575:INFO:train:Epoch 00005: val_fus_loss improved from 0.09950 to 0.09712, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:09:52,684:INFO:train:Epoch 6/500
+2022-01-19 21:11:50,773:INFO:train:368/368 - 118s - opt_accuracy: 0.8426 - sar_accuracy: 0.8482 - fus_accuracy: 0.8848 - opt_loss: 0.0945 - sar_loss: 0.0937 - fus_loss: 0.0764 - loss: 0.2645 - val_opt_accuracy: 0.8377 - val_sar_accuracy: 0.8082 - val_fus_accuracy: 0.8560 - val_opt_loss: 0.0952 - val_sar_loss: 0.1053 - val_fus_loss: 0.0971 - val_loss: 0.2976
+2022-01-19 21:11:50,773:INFO:train:
+2022-01-19 21:11:50,773:INFO:train:Epoch 00006: val_fus_loss did not improve from 0.09712
+2022-01-19 21:11:50,788:INFO:train:Epoch 7/500
+2022-01-19 21:13:48,751:INFO:train:368/368 - 118s - opt_accuracy: 0.8487 - sar_accuracy: 0.8519 - fus_accuracy: 0.8879 - opt_loss: 0.0910 - sar_loss: 0.0913 - fus_loss: 0.0723 - loss: 0.2545 - val_opt_accuracy: 0.8334 - val_sar_accuracy: 0.8480 - val_fus_accuracy: 0.8540 - val_opt_loss: 0.1030 - val_sar_loss: 0.0880 - val_fus_loss: 0.0954 - val_loss: 0.2864
+2022-01-19 21:13:48,751:INFO:train:
+2022-01-19 21:13:48,751:INFO:train:Epoch 00007: val_fus_loss improved from 0.09712 to 0.09545, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:13:48,860:INFO:train:Epoch 8/500
+2022-01-19 21:15:46,808:INFO:train:368/368 - 118s - opt_accuracy: 0.8522 - sar_accuracy: 0.8536 - fus_accuracy: 0.8904 - opt_loss: 0.0882 - sar_loss: 0.0895 - fus_loss: 0.0691 - loss: 0.2468 - val_opt_accuracy: 0.8439 - val_sar_accuracy: 0.8457 - val_fus_accuracy: 0.8653 - val_opt_loss: 0.0934 - val_sar_loss: 0.0865 - val_fus_loss: 0.0812 - val_loss: 0.2610
+2022-01-19 21:15:46,808:INFO:train:
+2022-01-19 21:15:46,808:INFO:train:Epoch 00008: val_fus_loss improved from 0.09545 to 0.08119, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:15:46,902:INFO:train:Epoch 9/500
+2022-01-19 21:17:44,975:INFO:train:368/368 - 118s - opt_accuracy: 0.8564 - sar_accuracy: 0.8560 - fus_accuracy: 0.8930 - opt_loss: 0.0856 - sar_loss: 0.0878 - fus_loss: 0.0667 - loss: 0.2400 - val_opt_accuracy: 0.8322 - val_sar_accuracy: 0.8545 - val_fus_accuracy: 0.8604 - val_opt_loss: 0.1137 - val_sar_loss: 0.0829 - val_fus_loss: 0.0826 - val_loss: 0.2792
+2022-01-19 21:17:44,975:INFO:train:
+2022-01-19 21:17:44,975:INFO:train:Epoch 00009: val_fus_loss did not improve from 0.08119
+2022-01-19 21:17:44,991:INFO:train:Epoch 10/500
+2022-01-19 21:19:42,892:INFO:train:368/368 - 118s - opt_accuracy: 0.8600 - sar_accuracy: 0.8598 - fus_accuracy: 0.8956 - opt_loss: 0.0832 - sar_loss: 0.0845 - fus_loss: 0.0638 - loss: 0.2316 - val_opt_accuracy: 0.8160 - val_sar_accuracy: 0.8521 - val_fus_accuracy: 0.8480 - val_opt_loss: 0.1148 - val_sar_loss: 0.0838 - val_fus_loss: 0.0915 - val_loss: 0.2901
+2022-01-19 21:19:42,892:INFO:train:
+2022-01-19 21:19:42,892:INFO:train:Epoch 00010: val_fus_loss did not improve from 0.08119
+2022-01-19 21:19:42,907:INFO:train:Epoch 11/500
+2022-01-19 21:21:40,840:INFO:train:368/368 - 118s - opt_accuracy: 0.8633 - sar_accuracy: 0.8618 - fus_accuracy: 0.8983 - opt_loss: 0.0804 - sar_loss: 0.0824 - fus_loss: 0.0608 - loss: 0.2236 - val_opt_accuracy: 0.8319 - val_sar_accuracy: 0.8467 - val_fus_accuracy: 0.8665 - val_opt_loss: 0.1043 - val_sar_loss: 0.0893 - val_fus_loss: 0.0841 - val_loss: 0.2777
+2022-01-19 21:21:40,840:INFO:train:
+2022-01-19 21:21:40,840:INFO:train:Epoch 00011: val_fus_loss did not improve from 0.08119
+2022-01-19 21:21:40,855:INFO:train:Epoch 12/500
+2022-01-19 21:23:38,913:INFO:train:368/368 - 118s - opt_accuracy: 0.8676 - sar_accuracy: 0.8626 - fus_accuracy: 0.9011 - opt_loss: 0.0767 - sar_loss: 0.0823 - fus_loss: 0.0583 - loss: 0.2173 - val_opt_accuracy: 0.8396 - val_sar_accuracy: 0.8389 - val_fus_accuracy: 0.8548 - val_opt_loss: 0.0993 - val_sar_loss: 0.1002 - val_fus_loss: 0.0907 - val_loss: 0.2902
+2022-01-19 21:23:38,913:INFO:train:
+2022-01-19 21:23:38,913:INFO:train:Epoch 00012: val_fus_loss did not improve from 0.08119
+2022-01-19 21:23:38,928:INFO:train:Epoch 13/500
+2022-01-19 21:25:36,782:INFO:train:368/368 - 118s - opt_accuracy: 0.8702 - sar_accuracy: 0.8671 - fus_accuracy: 0.9037 - opt_loss: 0.0740 - sar_loss: 0.0778 - fus_loss: 0.0556 - loss: 0.2074 - val_opt_accuracy: 0.8451 - val_sar_accuracy: 0.8539 - val_fus_accuracy: 0.8641 - val_opt_loss: 0.1038 - val_sar_loss: 0.0828 - val_fus_loss: 0.0826 - val_loss: 0.2692
+2022-01-19 21:25:36,782:INFO:train:
+2022-01-19 21:25:36,782:INFO:train:Epoch 00013: val_fus_loss did not improve from 0.08119
+2022-01-19 21:25:36,798:INFO:train:Epoch 14/500
+2022-01-19 21:27:34,809:INFO:train:368/368 - 118s - opt_accuracy: 0.8748 - sar_accuracy: 0.8690 - fus_accuracy: 0.9062 - opt_loss: 0.0709 - sar_loss: 0.0760 - fus_loss: 0.0533 - loss: 0.2003 - val_opt_accuracy: 0.8238 - val_sar_accuracy: 0.8520 - val_fus_accuracy: 0.8492 - val_opt_loss: 0.1234 - val_sar_loss: 0.0819 - val_fus_loss: 0.0883 - val_loss: 0.2936
+2022-01-19 21:27:34,809:INFO:train:
+2022-01-19 21:27:34,809:INFO:train:Epoch 00014: val_fus_loss did not improve from 0.08119
+2022-01-19 21:27:34,824:INFO:train:Epoch 15/500
+2022-01-19 21:29:32,835:INFO:train:368/368 - 118s - opt_accuracy: 0.8793 - sar_accuracy: 0.8722 - fus_accuracy: 0.9089 - opt_loss: 0.0674 - sar_loss: 0.0734 - fus_loss: 0.0509 - loss: 0.1916 - val_opt_accuracy: 0.8516 - val_sar_accuracy: 0.8427 - val_fus_accuracy: 0.8734 - val_opt_loss: 0.1006 - val_sar_loss: 0.0934 - val_fus_loss: 0.0761 - val_loss: 0.2702
+2022-01-19 21:29:32,835:INFO:train:
+2022-01-19 21:29:32,835:INFO:train:Epoch 00015: val_fus_loss improved from 0.08119 to 0.07614, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_3.h5
+2022-01-19 21:29:32,928:INFO:train:Epoch 16/500
+2022-01-19 21:31:30,798:INFO:train:368/368 - 118s - opt_accuracy: 0.8817 - sar_accuracy: 0.8712 - fus_accuracy: 0.9090 - opt_loss: 0.0664 - sar_loss: 0.0735 - fus_loss: 0.0508 - loss: 0.1907 - val_opt_accuracy: 0.8401 - val_sar_accuracy: 0.8518 - val_fus_accuracy: 0.8669 - val_opt_loss: 0.1165 - val_sar_loss: 0.0848 - val_fus_loss: 0.0798 - val_loss: 0.2811
+2022-01-19 21:31:30,798:INFO:train:
+2022-01-19 21:31:30,798:INFO:train:Epoch 00016: val_fus_loss did not improve from 0.07614
+2022-01-19 21:31:30,814:INFO:train:Epoch 17/500
+2022-01-19 21:33:28,791:INFO:train:368/368 - 118s - opt_accuracy: 0.8869 - sar_accuracy: 0.8780 - fus_accuracy: 0.9143 - opt_loss: 0.0616 - sar_loss: 0.0690 - fus_loss: 0.0464 - loss: 0.1770 - val_opt_accuracy: 0.8505 - val_sar_accuracy: 0.8545 - val_fus_accuracy: 0.8697 - val_opt_loss: 0.1058 - val_sar_loss: 0.0852 - val_fus_loss: 0.0776 - val_loss: 0.2686
+2022-01-19 21:33:28,791:INFO:train:
+2022-01-19 21:33:28,791:INFO:train:Epoch 00017: val_fus_loss did not improve from 0.07614
+2022-01-19 21:33:28,807:INFO:train:Epoch 18/500
+2022-01-19 21:35:26,737:INFO:train:368/368 - 118s - opt_accuracy: 0.8886 - sar_accuracy: 0.8791 - fus_accuracy: 0.9149 - opt_loss: 0.0600 - sar_loss: 0.0671 - fus_loss: 0.0451 - loss: 0.1723 - val_opt_accuracy: 0.8507 - val_sar_accuracy: 0.8428 - val_fus_accuracy: 0.8676 - val_opt_loss: 0.1094 - val_sar_loss: 0.0877 - val_fus_loss: 0.0840 - val_loss: 0.2811
+2022-01-19 21:35:26,737:INFO:train:
+2022-01-19 21:35:26,737:INFO:train:Epoch 00018: val_fus_loss did not improve from 0.07614
+2022-01-19 21:35:26,753:INFO:train:Epoch 19/500
+2022-01-19 21:37:24,762:INFO:train:368/368 - 118s - opt_accuracy: 0.8918 - sar_accuracy: 0.8822 - fus_accuracy: 0.9167 - opt_loss: 0.0575 - sar_loss: 0.0645 - fus_loss: 0.0435 - loss: 0.1654 - val_opt_accuracy: 0.8481 - val_sar_accuracy: 0.8614 - val_fus_accuracy: 0.8769 - val_opt_loss: 0.1069 - val_sar_loss: 0.0827 - val_fus_loss: 0.0772 - val_loss: 0.2668
+2022-01-19 21:37:24,762:INFO:train:
+2022-01-19 21:37:24,762:INFO:train:Epoch 00019: val_fus_loss did not improve from 0.07614
+2022-01-19 21:37:24,778:INFO:train:Epoch 20/500
+2022-01-19 21:39:22,677:INFO:train:368/368 - 118s - opt_accuracy: 0.8955 - sar_accuracy: 0.8832 - fus_accuracy: 0.9187 - opt_loss: 0.0555 - sar_loss: 0.0638 - fus_loss: 0.0420 - loss: 0.1612 - val_opt_accuracy: 0.8435 - val_sar_accuracy: 0.8490 - val_fus_accuracy: 0.8680 - val_opt_loss: 0.1217 - val_sar_loss: 0.0922 - val_fus_loss: 0.0845 - val_loss: 0.2984
+2022-01-19 21:39:22,677:INFO:train:
+2022-01-19 21:39:22,677:INFO:train:Epoch 00020: val_fus_loss did not improve from 0.07614
+2022-01-19 21:39:22,693:INFO:train:Epoch 21/500
+2022-01-19 21:41:20,717:INFO:train:368/368 - 118s - opt_accuracy: 0.8983 - sar_accuracy: 0.8862 - fus_accuracy: 0.9209 - opt_loss: 0.0530 - sar_loss: 0.0611 - fus_loss: 0.0404 - loss: 0.1545 - val_opt_accuracy: 0.8478 - val_sar_accuracy: 0.8536 - val_fus_accuracy: 0.8639 - val_opt_loss: 0.1251 - val_sar_loss: 0.0878 - val_fus_loss: 0.0862 - val_loss: 0.2991
+2022-01-19 21:41:20,717:INFO:train:
+2022-01-19 21:41:20,717:INFO:train:Epoch 00021: val_fus_loss did not improve from 0.07614
+2022-01-19 21:41:20,733:INFO:train:Epoch 22/500
+2022-01-19 21:43:18,789:INFO:train:368/368 - 118s - opt_accuracy: 0.9017 - sar_accuracy: 0.8879 - fus_accuracy: 0.9231 - opt_loss: 0.0505 - sar_loss: 0.0598 - fus_loss: 0.0386 - loss: 0.1488 - val_opt_accuracy: 0.8492 - val_sar_accuracy: 0.8537 - val_fus_accuracy: 0.8741 - val_opt_loss: 0.1348 - val_sar_loss: 0.0890 - val_fus_loss: 0.1025 - val_loss: 0.3263
+2022-01-19 21:43:18,789:INFO:train:
+2022-01-19 21:43:18,789:INFO:train:Epoch 00022: val_fus_loss did not improve from 0.07614
+2022-01-19 21:43:18,805:INFO:train:Epoch 23/500
+2022-01-19 21:45:16,720:INFO:train:368/368 - 118s - opt_accuracy: 0.9021 - sar_accuracy: 0.8896 - fus_accuracy: 0.9231 - opt_loss: 0.0503 - sar_loss: 0.0580 - fus_loss: 0.0383 - loss: 0.1466 - val_opt_accuracy: 0.8485 - val_sar_accuracy: 0.8522 - val_fus_accuracy: 0.8734 - val_opt_loss: 0.1341 - val_sar_loss: 0.0927 - val_fus_loss: 0.0847 - val_loss: 0.3115
+2022-01-19 21:45:16,720:INFO:train:
+2022-01-19 21:45:16,720:INFO:train:Epoch 00023: val_fus_loss did not improve from 0.07614
+2022-01-19 21:45:16,735:INFO:train:Epoch 24/500
+2022-01-19 21:47:14,635:INFO:train:368/368 - 118s - opt_accuracy: 0.9045 - sar_accuracy: 0.8912 - fus_accuracy: 0.9255 - opt_loss: 0.0485 - sar_loss: 0.0567 - fus_loss: 0.0366 - loss: 0.1419 - val_opt_accuracy: 0.8478 - val_sar_accuracy: 0.8564 - val_fus_accuracy: 0.8729 - val_opt_loss: 0.1230 - val_sar_loss: 0.0897 - val_fus_loss: 0.0845 - val_loss: 0.2972
+2022-01-19 21:47:14,635:INFO:train:
+2022-01-19 21:47:14,635:INFO:train:Epoch 00024: val_fus_loss did not improve from 0.07614
+2022-01-19 21:47:14,651:INFO:train:Epoch 25/500
+2022-01-19 21:49:12,644:INFO:train:368/368 - 118s - opt_accuracy: 0.9071 - sar_accuracy: 0.8929 - fus_accuracy: 0.9268 - opt_loss: 0.0466 - sar_loss: 0.0550 - fus_loss: 0.0358 - loss: 0.1374 - val_opt_accuracy: 0.8405 - val_sar_accuracy: 0.8571 - val_fus_accuracy: 0.8691 - val_opt_loss: 0.1311 - val_sar_loss: 0.0883 - val_fus_loss: 0.0891 - val_loss: 0.3085
+2022-01-19 21:49:12,644:INFO:train:
+2022-01-19 21:49:12,644:INFO:train:Epoch 00025: val_fus_loss did not improve from 0.07614
+2022-01-19 21:49:12,660:INFO:train:Epoch 26/500
+2022-01-19 21:51:10,575:INFO:train:368/368 - 118s - opt_accuracy: 0.9097 - sar_accuracy: 0.8929 - fus_accuracy: 0.9279 - opt_loss: 0.0450 - sar_loss: 0.0548 - fus_loss: 0.0347 - loss: 0.1344 - val_opt_accuracy: 0.8377 - val_sar_accuracy: 0.8534 - val_fus_accuracy: 0.8616 - val_opt_loss: 0.1322 - val_sar_loss: 0.0920 - val_fus_loss: 0.0950 - val_loss: 0.3191
+2022-01-19 21:51:10,575:INFO:train:
+2022-01-19 21:51:10,575:INFO:train:Epoch 00026: val_fus_loss did not improve from 0.07614
+2022-01-19 21:51:10,591:INFO:train:Epoch 27/500
+2022-01-19 21:53:08,428:INFO:train:368/368 - 118s - opt_accuracy: 0.9111 - sar_accuracy: 0.8949 - fus_accuracy: 0.9294 - opt_loss: 0.0439 - sar_loss: 0.0528 - fus_loss: 0.0336 - loss: 0.1302 - val_opt_accuracy: 0.8409 - val_sar_accuracy: 0.8564 - val_fus_accuracy: 0.8645 - val_opt_loss: 0.1469 - val_sar_loss: 0.0917 - val_fus_loss: 0.1035 - val_loss: 0.3421
+2022-01-19 21:53:08,428:INFO:train:
+2022-01-19 21:53:08,428:INFO:train:Epoch 00027: val_fus_loss did not improve from 0.07614
+2022-01-19 21:53:08,444:INFO:train:Epoch 28/500
+2022-01-19 21:55:06,406:INFO:train:368/368 - 118s - opt_accuracy: 0.9131 - sar_accuracy: 0.8964 - fus_accuracy: 0.9308 - opt_loss: 0.0427 - sar_loss: 0.0519 - fus_loss: 0.0329 - loss: 0.1275 - val_opt_accuracy: 0.8440 - val_sar_accuracy: 0.8541 - val_fus_accuracy: 0.8692 - val_opt_loss: 0.1409 - val_sar_loss: 0.0955 - val_fus_loss: 0.0891 - val_loss: 0.3255
+2022-01-19 21:55:06,406:INFO:train:
+2022-01-19 21:55:06,406:INFO:train:Epoch 00028: val_fus_loss did not improve from 0.07614
+2022-01-19 21:55:06,422:INFO:train:Epoch 29/500
+2022-01-19 21:57:04,056:INFO:train:368/368 - 118s - opt_accuracy: 0.9152 - sar_accuracy: 0.8983 - fus_accuracy: 0.9322 - opt_loss: 0.0410 - sar_loss: 0.0500 - fus_loss: 0.0316 - loss: 0.1226 - val_opt_accuracy: 0.8389 - val_sar_accuracy: 0.8540 - val_fus_accuracy: 0.8680 - val_opt_loss: 0.1531 - val_sar_loss: 0.0934 - val_fus_loss: 0.0900 - val_loss: 0.3365
+2022-01-19 21:57:04,056:INFO:train:
+2022-01-19 21:57:04,056:INFO:train:Epoch 00029: val_fus_loss did not improve from 0.07614
+2022-01-19 21:57:04,071:INFO:train:Epoch 30/500
+2022-01-19 21:59:01,862:INFO:train:368/368 - 118s - opt_accuracy: 0.9164 - sar_accuracy: 0.8987 - fus_accuracy: 0.9329 - opt_loss: 0.0402 - sar_loss: 0.0494 - fus_loss: 0.0313 - loss: 0.1209 - val_opt_accuracy: 0.8399 - val_sar_accuracy: 0.8515 - val_fus_accuracy: 0.8638 - val_opt_loss: 0.1474 - val_sar_loss: 0.0960 - val_fus_loss: 0.1069 - val_loss: 0.3503
+2022-01-19 21:59:01,862:INFO:train:
+2022-01-19 21:59:01,862:INFO:train:Epoch 00030: val_fus_loss did not improve from 0.07614
+2022-01-19 21:59:01,862:INFO:train:Epoch 00030: early stopping
+2022-01-19 21:59:11,017:INFO:train:Training Experiment 16 time: 4
+2022-01-19 21:59:11,017:INFO:train:Training Conditions: CrossFusion_ResUNET_FUS_mix
+2022-01-19 22:02:48,343:INFO:train:Image1 stack:
+2022-01-19 22:02:48,343:INFO:train:(17730, 9203, 30)
+2022-01-19 22:02:48,343:INFO:train:Image2 stack:
+2022-01-19 22:02:48,343:INFO:train:(17730, 9203, 30)
+2022-01-19 22:02:52,264:INFO:train:Labels stack:
+2022-01-19 22:02:52,264:INFO:train:(17730, 9203)
+2022-01-19 22:03:21,966:INFO:train:Model: "cross_fusion__res_unet"
+2022-01-19 22:03:21,966:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,966:INFO:train:Layer (type)                 Output Shape              Param #
+2022-01-19 22:03:21,966:INFO:train:=================================================================
+2022-01-19 22:03:21,981:INFO:train:opt_encoder (ResUNET_Encoder multiple                  1066944
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:sar_encoder (ResUNET_Encoder multiple                  1054272
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:opt_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:sar_decoder (ResUNET_Decoder multiple                  221408
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:fus_cross (CrossFusion)      multiple                  518531
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:opt_classifier (Classifier)  multiple                  195
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:21,981:INFO:train:sar_classifier (Classifier)  multiple                  195
+2022-01-19 22:03:21,981:INFO:train:=================================================================
+2022-01-19 22:03:21,981:INFO:train:Total params: 3,082,953
+2022-01-19 22:03:21,981:INFO:train:Trainable params: 3,082,057
+2022-01-19 22:03:21,981:INFO:train:Non-trainable params: 896
+2022-01-19 22:03:21,981:INFO:train:_________________________________________________________________
+2022-01-19 22:03:23,372:INFO:train:Epoch 1/10
+2022-01-19 22:04:46,211:INFO:train:368/368 - 83s - opt_accuracy: 0.7559 - sar_accuracy: 0.7511 - fus_accuracy: 0.5379 - opt_loss: 0.1414 - sar_loss: 0.1578 - fus_loss: 0.3231 - loss: 0.6223 - val_opt_accuracy: 0.7962 - val_sar_accuracy: 0.7649 - val_fus_accuracy: 0.5557 - val_opt_loss: 0.1048 - val_sar_loss: 0.1387 - val_fus_loss: 0.3378 - val_loss: 0.5813
+2022-01-19 22:04:46,227:INFO:train:Epoch 2/10
+2022-01-19 22:05:43,960:INFO:train:368/368 - 58s - opt_accuracy: 0.7910 - sar_accuracy: 0.7672 - fus_accuracy: 0.5438 - opt_loss: 0.1200 - sar_loss: 0.1505 - fus_loss: 0.3184 - loss: 0.5889 - val_opt_accuracy: 0.8242 - val_sar_accuracy: 0.7757 - val_fus_accuracy: 0.5839 - val_opt_loss: 0.0989 - val_sar_loss: 0.1344 - val_fus_loss: 0.3003 - val_loss: 0.5336
+2022-01-19 22:05:43,975:INFO:train:Epoch 3/10
+2022-01-19 22:06:41,832:INFO:train:368/368 - 58s - opt_accuracy: 0.8036 - sar_accuracy: 0.7953 - fus_accuracy: 0.5491 - opt_loss: 0.1127 - sar_loss: 0.1323 - fus_loss: 0.3226 - loss: 0.5676 - val_opt_accuracy: 0.8255 - val_sar_accuracy: 0.7874 - val_fus_accuracy: 0.5505 - val_opt_loss: 0.0991 - val_sar_loss: 0.1337 - val_fus_loss: 0.3322 - val_loss: 0.5649
+2022-01-19 22:06:41,847:INFO:train:Epoch 4/10
+2022-01-19 22:07:39,969:INFO:train:368/368 - 58s - opt_accuracy: 0.8128 - sar_accuracy: 0.8236 - fus_accuracy: 0.5533 - opt_loss: 0.1086 - sar_loss: 0.1130 - fus_loss: 0.3247 - loss: 0.5463 - val_opt_accuracy: 0.8289 - val_sar_accuracy: 0.8035 - val_fus_accuracy: 0.5358 - val_opt_loss: 0.0989 - val_sar_loss: 0.1211 - val_fus_loss: 0.3763 - val_loss: 0.5963
+2022-01-19 22:07:39,985:INFO:train:Epoch 5/10
+2022-01-19 22:08:37,888:INFO:train:368/368 - 58s - opt_accuracy: 0.8205 - sar_accuracy: 0.8342 - fus_accuracy: 0.5606 - opt_loss: 0.1054 - sar_loss: 0.1042 - fus_loss: 0.3195 - loss: 0.5292 - val_opt_accuracy: 0.8342 - val_sar_accuracy: 0.8256 - val_fus_accuracy: 0.5606 - val_opt_loss: 0.0942 - val_sar_loss: 0.1022 - val_fus_loss: 0.3395 - val_loss: 0.5359
+2022-01-19 22:08:37,904:INFO:train:Epoch 6/10
+2022-01-19 22:09:36,041:INFO:train:368/368 - 58s - opt_accuracy: 0.8275 - sar_accuracy: 0.8359 - fus_accuracy: 0.5664 - opt_loss: 0.1032 - sar_loss: 0.1026 - fus_loss: 0.3144 - loss: 0.5202 - val_opt_accuracy: 0.8358 - val_sar_accuracy: 0.8190 - val_fus_accuracy: 0.5667 - val_opt_loss: 0.0964 - val_sar_loss: 0.1120 - val_fus_loss: 0.3268 - val_loss: 0.5352
+2022-01-19 22:09:36,057:INFO:train:Epoch 7/10
+2022-01-19 22:10:33,819:INFO:train:368/368 - 58s - opt_accuracy: 0.8340 - sar_accuracy: 0.8402 - fus_accuracy: 0.5669 - opt_loss: 0.0995 - sar_loss: 0.0996 - fus_loss: 0.3145 - loss: 0.5136 - val_opt_accuracy: 0.8290 - val_sar_accuracy: 0.8219 - val_fus_accuracy: 0.5371 - val_opt_loss: 0.0973 - val_sar_loss: 0.1082 - val_fus_loss: 0.3538 - val_loss: 0.5593
+2022-01-19 22:10:33,850:INFO:train:Epoch 8/10
+2022-01-19 22:11:31,785:INFO:train:368/368 - 58s - opt_accuracy: 0.8401 - sar_accuracy: 0.8410 - fus_accuracy: 0.5692 - opt_loss: 0.0962 - sar_loss: 0.0983 - fus_loss: 0.3114 - loss: 0.5060 - val_opt_accuracy: 0.8435 - val_sar_accuracy: 0.8185 - val_fus_accuracy: 0.5658 - val_opt_loss: 0.0964 - val_sar_loss: 0.1116 - val_fus_loss: 0.3159 - val_loss: 0.5239
+2022-01-19 22:11:31,800:INFO:train:Epoch 9/10
+2022-01-19 22:12:29,860:INFO:train:368/368 - 58s - opt_accuracy: 0.8441 - sar_accuracy: 0.8433 - fus_accuracy: 0.5685 - opt_loss: 0.0940 - sar_loss: 0.0968 - fus_loss: 0.3112 - loss: 0.5020 - val_opt_accuracy: 0.8490 - val_sar_accuracy: 0.8279 - val_fus_accuracy: 0.5221 - val_opt_loss: 0.0958 - val_sar_loss: 0.1038 - val_fus_loss: 0.3826 - val_loss: 0.5823
+2022-01-19 22:12:29,891:INFO:train:Epoch 10/10
+2022-01-19 22:13:27,857:INFO:train:368/368 - 58s - opt_accuracy: 0.8478 - sar_accuracy: 0.8452 - fus_accuracy: 0.5670 - opt_loss: 0.0918 - sar_loss: 0.0954 - fus_loss: 0.3118 - loss: 0.4990 - val_opt_accuracy: 0.8351 - val_sar_accuracy: 0.8194 - val_fus_accuracy: 0.5389 - val_opt_loss: 0.0973 - val_sar_loss: 0.1091 - val_fus_loss: 0.3478 - val_loss: 0.5543
+2022-01-19 22:13:27,997:INFO:train:Epoch 1/500
+2022-01-19 22:15:36,537:INFO:train:368/368 - 129s - opt_accuracy: 0.8053 - sar_accuracy: 0.8011 - fus_accuracy: 0.8482 - opt_loss: 0.1172 - sar_loss: 0.1320 - fus_loss: 0.1370 - loss: 0.3862 - val_opt_accuracy: 0.8248 - val_sar_accuracy: 0.8235 - val_fus_accuracy: 0.8329 - val_opt_loss: 0.1110 - val_sar_loss: 0.0948 - val_fus_loss: 0.1385 - val_loss: 0.3444
+2022-01-19 22:15:36,537:INFO:train:
+2022-01-19 22:15:36,537:INFO:train:Epoch 00001: val_fus_loss improved from inf to 0.13854, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:15:36,834:INFO:train:Epoch 2/500
+2022-01-19 22:17:36,734:INFO:train:368/368 - 120s - opt_accuracy: 0.8183 - sar_accuracy: 0.8254 - fus_accuracy: 0.8699 - opt_loss: 0.1095 - sar_loss: 0.1118 - fus_loss: 0.1084 - loss: 0.3297 - val_opt_accuracy: 0.8189 - val_sar_accuracy: 0.8281 - val_fus_accuracy: 0.8359 - val_opt_loss: 0.1015 - val_sar_loss: 0.0936 - val_fus_loss: 0.1220 - val_loss: 0.3171
+2022-01-19 22:17:36,734:INFO:train:
+2022-01-19 22:17:36,734:INFO:train:Epoch 00002: val_fus_loss improved from 0.13854 to 0.12203, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:17:36,843:INFO:train:Epoch 3/500
+2022-01-19 22:19:36,853:INFO:train:368/368 - 120s - opt_accuracy: 0.8306 - sar_accuracy: 0.8333 - fus_accuracy: 0.8762 - opt_loss: 0.1033 - sar_loss: 0.1058 - fus_loss: 0.0956 - loss: 0.3047 - val_opt_accuracy: 0.8372 - val_sar_accuracy: 0.8246 - val_fus_accuracy: 0.8368 - val_opt_loss: 0.0975 - val_sar_loss: 0.1046 - val_fus_loss: 0.1235 - val_loss: 0.3256
+2022-01-19 22:19:36,853:INFO:train:
+2022-01-19 22:19:36,853:INFO:train:Epoch 00003: val_fus_loss did not improve from 0.12203
+2022-01-19 22:19:36,868:INFO:train:Epoch 4/500
+2022-01-19 22:21:36,690:INFO:train:368/368 - 120s - opt_accuracy: 0.8337 - sar_accuracy: 0.8393 - fus_accuracy: 0.8798 - opt_loss: 0.1013 - sar_loss: 0.1000 - fus_loss: 0.0871 - loss: 0.2884 - val_opt_accuracy: 0.8420 - val_sar_accuracy: 0.8030 - val_fus_accuracy: 0.7890 - val_opt_loss: 0.0960 - val_sar_loss: 0.1208 - val_fus_loss: 0.1663 - val_loss: 0.3830
+2022-01-19 22:21:36,690:INFO:train:
+2022-01-19 22:21:36,690:INFO:train:Epoch 00004: val_fus_loss did not improve from 0.12203
+2022-01-19 22:21:36,706:INFO:train:Epoch 5/500
+2022-01-19 22:23:36,606:INFO:train:368/368 - 120s - opt_accuracy: 0.8387 - sar_accuracy: 0.8436 - fus_accuracy: 0.8825 - opt_loss: 0.0980 - sar_loss: 0.0971 - fus_loss: 0.0811 - loss: 0.2762 - val_opt_accuracy: 0.8487 - val_sar_accuracy: 0.8147 - val_fus_accuracy: 0.8465 - val_opt_loss: 0.0913 - val_sar_loss: 0.1044 - val_fus_loss: 0.1049 - val_loss: 0.3006
+2022-01-19 22:23:36,606:INFO:train:
+2022-01-19 22:23:36,606:INFO:train:Epoch 00005: val_fus_loss improved from 0.12203 to 0.10491, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:23:36,715:INFO:train:Epoch 6/500
+2022-01-19 22:25:36,615:INFO:train:368/368 - 120s - opt_accuracy: 0.8431 - sar_accuracy: 0.8458 - fus_accuracy: 0.8856 - opt_loss: 0.0951 - sar_loss: 0.0956 - fus_loss: 0.0763 - loss: 0.2670 - val_opt_accuracy: 0.8349 - val_sar_accuracy: 0.8485 - val_fus_accuracy: 0.8720 - val_opt_loss: 0.0938 - val_sar_loss: 0.0837 - val_fus_loss: 0.0813 - val_loss: 0.2587
+2022-01-19 22:25:36,615:INFO:train:
+2022-01-19 22:25:36,615:INFO:train:Epoch 00006: val_fus_loss improved from 0.10491 to 0.08131, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:25:36,709:INFO:train:Epoch 7/500
+2022-01-19 22:27:36,390:INFO:train:368/368 - 120s - opt_accuracy: 0.8487 - sar_accuracy: 0.8484 - fus_accuracy: 0.8872 - opt_loss: 0.0918 - sar_loss: 0.0943 - fus_loss: 0.0741 - loss: 0.2602 - val_opt_accuracy: 0.8465 - val_sar_accuracy: 0.8430 - val_fus_accuracy: 0.8681 - val_opt_loss: 0.0916 - val_sar_loss: 0.0899 - val_fus_loss: 0.0847 - val_loss: 0.2662
+2022-01-19 22:27:36,390:INFO:train:
+2022-01-19 22:27:36,390:INFO:train:Epoch 00007: val_fus_loss did not improve from 0.08131
+2022-01-19 22:27:36,405:INFO:train:Epoch 8/500
+2022-01-19 22:29:36,243:INFO:train:368/368 - 120s - opt_accuracy: 0.8513 - sar_accuracy: 0.8524 - fus_accuracy: 0.8889 - opt_loss: 0.0891 - sar_loss: 0.0901 - fus_loss: 0.0705 - loss: 0.2498 - val_opt_accuracy: 0.8389 - val_sar_accuracy: 0.8538 - val_fus_accuracy: 0.8567 - val_opt_loss: 0.0939 - val_sar_loss: 0.0810 - val_fus_loss: 0.0947 - val_loss: 0.2696
+2022-01-19 22:29:36,258:INFO:train:
+2022-01-19 22:29:36,258:INFO:train:Epoch 00008: val_fus_loss did not improve from 0.08131
+2022-01-19 22:29:36,258:INFO:train:Epoch 9/500
+2022-01-19 22:31:36,143:INFO:train:368/368 - 120s - opt_accuracy: 0.8554 - sar_accuracy: 0.8543 - fus_accuracy: 0.8923 - opt_loss: 0.0864 - sar_loss: 0.0891 - fus_loss: 0.0672 - loss: 0.2427 - val_opt_accuracy: 0.8478 - val_sar_accuracy: 0.8533 - val_fus_accuracy: 0.8678 - val_opt_loss: 0.0925 - val_sar_loss: 0.0806 - val_fus_loss: 0.0793 - val_loss: 0.2523
+2022-01-19 22:31:36,143:INFO:train:
+2022-01-19 22:31:36,143:INFO:train:Epoch 00009: val_fus_loss improved from 0.08131 to 0.07926, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:31:36,236:INFO:train:Epoch 10/500
+2022-01-19 22:33:35,840:INFO:train:368/368 - 120s - opt_accuracy: 0.8589 - sar_accuracy: 0.8570 - fus_accuracy: 0.8947 - opt_loss: 0.0839 - sar_loss: 0.0867 - fus_loss: 0.0651 - loss: 0.2357 - val_opt_accuracy: 0.8455 - val_sar_accuracy: 0.8577 - val_fus_accuracy: 0.8712 - val_opt_loss: 0.1036 - val_sar_loss: 0.0793 - val_fus_loss: 0.0967 - val_loss: 0.2797
+2022-01-19 22:33:35,840:INFO:train:
+2022-01-19 22:33:35,840:INFO:train:Epoch 00010: val_fus_loss did not improve from 0.07926
+2022-01-19 22:33:35,855:INFO:train:Epoch 11/500
+2022-01-19 22:35:35,712:INFO:train:368/368 - 120s - opt_accuracy: 0.8637 - sar_accuracy: 0.8612 - fus_accuracy: 0.8973 - opt_loss: 0.0797 - sar_loss: 0.0836 - fus_loss: 0.0621 - loss: 0.2254 - val_opt_accuracy: 0.8444 - val_sar_accuracy: 0.8517 - val_fus_accuracy: 0.8693 - val_opt_loss: 0.0948 - val_sar_loss: 0.0834 - val_fus_loss: 0.0774 - val_loss: 0.2557
+2022-01-19 22:35:35,712:INFO:train:
+2022-01-19 22:35:35,712:INFO:train:Epoch 00011: val_fus_loss improved from 0.07926 to 0.07743, saving model to imgs\experiments\exp_16\models\CrossFusion_ResUNET_4.h5
+2022-01-19 22:35:35,822:INFO:train:Epoch 12/500
+2022-01-19 22:37:36,229:INFO:train:368/368 - 120s - opt_accuracy: 0.8661 - sar_accuracy: 0.8617 - fus_accuracy: 0.8998 - opt_loss: 0.0772 - sar_loss: 0.0829 - fus_loss: 0.0594 - loss: 0.2195 - val_opt_accuracy: 0.8451 - val_sar_accuracy: 0.8532 - val_fus_accuracy: 0.8611 - val_opt_loss: 0.1004 - val_sar_loss: 0.0813 - val_fus_loss: 0.0798 - val_loss: 0.2615
+2022-01-19 22:37:36,229:INFO:train:
+2022-01-19 22:37:36,229:INFO:train:Epoch 00012: val_fus_loss did not improve from 0.07743
+2022-01-19 22:37:36,245:INFO:train:Epoch 13/500
+2022-01-19 22:39:36,386:INFO:train:368/368 - 120s - opt_accuracy: 0.8696 - sar_accuracy: 0.8630 - fus_accuracy: 0.9019 - opt_loss: 0.0748 - sar_loss: 0.0825 - fus_loss: 0.0576 - loss: 0.2149 - val_opt_accuracy: 0.8458 - val_sar_accuracy: 0.8402 - val_fus_accuracy: 0.8568 - val_opt_loss: 0.0990 - val_sar_loss: 0.0914 - val_fus_loss: 0.0819 - val_loss: 0.2723
+2022-01-19 22:39:36,386:INFO:train:
+2022-01-19 22:39:36,386:INFO:train:Epoch 00013: val_fus_loss did not improve from 0.07743
+2022-01-19 22:39:36,402:INFO:train:Epoch 14/500
+2022-01-19 22:41:36,802:INFO:train:368/368 - 120s - opt_accuracy: 0.8742 - sar_accuracy: 0.8691 - fus_accuracy: 0.9055 - opt_loss: 0.0711 - sar_loss: 0.0775 - fus_loss: 0.0544 - loss: 0.2030 - val_opt_accuracy: 0.8452 - val_sar_accuracy: 0.8415 - val_fus_accuracy: 0.8640 - val_opt_loss: 0.1075 - val_sar_loss: 0.0966 - val_fus_loss: 0.0837 - val_loss: 0.2877
+2022-01-19 22:41:36,802:INFO:train:
+2022-01-19 22:41:36,802:INFO:train:Epoch 00014: val_fus_loss did not improve from 0.07743
+2022-01-19 22:41:36,817:INFO:train:Epoch 15/500
+2022-01-19 22:43:36,936:INFO:train:368/368 - 120s - opt_accuracy: 0.8773 - sar_accuracy: 0.8699 - fus_accuracy: 0.9075 - opt_loss: 0.0681 - sar_loss: 0.0762 - fus_loss: 0.0519 - loss: 0.1962 - val_opt_accuracy: 0.8448 - val_sar_accuracy: 0.8511 - val_fus_accuracy: 0.8664 - val_opt_loss: 0.1083 - val_sar_loss: 0.0839 - val_fus_loss: 0.0792 - val_loss: 0.2715
+2022-01-19 22:43:36,936:INFO:train:
+2022-01-19 22:43:36,936:INFO:train:Epoch 00015: val_fus_loss did not improve from 0.07743
+2022-01-19 22:43:36,952:INFO:train:Epoch 16/500
+2022-01-19 22:45:37,258:INFO:train:368/368 - 120s - opt_accuracy: 0.8806 - sar_accuracy: 0.8723 - fus_accuracy: 0.9098 - opt_loss: 0.0650 - sar_loss: 0.0749 - fus_loss: 0.0499 - loss: 0.1899 - val_opt_accuracy: 0.8483 - val_sar_accuracy: 0.8503 - val_fus_accuracy: 0.8616 - val_opt_loss: 0.1050 - val_sar_loss: 0.0854 - val_fus_loss: 0.0842 - val_loss: 0.2746
+2022-01-19 22:45:37,258:INFO:train:
+2022-01-19 22:45:37,258:INFO:train:Epoch 00016: val_fus_loss did not improve from 0.07743
+2022-01-19 22:45:37,274:INFO:train:Epoch 17/500
+2022-01-19 22:47:37,393:INFO:train:368/368 - 120s - opt_accuracy: 0.8840 - sar_accuracy: 0.8745 - fus_accuracy: 0.9115 - opt_loss: 0.0628 - sar_loss: 0.0726 - fus_loss: 0.0484 - loss: 0.1838 - val_opt_accuracy: 0.8429 - val_sar_accuracy: 0.8480 - val_fus_accuracy: 0.8568 - val_opt_loss: 0.1124 - val_sar_loss: 0.0909 - val_fus_loss: 0.0849 - val_loss: 0.2882
+2022-01-19 22:47:37,393:INFO:train:
+2022-01-19 22:47:37,393:INFO:train:Epoch 00017: val_fus_loss did not improve from 0.07743
+2022-01-19 22:47:37,408:INFO:train:Epoch 18/500
+2022-01-19 22:49:37,527:INFO:train:368/368 - 120s - opt_accuracy: 0.8874 - sar_accuracy: 0.8777 - fus_accuracy: 0.9145 - opt_loss: 0.0601 - sar_loss: 0.0705 - fus_loss: 0.0458 - loss: 0.1764 - val_opt_accuracy: 0.8420 - val_sar_accuracy: 0.8568 - val_fus_accuracy: 0.8597 - val_opt_loss: 0.1172 - val_sar_loss: 0.0815 - val_fus_loss: 0.0848 - val_loss: 0.2835
+2022-01-19 22:49:37,527:INFO:train:
+2022-01-19 22:49:37,527:INFO:train:Epoch 00018: val_fus_loss did not improve from 0.07743
+2022-01-19 22:49:37,543:INFO:train:Epoch 19/500
+2022-01-19 22:51:37,505:INFO:train:368/368 - 120s - opt_accuracy: 0.8908 - sar_accuracy: 0.8760 - fus_accuracy: 0.9153 - opt_loss: 0.0572 - sar_loss: 0.0714 - fus_loss: 0.0448 - loss: 0.1733 - val_opt_accuracy: 0.8405 - val_sar_accuracy: 0.8572 - val_fus_accuracy: 0.8692 - val_opt_loss: 0.1194 - val_sar_loss: 0.0818 - val_fus_loss: 0.0809 - val_loss: 0.2821
+2022-01-19 22:51:37,505:INFO:train:
+2022-01-19 22:51:37,505:INFO:train:Epoch 00019: val_fus_loss did not improve from 0.07743
+2022-01-19 22:51:37,521:INFO:train:Epoch 20/500
+2022-01-19 22:53:37,546:INFO:train:368/368 - 120s - opt_accuracy: 0.8933 - sar_accuracy: 0.8800 - fus_accuracy: 0.9175 - opt_loss: 0.0554 - sar_loss: 0.0676 - fus_loss: 0.0429 - loss: 0.1658 - val_opt_accuracy: 0.8429 - val_sar_accuracy: 0.8516 - val_fus_accuracy: 0.8524 - val_opt_loss: 0.1170 - val_sar_loss: 0.0874 - val_fus_loss: 0.0937 - val_loss: 0.2981
+2022-01-19 22:53:37,546:INFO:train:
+2022-01-19 22:53:37,546:INFO:train:Epoch 00020: val_fus_loss did not improve from 0.07743
+2022-01-19 22:53:37,562:INFO:train:Epoch 21/500
+2022-01-19 22:55:37,548:INFO:train:368/368 - 120s - opt_accuracy: 0.8956 - sar_accuracy: 0.8825 - fus_accuracy: 0.9197 - opt_loss: 0.0536 - sar_loss: 0.0658 - fus_loss: 0.0412 - loss: 0.1606 - val_opt_accuracy: 0.8430 - val_sar_accuracy: 0.8463 - val_fus_accuracy: 0.8608 - val_opt_loss: 0.1160 - val_sar_loss: 0.0891 - val_fus_loss: 0.0871 - val_loss: 0.2922
+2022-01-19 22:55:37,548:INFO:train:
+2022-01-19 22:55:37,548:INFO:train:Epoch 00021: val_fus_loss did not improve from 0.07743
+2022-01-19 22:55:37,564:INFO:train:Epoch 22/500
+2022-01-19 22:57:37,402:INFO:train:368/368 - 120s - opt_accuracy: 0.8995 - sar_accuracy: 0.8853 - fus_accuracy: 0.9218 - opt_loss: 0.0507 - sar_loss: 0.0639 - fus_loss: 0.0396 - loss: 0.1542 - val_opt_accuracy: 0.8430 - val_sar_accuracy: 0.8538 - val_fus_accuracy: 0.8589 - val_opt_loss: 0.1158 - val_sar_loss: 0.0911 - val_fus_loss: 0.0890 - val_loss: 0.2959
+2022-01-19 22:57:37,402:INFO:train:
+2022-01-19 22:57:37,402:INFO:train:Epoch 00022: val_fus_loss did not improve from 0.07743
+2022-01-19 22:57:37,417:INFO:train:Epoch 23/500
+2022-01-19 22:59:37,443:INFO:train:368/368 - 120s - opt_accuracy: 0.9003 - sar_accuracy: 0.8861 - fus_accuracy: 0.9225 - opt_loss: 0.0501 - sar_loss: 0.0631 - fus_loss: 0.0389 - loss: 0.1520 - val_opt_accuracy: 0.8424 - val_sar_accuracy: 0.8552 - val_fus_accuracy: 0.8601 - val_opt_loss: 0.1204 - val_sar_loss: 0.0861 - val_fus_loss: 0.0926 - val_loss: 0.2992
+2022-01-19 22:59:37,443:INFO:train:
+2022-01-19 22:59:37,443:INFO:train:Epoch 00023: val_fus_loss did not improve from 0.07743
+2022-01-19 22:59:37,458:INFO:train:Epoch 24/500
+2022-01-19 23:01:37,561:INFO:train:368/368 - 120s - opt_accuracy: 0.9031 - sar_accuracy: 0.8886 - fus_accuracy: 0.9249 - opt_loss: 0.0479 - sar_loss: 0.0609 - fus_loss: 0.0370 - loss: 0.1458 - val_opt_accuracy: 0.8418 - val_sar_accuracy: 0.8544 - val_fus_accuracy: 0.8568 - val_opt_loss: 0.1305 - val_sar_loss: 0.0889 - val_fus_loss: 0.1002 - val_loss: 0.3196
+2022-01-19 23:01:37,561:INFO:train:
+2022-01-19 23:01:37,561:INFO:train:Epoch 00024: val_fus_loss did not improve from 0.07743
+2022-01-19 23:01:37,577:INFO:train:Epoch 25/500
+2022-01-19 23:03:37,243:INFO:train:368/368 - 120s - opt_accuracy: 0.9049 - sar_accuracy: 0.8894 - fus_accuracy: 0.9259 - opt_loss: 0.0467 - sar_loss: 0.0605 - fus_loss: 0.0363 - loss: 0.1436 - val_opt_accuracy: 0.8452 - val_sar_accuracy: 0.8515 - val_fus_accuracy: 0.8604 - val_opt_loss: 0.1269 - val_sar_loss: 0.0937 - val_fus_loss: 0.0941 - val_loss: 0.3146
+2022-01-19 23:03:37,243:INFO:train:
+2022-01-19 23:03:37,243:INFO:train:Epoch 00025: val_fus_loss did not improve from 0.07743
+2022-01-19 23:03:37,259:INFO:train:Epoch 26/500
+2022-01-19 23:05:37,144:INFO:train:368/368 - 120s - opt_accuracy: 0.9068 - sar_accuracy: 0.8898 - fus_accuracy: 0.9265 - opt_loss: 0.0456 - sar_loss: 0.0592 - fus_loss: 0.0356 - loss: 0.1404 - val_opt_accuracy: 0.8460 - val_sar_accuracy: 0.8517 - val_fus_accuracy: 0.8611 - val_opt_loss: 0.1241 - val_sar_loss: 0.0913 - val_fus_loss: 0.0940 - val_loss: 0.3094
+2022-01-19 23:05:37,144:INFO:train:
+2022-01-19 23:05:37,144:INFO:train:Epoch 00026: val_fus_loss did not improve from 0.07743
+2022-01-19 23:05:37,144:INFO:train:Epoch 00026: early stopping

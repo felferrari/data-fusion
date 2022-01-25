@@ -1,0 +1,35 @@
+2022-01-20 00:01:40,257:INFO:pred:Predicting Experiment 6 time: 0
+2022-01-20 00:01:40,257:INFO:pred:Conditions: ResUNET_SAR_c_c
+2022-01-20 00:02:02,225:INFO:pred:Image stack:
+2022-01-20 00:02:02,225:INFO:pred:(17730, 9203, 4)
+2022-01-20 00:02:02,225:INFO:pred:-126.0
+2022-01-20 00:02:02,225:INFO:pred:-13.0
+2022-01-20 00:02:40,473:INFO:pred:time prediction model 0: 26.61
+2022-01-20 00:02:46,973:INFO:pred:Predicting Experiment 6 time: 1
+2022-01-20 00:02:46,973:INFO:pred:Conditions: ResUNET_SAR_c_c
+2022-01-20 00:02:53,926:INFO:pred:Image stack:
+2022-01-20 00:02:53,926:INFO:pred:(17730, 9203, 4)
+2022-01-20 00:02:53,926:INFO:pred:-126.0
+2022-01-20 00:02:53,926:INFO:pred:-13.0
+2022-01-20 00:03:31,908:INFO:pred:time prediction model 1: 26.38
+2022-01-20 00:03:38,470:INFO:pred:Predicting Experiment 6 time: 2
+2022-01-20 00:03:38,470:INFO:pred:Conditions: ResUNET_SAR_c_c
+2022-01-20 00:03:45,486:INFO:pred:Image stack:
+2022-01-20 00:03:45,486:INFO:pred:(17730, 9203, 4)
+2022-01-20 00:03:45,486:INFO:pred:-126.0
+2022-01-20 00:03:45,486:INFO:pred:-13.0
+2022-01-20 00:04:24,031:INFO:pred:time prediction model 2: 26.66
+2022-01-20 00:04:30,530:INFO:pred:Predicting Experiment 6 time: 3
+2022-01-20 00:04:30,530:INFO:pred:Conditions: ResUNET_SAR_c_c
+2022-01-20 00:04:37,827:INFO:pred:Image stack:
+2022-01-20 00:04:37,827:INFO:pred:(17730, 9203, 4)
+2022-01-20 00:04:37,827:INFO:pred:-126.0
+2022-01-20 00:04:37,827:INFO:pred:-13.0
+2022-01-20 00:05:15,906:INFO:pred:time prediction model 3: 26.49
+2022-01-20 00:05:22,858:INFO:pred:Predicting Experiment 6 time: 4
+2022-01-20 00:05:22,858:INFO:pred:Conditions: ResUNET_SAR_c_c
+2022-01-20 00:05:30,452:INFO:pred:Image stack:
+2022-01-20 00:05:30,452:INFO:pred:(17730, 9203, 4)
+2022-01-20 00:05:30,467:INFO:pred:-126.0
+2022-01-20 00:05:30,467:INFO:pred:-13.0
+2022-01-20 00:06:08,497:INFO:pred:time prediction model 4: 26.58
