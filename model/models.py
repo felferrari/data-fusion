@@ -67,7 +67,7 @@ class ModelBaseFus(Model):
 
     def __init__(self, **kwargs):
         super(ModelBaseFus, self).__init__(**kwargs)
-        self.recon_weight = 0.01
+        self.recon_weight = 0.1
         self.loss_streams = [True, True, True]
 
     def set_loss_streams(self, streams):
